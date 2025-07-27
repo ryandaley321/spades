@@ -2,35 +2,36 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { CustomButton } from "@/components/ui/custom-button";
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header/Navigation */}
-      <header className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+      <header className="fixed top-0 w-full z-50" style={{ backgroundColor: '#181510' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between" style={{ height: '87px' }}>
             {/* Logo */}
             <div className="flex items-center">
               <Image
-                src="/spades_champagne_logo.svg"
+                src="/images/spades champagne 1.png"
                 alt="Spades Poker House Logo"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
+                width={65}
+                height={58}
+                className="ml-8"
               />
             </div>
             
             {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="hover:text-yellow-400 transition-colors font-medium" style={{ color: '#F7E7CE' }}>Home</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors font-medium" style={{ color: '#F7E7CE' }}>Website</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors font-medium" style={{ color: '#F7E7CE' }}>Baytown</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors font-medium" style={{ color: '#F7E7CE' }}>About</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors font-medium" style={{ color: '#F7E7CE' }}>Contact</a>
+            <nav className="hidden md:flex items-center space-x-12">
+              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Home</a>
+              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Webster</a>
+              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Baytown</a>
+              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>About</a>
+              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Contact</a>
             </nav>
             
             {/* Directions Button */}
-            <CustomButton size="md">
+            <CustomButton size="md" className="mr-8" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
               Directions
             </CustomButton>
           </div>
@@ -38,70 +39,52 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
+      <section className="relative flex items-center justify-center" style={{ height: '1080px', marginTop: '87px' }}>
         {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/hero-image 1.png"
-            alt="Poker chips and cards background"
-            fill
-            className="object-cover"
-            priority
-          />
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: `url('/images/luxury-poker-house-exterior-spades-logo-blue-sky-webster-texas.jpg 1.png')`,
+            backgroundColor: 'rgba(24, 21, 16, 0.7)'
+          }}
+        >
           {/* Color Overlay */}
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
         </div>
         
         {/* Content */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-2xl font-bold mb-4 tracking-wide" style={{ color: '#F7E7CE' }}>
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4" style={{ marginTop: '-200px' }}>
+          <h1 className="font-semibold mb-4 tracking-wide" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
             WELCOME TO SPADES POKER HOUSE
           </h1>
-          <h2 className="text-2xl font-bold mb-6" style={{ color: '#F7E7CE' }}>
+          <h2 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px' }}>
             Webster | Baytown
           </h2>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: '#F7E7CE' }}>
+          <p className="mb-10 max-w-2xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>
             Two Convenient Locations - Premier Poker Experience in Texas
           </p>
-          <CustomButton size="lg">
+          <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
             Play Now
           </CustomButton>
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-black py-16 border-t border-b border-yellow-500">
-        <div className="max-w-4xl mx-auto text-center px-4">
+      <section className="relative" style={{ backgroundColor: '#181510', height: '250px', borderTop: '1px solid #CBB682', borderBottom: '1px solid #CBB682' }}>
+        <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center h-full">
           <h2 className="text-2xl font-bold mb-6" style={{ color: '#F7E7CE' }}>
             Join the Elite. Experience Private-Membership Poker.
           </h2>
           <p className="mb-8 text-lg" style={{ color: '#F7E7CE' }}>
             Experience the best poker games in Webster & Baytown, TX.
           </p>
-          <CustomButton size="lg">
+          <CustomButton size="lg" style={{ backgroundColor: '#785F37', color: '#F7E7CE', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
             Learn More
           </CustomButton>
         </div>
       </section>
 
-      {/* Ultimate Poker Action Section */}
-      <section className="bg-black pt-16 pb-8">
-        <div className="max-w-6xl mx-auto text-center px-4">
-          {/* Trophy Icon */}
-          <div className="w-48 h-48 mx-auto mb-8 flex items-center justify-center">
-            <Image
-              src="/trophy1.png"
-              alt="Trophy icon"
-              width={192}
-              height={192}
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <h2 className="text-2xl font-bold mb-16" style={{ color: '#F7E7CE' }}>
-            Ultimate Poker Action & Exceptional Cuisine
-          </h2>
-        </div>
-      </section>
+      {/* Ultimate Poker Action Section - Remove this section as it's not in Figma design */}
 
       {/* Three Column Section */}
       <section className="bg-black pt-8 pb-16">
@@ -112,14 +95,14 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
-                    src="/cash-game-image.png"
+                    src="/images/high-stakes-poker-hand-chip-tower-cash-game-spades-poker-webster.jpg 1.png"
                     alt="Cash Games at Spades Poker House"
                     width={400}
                     height={225}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#F7E7CE' }}>Cash Games</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>Cash Games</h3>
                 <div className="space-y-3 text-sm" style={{ color: '#F7E7CE' }}>
                   <p>Enjoy the action of cash games at Spades Poker House! No matter your skill level, our tables are always open for you to join in the action.</p>
                   <ul className="space-y-1">
@@ -149,25 +132,25 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
-                    src="/tournament-image.png"
+                    src="/images/tournament-image 1.png"
                     alt="Poker Tournaments at Spades Poker House"
                     width={400}
                     height={225}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#F7E7CE' }}>Poker Tournaments</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>Poker Tournaments</h3>
                 <div className="space-y-3 text-sm" style={{ color: '#F7E7CE' }}>
                   <p>Join our thrilling poker tournaments with big prizes and intense action! Whether you&apos;re a beginner or a pro, there&apos;s a tournament for you.</p>
                   <ul className="space-y-1">
-                    <li>• <strong>NLH (Pot-Limit Omaha)</strong> and <strong>NLH (No-Limit Hold&apos;em)</strong> tournaments</li>
+                    <li>• <strong>PLO (Pot-Limit Omaha)</strong> and <strong>NLH (No-Limit Hold&apos;em)</strong> tournaments</li>
                     <li>• Thrilling <strong>Freezeouts</strong> and <strong>Bounty Tournaments</strong></li>
-                    <li>• Our signature &quot;Chill&quot; <strong>Tournaments</strong>, designed for a more laid-back atmosphere</li>
+                    <li>• Our signature <strong>&quot;Chill&quot; Tournaments</strong>, designed for a more laid-back atmosphere</li>
                     <li>• <strong>Large Prizepool Re-entry Deepstack Tournaments</strong> offering massive payouts</li>
                     <li>• <strong>Re-buy Tournaments</strong> with varying buy-ins for all bankrolls</li>
                     <li>• <strong>Ladies&apos; and Seniors&apos; Tournaments</strong> for a more inclusive experience</li>
                   </ul>
-                  <p className="text-xs">These <strong>tournaments are held daily</strong> in both of our locations, offering players the opportunity to compete and win thrilling prizes. Join us for an unforgettable poker experience at Spades Poker House – <strong>where the action never stops!</strong></p>
+                  <p className="text-xs">These <strong>tournaments are held daily</strong> in both of our locations, offering players the opportunity to compete and win amazing prizes. Join us for an unforgettable poker experience at Spades Poker House – <strong>where the action never stops!</strong></p>
                 </div>
                 <div className="mt-6">
                   <CustomButton size="sm" className="w-full text-sm" style={{ color: '#181510' }}>
@@ -185,23 +168,23 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
-                    src="/wrapimg.png"
+                    src="/images/wrap2 1.png"
                     alt="Gyro Hero Kitchen Food"
                     width={400}
                     height={225}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#F7E7CE' }}>Gyro Hero Kitchen</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>Kitchen</h3>
                 <div className="space-y-3 text-sm" style={{ color: '#F7E7CE' }}>
                   <p>Introducing <strong>GYRO HERO</strong>, the exclusive restaurant at Spades Poker House Webster! We take pride in offering a diverse menu that caters to all taste buds. Indulge in our mouthwatering <strong>Gyros, flavorful Sandwiches, delectable Wraps, and satisfying Pastas</strong>, alongside a variety of other tempting options. Whether you&apos;re in the mood for a quick snack or a full meal, our skilled chefs will craft dishes that will delight your senses.</p>
                   <ul className="space-y-1">
                     <li>• <strong>Wraps</strong> with fresh ingredients</li>
                     <li>• <strong>Sandwiches</strong> made to order</li>
                     <li>• <strong>Burgers</strong> cooked to perfection</li>
-                    <li>• <strong>Pizza & Bowls</strong> packed with flavor</li>
+                    <li>• <strong>Plates & Bowls</strong> packed with flavor</li>
                     <li>• <strong>Salads</strong> for a light yet tasty meal</li>
-                    <li>• <strong>Breakfast</strong> options to fuel your day</li>
+                    <li>• <strong>Breakfast</strong> options to start your day right</li>
                     <li>• <strong>Desserts</strong> to satisfy your sweet tooth</li>
                   </ul>
                   <p className="text-xs">Come by to satisfy your hunger at <strong>Gyro Hero, where each dish is crafted with care and full of flavor!</strong></p>
@@ -226,7 +209,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/happy1.png"
+                src="/images/happyq 1.png"
                 alt="Instagram post 1"
                 width={300}
                 height={300}
@@ -235,7 +218,7 @@ export default function Home() {
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/mario2.png"
+                src="/images/mario 1.png"
                 alt="Instagram post 2"
                 width={300}
                 height={300}
@@ -244,7 +227,7 @@ export default function Home() {
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/trio3.png"
+                src="/images/trio 1.png"
                 alt="Instagram post 3"
                 width={300}
                 height={300}
@@ -253,7 +236,7 @@ export default function Home() {
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/happier4.png"
+                src="/images/happier 1.png"
                 alt="Instagram post 4"
                 width={300}
                 height={300}
@@ -265,111 +248,122 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-12">
+      <footer className="relative py-16" style={{ backgroundColor: '#181510', borderTop: '1px solid #CBB682' }}>
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4" style={{ color: '#F7E7CE' }}>Spades Poker House Webster</h3>
+              <h3 className="text-2xl font-bold mb-8" style={{ color: '#F7E7CE' }}>Spades Poker House Webster</h3>
               <div className="flex justify-center space-x-4">
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/locationicon 1.png"
                     alt="Location"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={48}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phoneicon 1.png"
                     alt="Phone"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={49}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/pokeratlasicon 1.png"
                     alt="Poker Atlas"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={44}
+                    height={51}
+                    className="w-11 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/instagramicon 1.png"
                     alt="Instagram"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={48}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook icon 1.png"
                     alt="Facebook"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={48}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-2xl font-bold mb-4" style={{ color: '#F7E7CE' }}>Spades Poker House Baytown</h4>
+              <h4 className="text-2xl font-bold mb-8" style={{ color: '#F7E7CE' }}>Spades Poker House Baytown</h4>
               <div className="flex justify-center space-x-4">
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/locationicon 1.png"
                     alt="Location"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={48}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phoneicon 1.png"
                     alt="Phone"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={49}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/pokeratlasicon 1.png"
                     alt="Poker Atlas"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={44}
+                    height={51}
+                    className="w-11 h-12"
                   />
                 </a>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook icon 1.png"
                     alt="Facebook"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={48}
+                    height={51}
+                    className="w-12 h-12"
                   />
                 </a>
               </div>
             </div>
             
-            <div className="pt-8 text-center text-sm border-t border-gray-700 space-y-3" style={{ color: '#F7E7CE' }}>
-              <div className="flex justify-center space-x-6">
-                <a href="#" className="hover:text-yellow-400 transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-yellow-400 transition-colors">Terms of Use</a>
-                <a href="#" className="hover:text-yellow-400 transition-colors">Disclaimer</a>
-                <a href="#" className="hover:text-yellow-400 transition-colors">Cookie Policy</a>
+            <div className="pt-8 text-center text-sm space-y-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins' }}>
+              <div className="flex justify-center space-x-8 mb-6">
+                <a href="#" className="hover:opacity-80 transition-opacity">Privacy Policy</a>
+                <a href="#" className="hover:opacity-80 transition-opacity">Terms of Use</a>
+                <a href="#" className="hover:opacity-80 transition-opacity">Disclaimer</a>
+                <a href="#" className="hover:opacity-80 transition-opacity">Cookie Policy</a>
               </div>
               <p>© 2025 Spades Poker House. All rights reserved.</p>
               <p>Site Designed by G&R Technologies</p>
+              
+              {/* Logo at bottom */}
+              <div className="pt-6">
+                <Image
+                  src="/images/spades champagne 1.png"
+                  alt="Spades Poker House Logo"
+                  width={78}
+                  height={69}
+                  className="mx-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
