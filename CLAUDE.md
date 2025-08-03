@@ -49,3 +49,18 @@
 - Server at `http://127.0.0.1:3845/sse`
 - Never use placeholder images if localhost source provided
 - All assets should come from Figma payload
+
+## MCP Servers
+### Figma Dev Mode MCP Rules
+- The Figma Dev Mode MCP Server provides an assets endpoint which can serve image and SVG assets
+- IMPORTANT: If the Figma Dev Mode MCP Server returns a localhost source for an image or an SVG, use that image or SVG source directly
+- IMPORTANT: DO NOT import/add new icon packages, all the assets should be in the Figma payload
+- IMPORTANT: do NOT use or create placeholders if a localhost source is provided
+
+## General Development Rules
+- IMPORTANT: Always use components from `/src/components` when possible
+- Prioritize Figma fidelity to match designs exactly
+- Avoid hardcoded values, use design tokens from Figma where available
+- Follow WCAG requirements for accessibility
+- Add component documentation
+- Place UI components in `/src/components`; avoid inline styles unless truly necessary

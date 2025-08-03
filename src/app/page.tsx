@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { CustomButton } from "@/components/ui/custom-button";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -23,10 +24,10 @@ export default function Home() {
             
             {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-12">
-              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Home</a>
+              <a href="/" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Home</a>
               <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Webster</a>
               <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Baytown</a>
-              <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>About</a>
+              <a href="/about" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>About</a>
               <a href="#" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Contact</a>
             </nav>
             
@@ -247,127 +248,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="relative py-16" style={{ backgroundColor: '#181510', borderTop: '1px solid #CBB682' }}>
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-8" style={{ color: '#F7E7CE' }}>Spades Poker House Webster</h3>
-              <div className="flex justify-center space-x-4">
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/locationicon 1.png"
-                    alt="Location"
-                    width={48}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/phoneicon 1.png"
-                    alt="Phone"
-                    width={49}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/pokeratlasicon 1.png"
-                    alt="Poker Atlas"
-                    width={44}
-                    height={51}
-                    className="w-11 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/instagramicon 1.png"
-                    alt="Instagram"
-                    width={48}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/facebook icon 1.png"
-                    alt="Facebook"
-                    width={48}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="text-2xl font-bold mb-8" style={{ color: '#F7E7CE' }}>Spades Poker House Baytown</h4>
-              <div className="flex justify-center space-x-4">
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/locationicon 1.png"
-                    alt="Location"
-                    width={48}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/phoneicon 1.png"
-                    alt="Phone"
-                    width={49}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/pokeratlasicon 1.png"
-                    alt="Poker Atlas"
-                    width={44}
-                    height={51}
-                    className="w-11 h-12"
-                  />
-                </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/facebook icon 1.png"
-                    alt="Facebook"
-                    width={48}
-                    height={51}
-                    className="w-12 h-12"
-                  />
-                </a>
-              </div>
-            </div>
-            
-            <div className="pt-8 text-center text-sm space-y-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins' }}>
-              <div className="flex justify-center space-x-8 mb-6">
-                <a href="#" className="hover:opacity-80 transition-opacity">Privacy Policy</a>
-                <a href="#" className="hover:opacity-80 transition-opacity">Terms of Use</a>
-                <a href="#" className="hover:opacity-80 transition-opacity">Disclaimer</a>
-                <a href="#" className="hover:opacity-80 transition-opacity">Cookie Policy</a>
-              </div>
-              <p>© 2025 Spades Poker House. All rights reserved.</p>
-              <p>Site Designed by G&R Technologies</p>
-              
-              {/* Logo at bottom */}
-              <div className="pt-6">
-                <Image
-                  src="/images/spades champagne 1.png"
-                  alt="Spades Poker House Logo"
-                  width={78}
-                  height={69}
-                  className="mx-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
