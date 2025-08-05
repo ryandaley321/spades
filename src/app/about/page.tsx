@@ -1,385 +1,328 @@
-"use client";
-
 import Image from "next/image";
 import { CustomButton } from "@/components/ui/custom-button";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function About() {
   return (
-    <div className="relative overflow-x-hidden">
-      {/* Fixed Header */}
-      <header className="fixed top-0 w-full z-50" style={{ backgroundColor: '#181510', height: '87px' }}>
-        <div className="relative h-full" style={{ width: '1440px', margin: '0 auto' }}>
-          <Image
-            src="/images/spades champagne 1.png"
-            alt="Spades Poker House Logo"
-            width={65}
-            height={58}
-            className="absolute left-[50px] top-[12px]"
-          />
-          
-          <nav className="absolute left-[452px] top-[30px] flex items-center gap-[67px]">
-            <a href="/" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Home</a>
-            <a href="#" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Webster</a>
-            <a href="#" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Baytown</a>
-            <a href="/about" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>About</a>
-            <a href="#" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Contact</a>
-          </nav>
-          
-          <div className="absolute left-[1252px] top-[24px]" style={{ width: '139px', height: '38px', backgroundColor: '#CBB682', borderRadius: '11px' }}>
-            <p className="text-center mt-2" style={{ color: '#181510', fontFamily: 'Poppins', fontSize: '16px' }}>Directions</p>
-          </div>
+    <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Hero Section */}
+      <section className="relative flex items-center justify-center" style={{ height: '746px', marginTop: '87px' }}>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: `url('/images/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.png')`,
+          }}
+        >
+          {/* Dark Overlay */}
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
         </div>
-      </header>
+        
+        {/* Content */}
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+          <p className="font-semibold mb-4 tracking-wide" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
+            TWO LOCATIONS. ONE LEGENDARY POKER EXPERIENCE.
+          </p>
+          <h1 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '48px' }}>
+            Webster | Baytown
+          </h1>
+          <p className="mb-10 max-w-2xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
+            Your Premier Poker Destination in Baytown and Webster, Texas
+          </p>
+          <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
+            Play Now
+          </CustomButton>
+        </div>
+      </section>
 
-      {/* Main Content */}
-      <div style={{ width: '1440px', margin: '0 auto', paddingTop: '87px' }}>
-        {/* First Hero Section */}
-        <section className="relative" style={{ height: '746px' }}>
-          <div 
-            className="absolute inset-0"
-            style={{ 
-              backgroundImage: `url('/images/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.png')`,
-              backgroundSize: '100% 144.77%',
-              backgroundPosition: 'center top',
-            }}
-          />
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }} />
-          
-          <div className="relative z-10">
-            <p className="absolute left-[492px] top-[320px]" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px', fontWeight: 600 }}>
-              TWO LOCATIONS. ONE LEGENDARY POKER EXPERIENCE.
-            </p>
-            <h2 className="absolute left-[585px] top-[357px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: 700 }}>
-              Webster | Baytown
-            </h2>
-            <p className="absolute left-[492px] top-[399px]" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>
-              Your Premier Poker Destination in Baytown and Webster, Texas
-            </p>
-            <div className="absolute left-[659px] top-[442px]" style={{ width: '139px', height: '38px', backgroundColor: '#CBB682', borderRadius: '11px' }}>
-              <p className="text-center mt-2" style={{ color: '#181510', fontFamily: 'Poppins', fontSize: '16px' }}>Play Now</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action Banner */}
-        <section className="relative" style={{ height: '250px', backgroundColor: '#181510', borderTop: '1px solid #CBB682', borderBottom: '1px solid #CBB682' }}>
-          <h2 className="absolute left-[229px] top-[56px] text-center" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: 700, width: '1000px' }}>
+      {/* Call to Action Banner */}
+      <section className="relative" style={{ backgroundColor: '#181510', height: '250px', borderTop: '1px solid #CBB682', borderBottom: '1px solid #CBB682' }}>
+        <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center h-full">
+          <h2 className="text-2xl font-bold mb-6" style={{ color: '#F7E7CE' }}>
             How Spades Poker House Became a Top Poker Club in Texas
           </h2>
-          <p className="absolute left-[492px] top-[101px]" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>
+          <p className="mb-8 text-lg" style={{ color: '#F7E7CE' }}>
             Two locations, endless action, and a luxury poker atmosphere.
           </p>
-          <div className="absolute left-[627px] top-[156px]" style={{ width: '185px', height: '38px', backgroundColor: '#785F37', borderRadius: '11px' }}>
-            <p className="text-center mt-2" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>See How It All Started</p>
-          </div>
-        </section>
+          <CustomButton size="lg" style={{ backgroundColor: '#785F37', color: '#F7E7CE', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
+            See How It All Started
+          </CustomButton>
+        </div>
+      </section>
 
-        {/* Second Hero Section */}
-        <section className="relative" style={{ height: '938px', overflow: 'hidden' }}>
-          <div 
-            className="absolute"
-            style={{ 
-              left: '-177px',
-              top: 0,
-              width: '1906px',
-              height: '938px',
-              backgroundImage: `url('/images/faded spade premium quality poker cards 1.png')`,
-              backgroundSize: 'auto',
-              backgroundPosition: '0% 0%',
-            }}
-          />
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }} />
-          
-          <div className="relative z-10">
-            <p className="absolute left-[563px] top-[400px]" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px', fontWeight: 600 }}>
-              WELCOME TO SPADES POKER HOUSE
-            </p>
-            <h2 className="absolute left-[583px] top-[434px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: 700 }}>
-              Webster | Baytown
-            </h2>
-            <div className="absolute left-[658px] top-[489px]" style={{ width: '139px', height: '38px', backgroundColor: '#CBB682', borderRadius: '11px' }}>
-              <p className="text-center mt-2" style={{ color: '#181510', fontFamily: 'Poppins', fontSize: '16px' }}>Play Now</p>
+      {/* Google Reviews Section */}
+      <section className="relative" style={{ minHeight: '800px', backgroundColor: '#181510' }}>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0"
+          style={{ 
+            backgroundImage: `url('/images/faded spade premium quality poker cards 1.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.3
+          }}
+        />
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+            {/* Review 1 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
+                  <p className="text-sm text-gray-600">Local Guide • 23 reviews • 7 photos</p>
+                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">Placeholder review text. Great poker experience at Spades Poker House!</p>
             </div>
-          </div>
-        </section>
 
-        {/* Main Content Section with Timeline */}
-        <section className="relative" style={{ backgroundColor: '#181510', minHeight: '2664px' }}>
-          {/* Background image */}
-          <Image
-            src="/images/image 1.png"
-            alt="Background"
-            width={1411}
-            height={1866}
-            className="absolute opacity-30"
-            style={{ left: '21px', top: '42px' }}
-          />
+            {/* Review 2 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
+                  <p className="text-sm text-gray-600">Local Guide • 15 reviews • 10 photos</p>
+                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">Placeholder review text. Amazing atmosphere and professional dealers!</p>
+            </div>
 
-          {/* Google Reviews */}
-          <div className="relative z-10 pt-[68px]">
-            <Image
-              src="/images/Screenshot 2025-07-22 135627 1.png"
-              alt="Review 1"
-              width={529}
-              height={144}
-              className="absolute left-[91px] top-[68px]"
-            />
-            <Image
-              src="/images/Screenshot 2025-07-22 135705 1.png"
-              alt="Review 2"
-              width={522}
-              height={148}
-              className="absolute left-[94px] top-[257px]"
-            />
-            <Image
-              src="/images/Screenshot 2025-07-22 135730 1.png"
-              alt="Review 3"
-              width={525}
-              height={152}
-              className="absolute left-[94px] top-[421px]"
-            />
-            <Image
-              src="/images/Screenshot 2025-07-22 135749 1.png"
-              alt="Review 4"
-              width={533}
-              height={142}
-              className="absolute left-[87px] top-[618px]"
-            />
+            {/* Review 3 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
+                  <p className="text-sm text-gray-600">45 reviews • 1 photo</p>
+                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">Placeholder review text. Best poker room in Texas!</p>
+            </div>
 
-            <div className="absolute left-[611px] top-[818px]">
-              <button className="relative">
-                <Image
-                  src="/images/Rectangle 3.svg"
-                  alt="Button"
-                  width={234}
-                  height={38}
-                />
-                <span className="absolute inset-0 flex items-center justify-center" style={{ color: '#181510', fontFamily: 'Poppins', fontSize: '16px' }}>
-                  See More Google Reviews
-                </span>
-              </button>
+            {/* Review 4 */}
+            <div className="bg-white rounded-lg p-6 shadow-lg">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
+                  <p className="text-sm text-gray-600">89 reviews • 15 photos</p>
+                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm">Placeholder review text. Excellent service and great food!</p>
             </div>
           </div>
 
-          {/* Timeline Section */}
-          <div className="relative z-10" style={{ marginTop: '150px' }}>
-            <h2 className="text-center" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: 700 }}>
+          {/* See More Google Reviews Button */}
+          <div className="text-center mt-12">
+            <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}>
+              See More Google Reviews
+            </CustomButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline and CTA Container with shared background */}
+      <div className="relative" style={{ backgroundColor: '#181510' }}>
+        {/* Background Image for both sections */}
+        <div 
+          className="absolute inset-0"
+          style={{ 
+            backgroundImage: `url('/images/image 1.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.3
+          }}
+        />
+
+        {/* Timeline Section */}
+        <section className="relative" style={{ paddingTop: '80px', paddingBottom: '100px' }}>
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8">
+            {/* Timeline Title */}
+            <h2 className="text-center font-bold mb-16" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '48px' }}>
               Timeline
             </h2>
-            
-            <Image
-              src="/images/Group 16.svg"
-              alt="Decoration"
-              width={709}
-              height={90}
-              className="mx-auto mt-8"
-            />
+
+            {/* Top Spades Decoration */}
+            <div className="flex justify-center mb-20">
+              <Image
+                src="/images/Group 16.svg"
+                alt="Spades decoration"
+                width={700}
+                height={90}
+              />
+            </div>
 
             {/* Timeline Container */}
-            <div className="relative mt-16" style={{ maxWidth: '1250px', margin: '0 auto' }}>
-              {/* Timeline vertical lines */}
-              <div style={{ 
-                position: 'absolute',
-                left: '0',
-                top: '0',
-                width: '1px',
-                height: '1300px',
-                backgroundColor: '#785F37',
-                transform: 'rotate(90deg)',
-                transformOrigin: 'top left',
-                marginTop: '150px',
-                marginLeft: '625px'
-              }} />
-
+            <div className="space-y-8">
               {/* 2020 Entry */}
-              <div className="relative" style={{ paddingTop: '100px' }}>
-                <Image
-                  src="/images/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.png"
-                  alt="2020 Poker Room"
-                  width={288}
-                  height={216}
-                  className="absolute"
-                  style={{ left: '134px', top: '172px' }}
-                />
-                
-                <h3 className="absolute" style={{ 
-                  left: '456px', 
-                  top: '172px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Montserrat', 
-                  fontSize: '24px', 
-                  fontWeight: 600 
-                }}>
-                  2020 – Launching Spades Poker House in Webster, TX
-                </h3>
-                
-                <p className="absolute" style={{ 
-                  left: '456px', 
-                  top: '223px',
-                  width: '854px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Poppins', 
-                  fontSize: '16px',
-                  lineHeight: '25px'
-                }}>
-                  In 2020, Spades Poker House opened its doors in Webster, Texas, bringing a luxurious and professional poker club experience to Southeast Texas.<br />
-                  We created dozens of local jobs for poker dealers, servers, managers, cage cashiers, security staff, and cleaners, building a team of qualified professionals.<br />
-                  Players were drawn to our modern poker room, time-based cash game model, and safe, upscale atmosphere, making us the go-to spot for Texas Hold'em and PLO action.
-                </p>
+              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
+                <div className="flex items-start gap-8">
+                  <div className="flex-shrink-0">
+                    <Image
+                      src="/images/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.png"
+                      alt="2020 Poker Room"
+                      width={280}
+                      height={210}
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
+                      2020 – Launching Spades Poker House in Webster, TX
+                    </h3>
+                    <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
+                      In 2020, Spades Poker House opened its doors in Webster, Texas, bringing a luxurious and professional poker club experience to Southeast Texas.<br/>
+                      We created dozens of local jobs for poker dealers, servers, managers, cage cashiers, security staff, and cleaners, building a team of qualified professionals.<br/>
+                      Players were drawn to our modern poker room, time-based cash game model, and safe, upscale atmosphere, making us the go-to spot for Texas Hold'em and PLO action.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* 2021-2022 Entry */}
-              <div className="relative" style={{ paddingTop: '200px' }}>
-                <h3 className="absolute" style={{ 
-                  left: '145px', 
-                  top: '289px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Montserrat', 
-                  fontSize: '24px', 
-                  fontWeight: 600 
-                }}>
-                  2021–2022 – Remodeling, Expanding & More Poker Action
-                </h3>
-                
-                <p className="absolute" style={{ 
-                  left: '145px', 
-                  top: '340px',
-                  width: '804px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Poppins', 
-                  fontSize: '16px',
-                  lineHeight: '25px'
-                }}>
-                  With increasing demand, we invested in remodeling the Webster poker room, introducing more tables and enhancing the environment.<br />
-                  Our kitchen upgrades brought high-quality food and drinks to complement the gaming experience.<br />
-                  We added a wider variety of poker games and tournaments, creating nonstop action for Southeast Texas poker enthusiasts.
-                </p>
-
-                <Image
-                  src="/images/480742102_2727444374108691_8265231031706897172_n 1.png"
-                  alt="Remodeled Room"
-                  width={286}
-                  height={215}
-                  className="absolute"
-                  style={{ left: '1035px', top: '306px' }}
-                />
+              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
+                <div className="flex items-start gap-8">
+                  <div className="flex-1">
+                    <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
+                      2021–2022 – Remodeling, Expanding & More Poker Action
+                    </h3>
+                    <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
+                      With increasing demand, we invested in remodeling the Webster poker room, introducing more tables and enhancing the environment.<br/>
+                      Our kitchen upgrades brought high-quality food and drinks to complement the gaming experience.<br/>
+                      We added a wider variety of poker games and tournaments, creating nonstop action for Southeast Texas poker enthusiasts.
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <Image
+                      src="/images/480742102_2727444374108691_8265231031706897172_n 1.png"
+                      alt="Remodeled Room"
+                      width={280}
+                      height={210}
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* 2023 Entry */}
-              <div className="relative" style={{ paddingTop: '250px' }}>
-                <Image
-                  src="/images/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.png"
-                  alt="Baytown Opening"
-                  width={290}
-                  height={218}
-                  className="absolute"
-                  style={{ left: '145px', top: '414px' }}
-                />
-
-                <h3 className="absolute" style={{ 
-                  left: '473px', 
-                  top: '400px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Montserrat', 
-                  fontSize: '24px', 
-                  fontWeight: 600 
-                }}>
-                  2023 – Opening Baytown's Top Poker Room
-                </h3>
-                
-                <div className="absolute" style={{ 
-                  left: '473px', 
-                  top: '451px',
-                  width: '842px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Poppins', 
-                  fontSize: '16px',
-                  lineHeight: '25px'
-                }}>
-                  <p>In 2023, we proudly expanded with a second location: Spades Poker House Baytown.<br />
-                  The Baytown poker room features:</p>
-                  <ul className="list-disc pl-6 mt-2">
-                    <li>A 150 sq. ft. TV wall for watching live sports</li>
-                    <li>Multiple big screens across the room</li>
-                    <li>A spacious, modern layout perfect for socializing or enjoying poker date nights</li>
-                  </ul>
-                  <p className="mt-2">We introduced fun daily promotions and quickly became a favorite among players seeking a vibrant and professional poker club in Baytown, TX.</p>
+              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
+                <div className="flex items-start gap-8">
+                  <div className="flex-shrink-0">
+                    <Image
+                      src="/images/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.png"
+                      alt="Baytown Opening"
+                      width={280}
+                      height={210}
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
+                      2023 – Opening Baytown's Top Poker Room
+                    </h3>
+                    <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
+                      <p className="mb-2">In 2023, we proudly expanded with a second location: Spades Poker House Baytown.</p>
+                      <p className="mb-2">The Baytown poker room features:</p>
+                      <ul className="list-disc pl-6 space-y-1 mb-2">
+                        <li>A 150 sq. ft. TV wall for watching live sports</li>
+                        <li>Multiple big screens across the room</li>
+                        <li>A spacious, modern layout perfect for socializing or enjoying poker date nights</li>
+                      </ul>
+                      <p>We introduced fun daily promotions and quickly became a favorite among players seeking a vibrant and professional poker club in Baytown, TX.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* 2024-Present Entry */}
-              <div className="relative" style={{ paddingTop: '300px' }}>
-                <h3 className="absolute" style={{ 
-                  left: '165px', 
-                  top: '435px',
-                  width: '755px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Montserrat', 
-                  fontSize: '24px', 
-                  fontWeight: 600 
-                }}>
-                  2024–Present – Leading Texas Poker with Technology & Service
-                </h3>
-                
-                <div className="absolute" style={{ 
-                  left: '165px', 
-                  top: '510px',
-                  width: '870px',
-                  color: '#F7E7CE', 
-                  fontFamily: 'Poppins', 
-                  fontSize: '16px',
-                  lineHeight: '25px'
-                }}>
-                  <p>Today, Spades Poker House uses Poker Atlas tablets at every table, giving players access to:</p>
-                  <ul className="list-disc pl-6 mt-2">
-                    <li>Real-time waitlist registration for cash games</li>
-                    <li>Live updates on active tables and tournament schedules</li>
-                    <li>Convenient mobile check-ins for Webster and Baytown poker rooms</li>
-                  </ul>
-                  <p className="mt-2">With two thriving locations and a focus on innovation, we're proud to be recognized as a top-rated poker destination in Texas, offering a premium experience for casual players and high-stakes grinders alike.</p>
+              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
+                <div className="flex items-start gap-8">
+                  <div className="flex-1">
+                    <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
+                      2024–Present – Leading Texas Poker with Technology & Service
+                    </h3>
+                    <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
+                      <p className="mb-2">Today, Spades Poker House uses Poker Atlas tablets at every table, giving players access to:</p>
+                      <ul className="list-disc pl-6 space-y-1 mb-2">
+                        <li>Real-time waitlist registration for cash games</li>
+                        <li>Live updates on active tables and tournament schedules</li>
+                        <li>Convenient mobile check-ins for Webster and Baytown poker rooms</li>
+                      </ul>
+                      <p>With two thriving locations and a focus on innovation, we're proud to be recognized as a top-rated poker destination in Texas, offering a premium experience for casual players and high-stakes grinders alike.</p>
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <Image
+                      src="/images/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.png"
+                      alt="Modern Poker Action"
+                      width={280}
+                      height={210}
+                      className="rounded-lg"
+                    />
+                  </div>
                 </div>
-
-                <Image
-                  src="/images/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.png"
-                  alt="Modern Action"
-                  width={290}
-                  height={218}
-                  className="absolute"
-                  style={{ left: '1045px', top: '470px' }}
-                />
               </div>
             </div>
 
-            <Image
-              src="/images/Group 16.svg"
-              alt="Decoration"
-              width={709}
-              height={90}
-              className="absolute"
-              style={{ right: '86px', bottom: '240px' }}
-            />
-          </div>
-
-          {/* Call to Action Section at Bottom */}
-          <div className="absolute bottom-0 left-0 right-0" style={{ height: '280px', backgroundColor: '#181510', borderTop: '1px solid #CBB682' }}>
-            <h2 className="text-center mt-[43px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: 700 }}>
-              Your Seat is Waiting – Check Live Poker Action
-            </h2>
-            
-            <div className="flex flex-col items-center gap-4 mt-12">
-              <div style={{ width: '365px', height: '38px', backgroundColor: '#CBB682', borderRadius: '11px' }}>
-                <p className="text-center mt-2" style={{ color: '#181510', fontFamily: 'Poppins', fontSize: '16px' }}>Poker Atlas- Webster</p>
-              </div>
-              <div style={{ width: '365px', height: '38px', backgroundColor: '#CBB682', borderRadius: '11px' }}>
-                <p className="text-center mt-2" style={{ color: '#181510', fontFamily: 'Poppins', fontSize: '16px' }}>Poker Atlas- Baytown</p>
-              </div>
+            {/* Bottom Spades Decoration */}
+            <div className="flex justify-center mt-20">
+              <Image
+                src="/images/Group 16.svg"
+                alt="Spades decoration"
+                width={700}
+                height={90}
+              />
             </div>
           </div>
         </section>
 
-        <Footer />
+        {/* Call to Action - Check Live Poker Action */}
+        <section className="relative" style={{ height: '280px', borderTop: '1px solid #CBB682' }}>
+          <div className="relative z-10 flex flex-col items-center justify-center h-full">
+            <h2 className="text-center font-bold mb-12" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '36px' }}>
+              Your Seat is Waiting – Check Live Poker Action
+            </h2>
+            
+            <div className="flex flex-col items-center gap-4">
+              <CustomButton size="lg" style={{ 
+                backgroundColor: '#CBB682', 
+                color: '#181510', 
+                borderRadius: '11px', 
+                padding: '10px 60px', 
+                fontSize: '16px',
+                minWidth: '365px'
+              }}>
+                Poker Atlas- Webster
+              </CustomButton>
+              <CustomButton size="lg" style={{ 
+                backgroundColor: '#CBB682', 
+                color: '#181510', 
+                borderRadius: '11px', 
+                padding: '10px 60px', 
+                fontSize: '16px',
+                minWidth: '365px'
+              }}>
+                Poker Atlas- Baytown
+              </CustomButton>
+            </div>
+          </div>
+        </section>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
