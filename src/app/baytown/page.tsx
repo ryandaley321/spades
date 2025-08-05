@@ -162,8 +162,8 @@ export default function BaytownLocationPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/happyq 1.png"
-                  alt="Promotion 1"
+                  src="/images/spades-baytown-poker-tournament-winners-cash-prize-felt-webster.jpg"
+                  alt="Spades Baytown poker tournament winners with cash prize"
                   width={300}
                   height={300}
                   className="w-full h-full object-cover"
@@ -171,8 +171,8 @@ export default function BaytownLocationPage() {
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/mario 1.png"
-                  alt="Promotion 2"
+                  src="/images/spades-baytown-10000-giveaway-winner-cash-backdrop-promotion.jpg"
+                  alt="Spades Baytown $10,000 giveaway winner with cash backdrop"
                   width={300}
                   height={300}
                   className="w-full h-full object-cover"
@@ -180,8 +180,8 @@ export default function BaytownLocationPage() {
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/trio 1.png"
-                  alt="Promotion 3"
+                  src="/images/spades-baytown-large-chip-stacks-poker-game-high-stakes-texas.jpg"
+                  alt="Spades Baytown large chip stacks in high stakes poker game"
                   width={300}
                   height={300}
                   className="w-full h-full object-cover"
@@ -189,8 +189,8 @@ export default function BaytownLocationPage() {
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/happier 1.png"
-                  alt="Promotion 4"
+                  src="/images/spades-baytown-poker-room-full-players-live-action-texas-poker.jpg"
+                  alt="Spades Baytown poker room full of players in live action"
                   width={300}
                   height={300}
                   className="w-full h-full object-cover"
