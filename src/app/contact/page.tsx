@@ -11,26 +11,23 @@ export default function ContactPage() {
       <Header directionsUrl={websterDirectionsUrl} />
       <main>
         {/* Hero Section */}
-        <section className="relative pt-24 pb-16 text-center" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.jpg')", backgroundSize: '100% auto', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <section className="relative flex items-center justify-center text-center" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.jpg')", backgroundSize: '100% auto', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', minHeight: '80vh', paddingTop: '87px' }}>
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
           <div className="max-w-4xl mx-auto px-4 relative z-10">
             <p className="text-sm mb-2" style={{ color: '#F7E7CE', fontFamily: 'Poppins' }}>
-              Elite-level poker action at both Webster and Baytown, TX
+              Elite-Level Poker Events and Games Near Houston, TX
             </p>
             <h1 className="text-5xl font-bold mb-2" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
               Webster | Baytown
             </h1>
-            <h2 className="text-3xl font-bold mb-8" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
-              Find Us, Call Us, Join the Game
-            </h2>
             <p className="mb-8 max-w-2xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
-              Join a community of serious players in live-play tournaments and action games. Ultimate service, food and atmosphere awaits.
+              Whether you're ready to play or need more info, our team is here to help you join the action in Webster or Baytown.
             </p>
             
             <div className="flex justify-center mb-16">
               <CustomButton style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
-                Baytown Schedule & Tournaments
+                Find Your Nearest Club
               </CustomButton>
             </div>
           </div>
@@ -65,6 +62,9 @@ export default function ContactPage() {
               
               {/* Spades Poker House Webster */}
               <div className="text-center">
+                <h3 className="text-xl font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+                  Spades Poker House Webster
+                </h3>
                 <div className="flex justify-center items-center mb-4">
                   <div className="flex space-x-2">
                     <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
@@ -84,9 +84,6 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
-                  Spades Poker House Webster
-                </h3>
                 
                 {/* Google Map Embed */}
                 <div className="mb-4 rounded-lg overflow-hidden">
@@ -100,27 +97,13 @@ export default function ContactPage() {
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
-                
-                <div className="flex justify-center items-center mb-4">
-                  <div className="flex space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/facebook-icon.png" alt="Facebook" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/instagram-icon.png" alt="Instagram" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/phone-icon.png" alt="Phone" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/location-icon.png" alt="Location" width={16} height={16} />
-                    </div>
-                  </div>
-                </div>
               </div>
 
               {/* Spades Poker House Baytown */}
               <div className="text-center">
+                <h3 className="text-xl font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+                  Spades Poker House Baytown
+                </h3>
                 <div className="flex justify-center items-center mb-4">
                   <div className="flex space-x-2">
                     <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
@@ -140,9 +123,6 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
-                  Spades Poker House Baytown
-                </h3>
                 
                 {/* Google Map Embed */}
                 <div className="mb-4 rounded-lg overflow-hidden">
@@ -155,23 +135,6 @@ export default function ContactPage() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
-                </div>
-                
-                <div className="flex justify-center items-center mb-4">
-                  <div className="flex space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/facebook-icon.png" alt="Facebook" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/instagram-icon.png" alt="Instagram" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/phone-icon.png" alt="Phone" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/location-icon.png" alt="Location" width={16} height={16} />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
