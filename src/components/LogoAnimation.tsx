@@ -38,7 +38,8 @@ const LogoAnimation: React.FC = () => {
         autoPlay
         muted
         playsInline
-        className="max-w-full max-h-full"
+        className="w-[100vw] md:w-[90vw] lg:w-[80vw] h-auto object-contain"
+        style={{ transform: 'scale(3)' }}
       >
         <source src="/Stroke logo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
