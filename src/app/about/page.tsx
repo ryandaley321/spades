@@ -5,6 +5,7 @@ import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
+import { useState, useRef, useEffect } from "react";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
