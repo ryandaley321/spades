@@ -1,17 +1,13 @@
 import Image from "next/image";
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CustomButton } from "@/components/ui/custom-button";
 
 export default function ContactPage() {
-  const websterDirectionsUrl = "https://www.google.com/maps/search/?api=1&query=20798+Gulf+Fwy,+Webster,+TX+77598";
-  
   return (
     <div className="min-h-screen bg-[#181510]">
-      <Header directionsUrl={websterDirectionsUrl} />
       <main>
         {/* Hero Section */}
-        <section className="relative flex items-center justify-center text-center" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.jpg')", backgroundSize: '100% auto', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', minHeight: '80vh', paddingTop: '87px' }}>
+        <section className="relative flex items-center justify-center text-center" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.jpg')", backgroundSize: '100% auto', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', minHeight: '80vh' }}>
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
           <div className="max-w-4xl mx-auto px-4 relative z-10">

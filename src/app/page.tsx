@@ -1,18 +1,14 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { CustomButton } from "@/components/ui/custom-button";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <Navbar />
-
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center" style={{ height: '1080px', marginTop: '87px' }}>
+      <section className="relative flex items-center justify-center" style={{ height: '1080px' }}>
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"

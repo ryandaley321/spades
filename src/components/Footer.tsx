@@ -38,7 +38,7 @@ export default function Footer() {
     setShowTermsOfUse(false);
   };
   return (
-    <footer className="relative bg-[#181510] border border-[#cbb682]">
+    <footer className="relative bg-[#181510] border-t border-[#cbb682]">
       <div className="px-4 py-8 md:py-10">
         <div className="max-w-2xl mx-auto">
           {/* Locations Container - Vertically Stacked */}
