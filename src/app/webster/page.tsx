@@ -11,7 +11,7 @@ export default function Webster() {
         subtitle="SPADES POKER HOUSE WEBSTER"
         title="Experience Real Texas Hold'em at Its Finest"
         description="Live cash tables, dynamic daily tournaments, and a refined player experience — all under one roof."
-        backgroundImage="/images/spades-poker-house-full-room-live-action-poker-game 1.png"
+        backgroundImage="/images/optimized/spades-poker-house-full-room-live-action-poker-game 1.webp"
         overlayOpacity={0.5}
       />
 
@@ -28,7 +28,7 @@ export default function Webster() {
         <div 
           className="absolute inset-0"
           style={{ 
-            backgroundImage: `url('/images/BACKDROP1.png')`,
+            backgroundImage: `url('/images/optimized/BACKDROP1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 1
@@ -47,7 +47,7 @@ export default function Webster() {
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
             <div className="lg:w-1/3">
               <Image
-                src="/images/player-holding-cards-chip-stack-money-spades-poker-house-webster-texas.jpg 1.png"
+                src="/images/optimized/player-holding-cards-chip-stack-money-spades-poker-house-webster-texas.jpg 1.webp"
                 alt="Player holding cards"
                 width={400}
                 height={300}
@@ -65,7 +65,7 @@ export default function Webster() {
                 <p className="mb-6">
                   Join us at <strong>Spades Poker House Webster</strong>, where <strong>elite poker action</strong> and <strong>luxury</strong> meet.
                 </p>
-                <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                   Poker Atlas- Spades Webster
                 </CustomButton>
               </div>
@@ -86,7 +86,7 @@ export default function Webster() {
                   Take a break from the poker table to grab a bite, and recharge. <strong>Great food, great poker, and a great atmosphere</strong>—only at Spades.
                 </p>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                  <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                     Explore Walzz Kookin Menu & Specials
                   </CustomButton>
                 </a>
@@ -95,7 +95,7 @@ export default function Webster() {
             <div className="lg:w-1/2 flex justify-center">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.png"
+                  src="/images/optimized/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.webp"
                   alt="Walzz Kookin Menu"
                   width={500}
                   height={700}
@@ -109,7 +109,7 @@ export default function Webster() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/3">
               <Image
-                src="/images/massage 1.png"
+                src="/images/optimized/massage 1.webp"
                 alt="Massage therapy"
                 width={400}
                 height={300}
@@ -119,7 +119,7 @@ export default function Webster() {
             <div className="lg:w-2/3">
               <div className="flex items-center gap-4 mb-6">
                 <Image
-                  src="/images/sol_massage_logo_final_072524 1.png"
+                  src="/images/optimized/sol_massage_logo_final_072524 1.webp"
                   alt="Sol Massage Logo"
                   width={60}
                   height={60}
@@ -138,7 +138,7 @@ export default function Webster() {
                 <p className="mb-6">
                   To book an appointment with your preferred therapist, call or text 409-795-1170. Your massage session is your time—we're here to ensure it meets your expectations. Discover more about our services and benefits <a href="#" className="underline">[here]</a>.
                 </p>
-                <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                   Learn More About Sol Massage
                 </CustomButton>
               </div>
@@ -158,7 +158,7 @@ export default function Webster() {
           {/* Gallery Image */}
           <div className="flex justify-center mb-12">
             <Image
-              src="/images/Group 28.png"
+              src="/images/optimized/Group 28.webp"
               alt="Spades Poker House Highlights Gallery"
               width={1200}
               height={400}
@@ -168,7 +168,7 @@ export default function Webster() {
 
           {/* Google Reviews Button */}
           <div className="flex justify-center">
-            <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}>
+            <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}>
               Spades Webster Google Reviews
             </CustomButton>
           </div>

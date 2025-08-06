@@ -1118,7 +1118,7 @@ export default function Footer() {
           {/* Logo and Copyright */}
           <div className="flex items-center justify-center gap-4">
             <Image
-              src="/images/spades champagne 1.png"
+              src="/images/optimized/spades champagne 1.webp"
               alt="Spades Poker House"
               width={55}
               height={55}

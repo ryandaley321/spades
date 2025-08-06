@@ -41,3 +41,12 @@ yarn-error.log*
 next-env.d.ts
 
 .early.coverage
+
+# Original unoptimized images (keeping locally but not in repo)
+/public/images/*.png
+/public/images/*.jpg
+/public/images/*.jpeg
+# Keep SVG files as they're already optimized
+!/public/images/*.svg
+# Keep the optimized folder
+!/public/images/optimized/
