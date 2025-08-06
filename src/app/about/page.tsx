@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
-import { useEffect, useRef, useState } from "react";
+import HeroBanner from "@/components/HeroBanner";
+import CallToActionBanner from "@/components/CallToActionBanner";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,71 +26,20 @@ export default function About() {
   }, []);
   return (
     <div className="min-h-screen bg-black text-white">
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          .spade-line {
-            transition: all 0.8s ease-in-out;
-            transform: scaleY(0.05);
-            opacity: 0.4;
-          }
-          
-          .spade-line.visible {
-            opacity: 1;
-          }
-          
-          .spade-line.top.visible {
-            transform: scaleY(-1);
-          }
-          
-          .spade-line.bottom.visible {
-            transform: scaleY(1);
-          }
-        `
-      }} />
-      {/* Hero Section */}
-      <section className="relative flex items-center justify-center" style={{ height: '746px' }}>
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url('/images/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.png')`,
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <p className="font-semibold mb-4 tracking-wide" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
-            TWO LOCATIONS. ONE LEGENDARY POKER EXPERIENCE.
-          </p>
-          <h1 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '48px' }}>
-            Webster | Baytown
-          </h1>
-          <p className="mb-10 max-w-2xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
-            Your Premier Poker Destination in Baytown and Webster, Texas
-          </p>
-          <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
-            Play Now
-          </CustomButton>
-        </div>
-      </section>
+      <HeroBanner
+        subtitle="TWO LOCATIONS. ONE LEGENDARY POKER EXPERIENCE."
+        title="Webster | Baytown"
+        description="Your Premier Poker Destination in Baytown and Webster, Texas"
+        backgroundImage="/images/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.png"
+        overlayOpacity={0.7}
+      />
 
-      {/* Call to Action Banner */}
-      <section className="relative" style={{ backgroundColor: '#181510', height: '250px', borderTop: '1px solid #CBB682', borderBottom: '1px solid #CBB682' }}>
-        <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center h-full">
-          <h2 className="text-2xl font-bold mb-6" style={{ color: '#F7E7CE' }}>
-            How Spades Poker House Became a Top Poker Club in Texas
-          </h2>
-          <p className="mb-8 text-lg" style={{ color: '#F7E7CE' }}>
-            Two locations, endless action, and a luxury poker atmosphere.
-          </p>
-          <CustomButton size="lg" style={{ backgroundColor: '#785F37', color: '#F7E7CE', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
-            See How It All Started
-          </CustomButton>
-        </div>
-      </section>
+      <CallToActionBanner
+        title="How Spades Poker House Became a Top Poker Club in Texas"
+        description="Two locations, endless action, and a luxury poker atmosphere."
+        buttonText="See How It All Started"
+        buttonStyle="brown"
+      />
 
       {/* Google Reviews Section */}
       <section className="relative" style={{ minHeight: '800px', backgroundColor: '#181510' }}>
