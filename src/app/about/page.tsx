@@ -1,10 +1,51 @@
+'use client';
+
 import Image from "next/image";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
+import { useEffect, useRef, useState } from "react";
 
 export default function About() {
+  const [isVisible, setIsVisible] = useState(false);
+  const timelineRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (timelineRef.current) {
+      observer.observe(timelineRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <div className="min-h-screen bg-black text-white">
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          .spade-line {
+            transition: all 0.8s ease-in-out;
+            transform: scaleY(0.05);
+            opacity: 0.4;
+          }
+          
+          .spade-line.visible {
+            opacity: 1;
+          }
+          
+          .spade-line.top.visible {
+            transform: scaleY(-1);
+          }
+          
+          .spade-line.bottom.visible {
+            transform: scaleY(1);
+          }
+        `
+      }} />
       {/* Hero Section */}
       <section className="relative flex items-center justify-center" style={{ height: '746px' }}>
         {/* Background Image */}
@@ -142,7 +183,7 @@ export default function About() {
         />
 
         {/* Timeline Section */}
-        <section className="relative" style={{ paddingTop: '80px', paddingBottom: '100px' }}>
+        <section ref={timelineRef} className="relative" style={{ paddingTop: '80px', paddingBottom: '100px' }}>
           {/* Content */}
           <div className="relative z-10 max-w-7xl mx-auto px-8">
             {/* Timeline Title */}
@@ -151,12 +192,13 @@ export default function About() {
             </h2>
 
             {/* Top Spades Decoration */}
-            <div className="flex justify-center mb-20">
+            <div className="flex justify-start mb-2" style={{ marginLeft: 'calc(2.5% + 5px)' }}>
               <Image
                 src="/images/Group 16.svg"
                 alt="Spades decoration"
                 width={700}
                 height={90}
+                className={`spade-line top ${isVisible ? 'visible' : ''}`}
               />
             </div>
 
@@ -273,12 +315,13 @@ export default function About() {
             </div>
 
             {/* Bottom Spades Decoration */}
-            <div className="flex justify-center mt-20">
+            <div className="flex justify-end mt-2" style={{ marginRight: 'calc(2.5% + 5px)' }}>
               <Image
                 src="/images/Group 16.svg"
                 alt="Spades decoration"
                 width={700}
                 height={90}
+                className={`spade-line bottom ${isVisible ? 'visible' : ''}`}
               />
             </div>
           </div>
