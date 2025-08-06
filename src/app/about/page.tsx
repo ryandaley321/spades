@@ -3,6 +3,7 @@ import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
+import GoogleReviewCard from "@/components/GoogleReviewCard";
 
 export default function About() {
   return (
@@ -23,7 +24,7 @@ export default function About() {
       />
 
       {/* Google Reviews Section */}
-      <section className="relative" style={{ minHeight: '800px', backgroundColor: '#181510' }}>
+      <section className="relative" style={{ backgroundColor: '#181510' }}>
         {/* Background Image */}
         <div 
           className="absolute inset-0"
@@ -36,66 +37,54 @@ export default function About() {
         />
         
         {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
-            {/* Review 1 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
-                  <p className="text-sm text-gray-600">Local Guide • 23 reviews • 7 photos</p>
-                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm">Placeholder review text. Great poker experience at Spades Poker House!</p>
-            </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <GoogleReviewCard
+              name="Michael Torres"
+              rating={5}
+              comment="Great Atmosphere, friendly staff and surprisingly great food for a Poker place!"
+              isLocalGuide={true}
+              reviewCount={47}
+              photoCount={12}
+            />
 
-            {/* Review 2 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
-                  <p className="text-sm text-gray-600">Local Guide • 15 reviews • 10 photos</p>
-                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm">Placeholder review text. Amazing atmosphere and professional dealers!</p>
-            </div>
+            <GoogleReviewCard
+              name="David Chen"
+              rating={5}
+              comment="Virtually always great service from service team, dealers, and management."
+              isLocalGuide={true}
+              reviewCount={31}
+              photoCount={8}
+            />
 
-            {/* Review 3 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
-                  <p className="text-sm text-gray-600">45 reviews • 1 photo</p>
-                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm">Placeholder review text. Best poker room in Texas!</p>
-            </div>
+            <GoogleReviewCard
+              name="Sarah Johnson"
+              rating={5}
+              comment="Best poker room in Houston area! Professional dealers, clean facility, and the action never stops. Highly recommend!"
+              reviewCount={92}
+              photoCount={5}
+            />
 
-            {/* Review 4 */}
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Reviewer Name</h4>
-                  <p className="text-sm text-gray-600">89 reviews • 15 photos</p>
-                  <div className="flex text-yellow-400 text-sm mt-1">★★★★★</div>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm">Placeholder review text. Excellent service and great food!</p>
-            </div>
+            <GoogleReviewCard
+              name="James Rodriguez"
+              rating={5}
+              comment="Love the atmosphere here! Great promotions, friendly staff, and the food is actually really good. My go-to poker spot!"
+              reviewCount={156}
+              photoCount={23}
+            />
           </div>
 
           {/* See More Google Reviews Button */}
-          <div className="text-center mt-12">
-            <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}>
-              See More Google Reviews
-            </CustomButton>
+          <div className="text-center mt-8">
+            <a 
+              href="https://maps.app.goo.gl/jEARNPRj9tnAbKuC6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}>
+                See More Google Reviews
+              </CustomButton>
+            </a>
           </div>
         </div>
       </section>
