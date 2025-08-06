@@ -60,11 +60,11 @@ export default function ContactPage() {
                 </div>
                 
                 {/* Google Map Embed */}
-                <div className="mb-4 rounded-lg overflow-hidden">
+                <div className="mb-4 overflow-hidden aspect-[4/3] max-w-sm mx-auto">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.123!2d-95.123!3d29.456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDI3JzIxLjYiTiA5NcKwMDcnMjIuOCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.692971198143!2d-95.1287523!3d29.525307299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86409deb3aaf1249%3A0x955d6348ef3f4ca7!2sSpades!5e0!3m2!1sen!2sus!4v1754450053329!5m2!1sen!2sus"
                     width="100%"
-                    height="200"
+                    height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
@@ -99,11 +99,11 @@ export default function ContactPage() {
                 </div>
                 
                 {/* Google Map Embed */}
-                <div className="mb-4 rounded-lg overflow-hidden">
+                <div className="mb-4 overflow-hidden aspect-[4/3] max-w-sm mx-auto">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.789!2d-94.977!3d29.735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0123!2s6952+Garth+Rd%2C+Baytown%2C+TX+77521!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.1224172158722!2d-94.98263328860075!3d29.80300752986501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f59ac4a147689%3A0xa129598a21b5cb10!2sSpades%20Poker%20House%20Baytown!5e0!3m2!1sen!2sus!4v1754450126202!5m2!1sen!2sus"
                     width="100%"
-                    height="200"
+                    height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"

@@ -48,7 +48,7 @@ export default function Footer() {
               <h3 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-2">
                 Spades Poker House Webster
               </h3>
-              <div className="flex items-center justify-center gap-[5px]">
+              <div className="flex items-center justify-center gap-4">
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/location-icon.png"
@@ -102,7 +102,7 @@ export default function Footer() {
               <h3 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-2">
                 Spades Poker House Baytown
               </h3>
-              <div className="flex items-center justify-center gap-[5px]">
+              <div className="flex items-center justify-center gap-4">
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/location-icon.png"
@@ -1116,13 +1116,13 @@ export default function Footer() {
           )}
 
           {/* Logo and Copyright */}
-          <div className="text-center">
+          <div className="flex items-center justify-center gap-4">
             <Image
               src="/images/spades champagne 1.png"
               alt="Spades Poker House"
               width={55}
               height={55}
-              className="mx-auto mb-3 w-12 h-12 md:w-[55px] md:h-[55px]"
+              className="w-12 h-12 md:w-[55px] md:h-[55px]"
             />
             <div className="font-['Poppins'] text-[#f7e7ce] text-[16px] leading-tight space-y-1">
               <p>© 2025 Spades Poker House. All rights reserved.</p>
