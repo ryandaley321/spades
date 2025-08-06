@@ -1,55 +1,27 @@
 import Image from "next/image";
 import Footer from '@/components/Footer';
 import { CustomButton } from "@/components/ui/custom-button";
+import HeroBanner from "@/components/HeroBanner";
+import CallToActionBanner from "@/components/CallToActionBanner";
 
 export default function BaytownLocationPage() {
   return (
     <div className="min-h-screen bg-[#181510]">
       <main>
-        {/* Hero Section */}
-        <section className="relative flex items-center justify-center" style={{ height: '1080px' }}>
-          {/* Background Image with poker chips */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ 
-              backgroundImage: `url('/images/baytown-hero-image.png')`,
-            }}
-          >
-            {/* Color Overlay */}
-            <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
-          </div>
-          
-          {/* Content */}
-          <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-            <h1 className="font-semibold mb-4 tracking-wide" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
-              SPADES POKER HOUSE BAYTOWN
-            </h1>
-            <h2 className="font-bold mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '48px', lineHeight: '1.2' }}>
-              Discover Real Poker Vibes in Baytown, Texas
-            </h2>
-            <p className="mb-10 max-w-3xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px', lineHeight: '1.6' }}>
-              Looking for poker near Baytown? Join live games, daily tournaments with blind and level adjustments, and top-notch connection that wins your Baytown, Texas poker experience over.
-            </p>
-            <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 40px', fontSize: '16px', fontWeight: '600' }}>
-              Play Now
-            </CustomButton>
-          </div>
-        </section>
+        <HeroBanner
+          subtitle="SPADES POKER HOUSE BAYTOWN"
+          title="Discover Real Poker Vibes in Baytown, Texas"
+          description="Looking for poker near Baytown? Join live games, daily tournaments with blind and level adjustments, and top-notch connection that wins your Baytown, Texas poker experience over."
+          backgroundImage="/images/baytown-hero-image.png"
+          overlayOpacity={0.7}
+        />
 
-        {/* Trusted Venue Section */}
-        <section className="relative py-16" style={{ backgroundColor: '#181510', borderBottom: '1px solid #CBB682' }}>
-          <div className="max-w-4xl mx-auto text-center px-4">
-            <h2 className="font-bold" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', whiteSpace: 'nowrap', marginBottom: '5px' }}>
-              Trusted Poker Venue for Cash Games and Tournaments in Southeast Texas
-            </h2>
-            <p className="mb-8" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px', lineHeight: '1.6' }}>
-              Established tables, consistent action, and a loyal community of serious players.
-            </p>
-            <CustomButton size="lg" style={{ backgroundColor: '#785F37', color: '#F7E7CE', borderRadius: '11px', padding: '12px 40px', fontSize: '16px', fontWeight: '600' }}>
-              View Baytown Schedule
-            </CustomButton>
-          </div>
-        </section>
+        <CallToActionBanner
+          title="Trusted Poker Venue for Cash Games and Tournaments in Southeast Texas"
+          description="Established tables, consistent action, and a loyal community of serious players."
+          buttonText="View Baytown Schedule"
+          buttonStyle="brown"
+        />
 
         {/* Service Highlights Section */}
         <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-unbeatable-background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>

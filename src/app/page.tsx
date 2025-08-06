@@ -2,56 +2,27 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
+import HeroBanner from "@/components/HeroBanner";
+import CallToActionBanner from "@/components/CallToActionBanner";
 
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
-      <section className="relative flex items-center justify-center" style={{ height: '1080px' }}>
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url('/images/luxury-poker-house-exterior-spades-logo-blue-sky-webster-texas.jpg 1.png')`,
-            backgroundColor: 'rgba(24, 21, 16, 0.7)'
-          }}
-        >
-          {/* Color Overlay */}
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.7)' }}></div>
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4" style={{ marginTop: '-200px' }}>
-          <h1 className="font-semibold mb-4 tracking-wide" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}>
-            WELCOME TO SPADES POKER HOUSE
-          </h1>
-          <h2 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px' }}>
-            Webster | Baytown
-          </h2>
-          <p className="mb-10 max-w-2xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>
-            Two Convenient Locations - Premier Poker Experience in Texas
-          </p>
-          <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
-            Play Now
-          </CustomButton>
-        </div>
-      </section>
+      <HeroBanner
+        subtitle="WELCOME TO SPADES POKER HOUSE"
+        title="Webster | Baytown"
+        description="Two Convenient Locations - Premier Poker Experience in Texas"
+        backgroundImage="/images/luxury-poker-house-exterior-spades-logo-blue-sky-webster-texas.jpg 1.png"
+        overlayOpacity={0.7}
+      />
 
-      {/* Call to Action Section */}
-      <section className="relative" style={{ backgroundColor: '#181510', height: '250px', borderTop: '1px solid #CBB682', borderBottom: '1px solid #CBB682' }}>
-        <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center h-full">
-          <h2 className="text-2xl font-bold mb-6" style={{ color: '#F7E7CE' }}>
-            Join the Elite. Experience Private-Membership Poker.
-          </h2>
-          <p className="mb-8 text-lg" style={{ color: '#F7E7CE' }}>
-            Experience the best poker games in Webster & Baytown, TX.
-          </p>
-          <CustomButton size="lg" style={{ backgroundColor: '#785F37', color: '#F7E7CE', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
-            Learn More
-          </CustomButton>
-        </div>
-      </section>
+      <CallToActionBanner
+        title="Join the Elite. Experience Private-Membership Poker."
+        description="Experience the best poker games in Webster & Baytown, TX."
+        buttonText="Learn More"
+        buttonStyle="brown"
+      />
 
       {/* Ultimate Poker Action Section - Remove this section as it's not in Figma design */}
 
