@@ -30,21 +30,20 @@ export default function CallToActionBanner({
   
   return (
     <section 
-      className="relative" 
+      className="relative py-16" 
       style={{ 
         backgroundColor: '#181510', 
-        height: isContact ? '320px' : '250px', 
         borderTop: '1px solid #CBB682', 
         borderBottom: '1px solid #CBB682' 
       }}
     >
-      <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center h-full">
+      <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center">
         <h2 
           className="font-bold mb-4" 
           style={{ 
             color: '#F7E7CE', 
             fontFamily: 'Montserrat',
-            fontSize: isContact ? '28.8px' : '24px'
+            fontSize: '28.8px'
           }}
         >
           {title}
@@ -54,7 +53,7 @@ export default function CallToActionBanner({
           style={{ 
             color: '#F7E7CE', 
             fontFamily: 'Poppins',
-            fontSize: isContact ? '16px' : '18px',
+            fontSize: '16px',
             lineHeight: '1.6'
           }}
         >
