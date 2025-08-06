@@ -1,54 +1,26 @@
 import Image from "next/image";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
+import HeroBanner from "@/components/HeroBanner";
+import CallToActionBanner from "@/components/CallToActionBanner";
 
 export default function Webster() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
-      <section className="relative flex items-center justify-center" style={{ height: '600px' }}>
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url('/images/spades-poker-house-full-room-live-action-poker-game 1.png')`,
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}></div>
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="font-bold mb-2" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', letterSpacing: '0.1em' }}>
-            SPADES POKER HOUSE WEBSTER
-          </h1>
-          <h2 className="font-bold mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '48px', lineHeight: '1.2' }}>
-            Experience Real Texas Hold'em at Its Finest
-          </h2>
-          <p className="mb-10 max-w-3xl mx-auto" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px', lineHeight: '1.6' }}>
-            Live cash tables, dynamic daily tournaments, and a refined player experience — all under one roof.
-          </p>
-          <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 40px', fontSize: '16px' }}>
-            Play Now
-          </CustomButton>
-        </div>
-      </section>
+      <HeroBanner
+        subtitle="SPADES POKER HOUSE WEBSTER"
+        title="Experience Real Texas Hold'em at Its Finest"
+        description="Live cash tables, dynamic daily tournaments, and a refined player experience — all under one roof."
+        backgroundImage="/images/spades-poker-house-full-room-live-action-poker-game 1.png"
+        overlayOpacity={0.5}
+      />
 
-      {/* Call to Action Banner */}
-      <section className="relative" style={{ backgroundColor: '#181510', height: '250px', borderTop: '1px solid #CBB682', borderBottom: '1px solid #CBB682' }}>
-        <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center h-full">
-          <h2 className="text-2xl font-bold mb-6" style={{ color: '#F7E7CE' }}>
-            Spades Poker House Webster: Your Premier Poker Destination in Texas
-          </h2>
-          <p className="mb-8 text-lg" style={{ color: '#F7E7CE' }}>
-            Join the action at our luxurious poker room, featuring high-stakes games, daily tournaments, and a vibrant player community.
-          </p>
-          <CustomButton size="lg" style={{ backgroundColor: '#785F37', color: '#F7E7CE', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
-            See Webster Schedule
-          </CustomButton>
-        </div>
-      </section>
+      <CallToActionBanner
+        title="Spades Poker House Webster: Your Premier Poker Destination in Texas"
+        description="Join the action at our luxurious poker room, featuring high-stakes games, daily tournaments, and a vibrant player community."
+        buttonText="See Webster Schedule"
+        buttonStyle="brown"
+      />
 
       {/* Premium Amenities and Highlights Container */}
       <div className="relative" style={{ backgroundColor: '#181510' }}>
