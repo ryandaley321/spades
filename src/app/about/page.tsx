@@ -27,6 +27,27 @@ export default function About() {
   }, []);
   return (
     <div className="min-h-screen bg-black text-white">
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          .spade-line {
+            transition: all 0.8s ease-in-out;
+            transform: scaleY(0.05);
+            opacity: 0.4;
+          }
+          
+          .spade-line.visible {
+            opacity: 1;
+          }
+          
+          .spade-line.top.visible {
+            transform: scaleY(1);
+          }
+          
+          .spade-line.bottom.visible {
+            transform: scaleY(1);
+          }
+        `
+      }} />
       <HeroBanner
         subtitle="TWO LOCATIONS. ONE LEGENDARY POKER EXPERIENCE."
         title="Webster | Baytown"
