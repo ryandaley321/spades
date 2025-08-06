@@ -163,18 +163,18 @@ export default function About() {
             {/* Timeline Container */}
             <div className="space-y-8">
               {/* 2020 Entry */}
-              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
-                <div className="flex items-start gap-8">
-                  <div className="flex-shrink-0">
+              <div className="p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
+                <div className="flex items-stretch gap-8">
+                  <div className="flex-shrink-0 flex items-stretch">
                     <Image
                       src="/images/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.png"
                       alt="2020 Poker Room"
                       width={280}
-                      height={210}
-                      className="rounded-lg"
+                      height={0}
+                      style={{ height: 'auto', objectFit: 'cover' }}
                     />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 flex flex-col justify-center">
                     <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
                       2020 – Launching Spades Poker House in Webster, TX
                     </h3>
@@ -188,9 +188,9 @@ export default function About() {
               </div>
 
               {/* 2021-2022 Entry */}
-              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
-                <div className="flex items-start gap-8">
-                  <div className="flex-1">
+              <div className="p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
+                <div className="flex items-stretch gap-8">
+                  <div className="flex-1 flex flex-col justify-center">
                     <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
                       2021–2022 – Remodeling, Expanding & More Poker Action
                     </h3>
@@ -200,31 +200,31 @@ export default function About() {
                       We added a wider variety of poker games and tournaments, creating nonstop action for Southeast Texas poker enthusiasts.
                     </p>
                   </div>
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0 flex items-stretch">
                     <Image
                       src="/images/480742102_2727444374108691_8265231031706897172_n 1.png"
                       alt="Remodeled Room"
                       width={280}
-                      height={210}
-                      className="rounded-lg"
+                      height={0}
+                      style={{ height: 'auto', objectFit: 'cover' }}
                     />
                   </div>
                 </div>
               </div>
 
               {/* 2023 Entry */}
-              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
-                <div className="flex items-start gap-8">
-                  <div className="flex-shrink-0">
+              <div className="p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
+                <div className="flex items-stretch gap-8">
+                  <div className="flex-shrink-0 flex items-stretch">
                     <Image
                       src="/images/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.png"
                       alt="Baytown Opening"
                       width={280}
-                      height={210}
-                      className="rounded-lg"
+                      height={0}
+                      style={{ height: 'auto', objectFit: 'cover' }}
                     />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 flex flex-col justify-center">
                     <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
                       2023 – Opening Baytown's Top Poker Room
                     </h3>
@@ -243,9 +243,9 @@ export default function About() {
               </div>
 
               {/* 2024-Present Entry */}
-              <div className="p-8 rounded-lg mx-auto" style={{ maxWidth: '1000px', backgroundColor: 'rgba(0, 0, 0, 0.6)', border: '2px solid #785F37' }}>
-                <div className="flex items-start gap-8">
-                  <div className="flex-1">
+              <div className="p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
+                <div className="flex items-stretch gap-8">
+                  <div className="flex-1 flex flex-col justify-center">
                     <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
                       2024–Present – Leading Texas Poker with Technology & Service
                     </h3>
@@ -259,13 +259,13 @@ export default function About() {
                       <p>With two thriving locations and a focus on innovation, we're proud to be recognized as a top-rated poker destination in Texas, offering a premium experience for casual players and high-stakes grinders alike.</p>
                     </div>
                   </div>
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0 flex items-stretch">
                     <Image
                       src="/images/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.png"
                       alt="Modern Poker Action"
                       width={280}
-                      height={210}
-                      className="rounded-lg"
+                      height={0}
+                      style={{ height: 'auto', objectFit: 'cover' }}
                     />
                   </div>
                 </div>
