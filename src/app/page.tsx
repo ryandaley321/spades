@@ -4,11 +4,13 @@ import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
+import LogoAnimation from "@/components/LogoAnimation";
 
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
+      <LogoAnimation />
       <HeroBanner
         subtitle="WELCOME TO SPADES POKER HOUSE"
         title="Webster | Baytown"
