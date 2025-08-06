@@ -60,7 +60,7 @@ export default function Webster() {
               </h3>
               <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
                 <p className="mb-4">
-                  At Spades Poker House Webster, we bring you top-tier poker action in a <strong>luxurious setting</strong>. Our <strong>state-of-the-art poker tables</strong> and <strong>Poker Atlas tablets</strong> make it easy to join games, track live action, and check tournament schedules. From <strong>Texas Hold'em</strong> to <strong>PLO</strong>, we offer a variety of <strong>cash games</strong> and <strong>high-stakes tournaments</strong>. Whether you're a novice looking to try your hand or a seasoned pro aiming for the next big win, our <strong>professional dealers</strong> and <strong>friendly atmosphere</strong> will ensure your poker experience is unforgettable.
+                  {`At Spades Poker House Webster, we bring you top-tier poker action in a `}<strong>luxurious setting</strong>{`. Our `}<strong>state-of-the-art poker tables</strong>{` and `}<strong>Poker Atlas tablets</strong>{` make it easy to join games, track live action, and check tournament schedules. From `}<strong>{`Texas Hold'em`}</strong>{` to `}<strong>PLO</strong>{`, we offer a variety of `}<strong>cash games</strong>{` and `}<strong>high-stakes tournaments</strong>{`. Whether you're a novice looking to try your hand or a seasoned pro aiming for the next big win, our `}<strong>professional dealers</strong>{` and `}<strong>friendly atmosphere</strong>{` will ensure your poker experience is unforgettable.`}
                 </p>
                 <p className="mb-6">
                   Join us at <strong>Spades Poker House Webster</strong>, where <strong>elite poker action</strong> and <strong>luxury</strong> meet.
@@ -80,7 +80,7 @@ export default function Webster() {
               </h3>
               <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
                 <p className="mb-4">
-                  Enjoy a wide range of <strong>delicious meals</strong> at Spades Poker House, crafted to satisfy your cravings while you play. Our menu features a <strong>variety of options</strong>, from quick bites to satisfying entrees, designed to fuel you for long sessions at the table. Whether you're in the mood for a <strong>hearty meal</strong> or a <strong>light snack</strong>, we've got something for everyone.
+                  {`Enjoy a wide range of `}<strong>delicious meals</strong>{` at Spades Poker House, crafted to satisfy your cravings while you play. Our menu features a `}<strong>variety of options</strong>{`, from quick bites to satisfying entrees, designed to fuel you for long sessions at the table. Whether you're in the mood for a `}<strong>hearty meal</strong>{` or a `}<strong>light snack</strong>{`, we've got something for everyone.`}
                 </p>
                 <p className="mb-6">
                   Take a break from the poker table to grab a bite, and recharge. <strong>Great food, great poker, and a great atmosphere</strong>—only at Spades.
@@ -136,7 +136,7 @@ export default function Webster() {
                   Our massages are tailored to your needs, incorporating light stretch techniques tableside. For a comprehensive experience, we suggest scheduling a weekly off-table massage for deeper relaxation and targeted therapy, including optional hot stone treatments.
                 </p>
                 <p className="mb-6">
-                  To book an appointment with your preferred therapist, call or text 409-795-1170. Your massage session is your time—we're here to ensure it meets your expectations. Discover more about our services and benefits <a href="#" className="underline">[here]</a>.
+                  {`To book an appointment with your preferred therapist, call or text 409-795-1170. Your massage session is your time—we're here to ensure it meets your expectations. Discover more about our services and benefits `}<a href="#" className="underline">[here]</a>{`.`}
                 </p>
                 <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                   Learn More About Sol Massage

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
@@ -162,7 +163,7 @@ export default function About() {
                     <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
                       In 2020, Spades Poker House opened its doors in Webster, Texas, bringing a luxurious and professional poker club experience to Southeast Texas.<br/>
                       We created dozens of local jobs for poker dealers, servers, managers, cage cashiers, security staff, and cleaners, building a team of qualified professionals.<br/>
-                      Players were drawn to our modern poker room, time-based cash game model, and safe, upscale atmosphere, making us the go-to spot for Texas Hold'em and PLO action.
+                      {`Players were drawn to our modern poker room, time-based cash game model, and safe, upscale atmosphere, making us the go-to spot for Texas Hold'em and PLO action.`}
                     </p>
                   </div>
                 </div>
@@ -207,7 +208,7 @@ export default function About() {
                   </div>
                   <div className="flex-1 flex flex-col justify-center">
                     <h3 className="font-bold mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28px' }}>
-                      2023 – Opening Baytown's Top Poker Room
+                      {`2023 – Opening Baytown's Top Poker Room`}
                     </h3>
                     <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.8' }}>
                       <p className="mb-2">In 2023, we proudly expanded with a second location: Spades Poker House Baytown.</p>
@@ -237,7 +238,7 @@ export default function About() {
                         <li>Live updates on active tables and tournament schedules</li>
                         <li>Convenient mobile check-ins for Webster and Baytown poker rooms</li>
                       </ul>
-                      <p>With two thriving locations and a focus on innovation, we're proud to be recognized as a top-rated poker destination in Texas, offering a premium experience for casual players and high-stakes grinders alike.</p>
+                      <p>{`With two thriving locations and a focus on innovation, we're proud to be recognized as a top-rated poker destination in Texas, offering a premium experience for casual players and high-stakes grinders alike.`}</p>
                     </div>
                   </div>
                   <div className="flex-shrink-0 flex items-stretch">
