@@ -13,7 +13,6 @@ interface CallToActionBannerProps {
   buttonAction?: () => void;
   buttonStyle?: "gold" | "brown";
   buttons?: ButtonConfig[];
-  variant?: "default" | "contact";
 }
 
 export default function CallToActionBanner({
@@ -22,11 +21,9 @@ export default function CallToActionBanner({
   buttonText,
   buttonAction,
   buttonStyle = "brown",
-  buttons,
-  variant = "default"
+  buttons
 }: CallToActionBannerProps) {
   const buttonConfigs = buttons || (buttonText ? [{ text: buttonText, action: buttonAction, style: buttonStyle }] : []);
-  const isContact = variant === "contact";
   
   return (
     <section 

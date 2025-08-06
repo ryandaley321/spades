@@ -24,7 +24,6 @@ export default function ContactPage() {
             { text: "Webster Games & Promotions", style: "brown" },
             { text: "Baytown Games & Promotions", style: "brown" }
           ]}
-          variant="contact"
         />
 
         {/* Location Cards Section */}
