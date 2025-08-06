@@ -59,7 +59,7 @@ export default function BaytownLocationPage() {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <CustomButton style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 30px', fontSize: '16px' }}>
+                  <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px' }}>
                     Read Our Google Reviews
                   </CustomButton>
                 </div>
@@ -85,7 +85,7 @@ export default function BaytownLocationPage() {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <CustomButton style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 30px', fontSize: '16px' }}>
+                  <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px' }}>
                     Check Out Spades in Person
                   </CustomButton>
                 </div>
@@ -170,7 +170,7 @@ export default function BaytownLocationPage() {
               <p className="mb-8" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
                 At <strong>Spades Baytown</strong>, the excitement never stops! With <strong>ongoing promotions</strong> for both <strong>cash games</strong> and <strong>tournaments</strong>, there's always something exciting happening. Whether you're joining daily bounty tournaments or taking advantage of our <strong>high hand</strong> promotions, you'll find new opportunities to win big every day at <strong>Spades Baytown</strong> is the perfect poker experience.
               </p>
-              <CustomButton style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
+              <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
                 See Current Promotions
               </CustomButton>
             </div>

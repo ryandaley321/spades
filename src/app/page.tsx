@@ -57,10 +57,10 @@ export default function Home() {
                   <p className="text-xs">Our cash games are available daily at both of our locations, providing a wide range of options for players. Whether you&apos;re looking for a relaxed game or high-stakes action, <strong>Spades Poker House is the place to be!</strong></p>
                 </div>
                 <div className="mt-6 space-y-2">
-                  <CustomButton size="sm" className="w-full text-sm" style={{ color: '#181510' }}>
+                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
                     Games today- Webster
                   </CustomButton>
-                  <CustomButton size="sm" className="w-full text-sm" style={{ color: '#181510' }}>
+                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
                     Games today- Baytown
                   </CustomButton>
                 </div>
@@ -93,10 +93,10 @@ export default function Home() {
                   <p className="text-xs">These <strong>tournaments are held daily</strong> in both of our locations, offering players the opportunity to compete and win amazing prizes. Join us for an unforgettable poker experience at Spades Poker House – <strong>where the action never stops!</strong></p>
                 </div>
                 <div className="mt-6">
-                  <CustomButton size="sm" className="w-full text-sm" style={{ color: '#181510' }}>
+                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
                     Webster Schedule
                   </CustomButton>
-                  <CustomButton size="sm" className="w-full text-sm mt-2" style={{ color: '#181510' }}>
+                  <CustomButton size="sm" className="w-full text-sm mt-2 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
                     Baytown Schedule
                   </CustomButton>
                 </div>
@@ -130,7 +130,7 @@ export default function Home() {
                   <p className="text-xs">Come by to satisfy your hunger at <strong>Gyro Hero, where each dish is crafted with care and full of flavor!</strong></p>
                 </div>
                 <div className="mt-6">
-                  <CustomButton size="sm" className="w-full text-sm" style={{ color: '#181510' }}>
+                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
                     View Menu
                   </CustomButton>
                 </div>

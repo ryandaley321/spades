@@ -60,24 +60,32 @@ export default function CallToActionBanner({
           {description}
         </p>
         <div className="flex flex-col items-center gap-3">
-          {buttonConfigs.map((button, index) => (
-            <CustomButton 
-              key={index}
-              size="lg" 
-              style={{ 
-                backgroundColor: (button.style || buttonStyle) === "gold" ? '#CBB682' : '#785F37', 
-                color: (button.style || buttonStyle) === "gold" ? '#181510' : '#F7E7CE', 
-                borderRadius: '11px', 
-                padding: '12px 40px', 
-                fontSize: '16px',
-                fontWeight: '600',
-                minWidth: '280px'
-              }}
-              onClick={button.action}
-            >
-              {button.text}
-            </CustomButton>
-          ))}
+          {buttonConfigs.map((button, index) => {
+            const isGold = (button.style || buttonStyle) === "gold";
+            return (
+              <CustomButton 
+                key={index}
+                size="lg" 
+                className={`
+                  ${isGold 
+                    ? 'bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE]' 
+                    : 'bg-[#785F37] text-[#F7E7CE] hover:bg-[#CBB682] hover:text-[#181510]'
+                  }
+                  transition-all duration-200
+                `}
+                style={{ 
+                  borderRadius: '11px', 
+                  padding: '12px 40px', 
+                  fontSize: '16px',
+                  fontWeight: '600',
+                  minWidth: '280px'
+                }}
+                onClick={button.action}
+              >
+                {button.text}
+              </CustomButton>
+            );
+          })}
         </div>
       </div>
     </section>

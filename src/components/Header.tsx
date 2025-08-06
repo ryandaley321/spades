@@ -59,13 +59,13 @@ export default function Header({ directionsUrl }: HeaderProps) {
           {/* Directions Button */}
           {directionsConfig.isExternal ? (
             <a href={directionsConfig.url} target="_blank" rel="noopener noreferrer">
-              <CustomButton size="md" className="mr-8" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
+              <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
                 Directions
               </CustomButton>
             </a>
           ) : (
             <a href={directionsConfig.url}>
-              <CustomButton size="md" className="mr-8" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
+              <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
                 Directions
               </CustomButton>
             </a>

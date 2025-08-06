@@ -93,7 +93,7 @@ export default function About() {
 
           {/* See More Google Reviews Button */}
           <div className="text-center mt-12">
-            <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}>
+            <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}>
               See More Google Reviews
             </CustomButton>
           </div>
@@ -264,9 +264,7 @@ export default function About() {
             </h2>
             
             <div className="flex flex-col items-center gap-4">
-              <CustomButton size="lg" style={{ 
-                backgroundColor: '#CBB682', 
-                color: '#181510', 
+              <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ 
                 borderRadius: '11px', 
                 padding: '10px 60px', 
                 fontSize: '16px',
@@ -274,9 +272,7 @@ export default function About() {
               }}>
                 Poker Atlas- Webster
               </CustomButton>
-              <CustomButton size="lg" style={{ 
-                backgroundColor: '#CBB682', 
-                color: '#181510', 
+              <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ 
                 borderRadius: '11px', 
                 padding: '10px 60px', 
                 fontSize: '16px',

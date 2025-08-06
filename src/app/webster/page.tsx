@@ -65,7 +65,7 @@ export default function Webster() {
                 <p className="mb-6">
                   Join us at <strong>Spades Poker House Webster</strong>, where <strong>elite poker action</strong> and <strong>luxury</strong> meet.
                 </p>
-                <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                   Poker Atlas- Spades Webster
                 </CustomButton>
               </div>
@@ -86,7 +86,7 @@ export default function Webster() {
                   Take a break from the poker table to grab a bite, and recharge. <strong>Great food, great poker, and a great atmosphere</strong>—only at Spades.
                 </p>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                  <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                     Explore Walzz Kookin Menu & Specials
                   </CustomButton>
                 </a>
@@ -138,7 +138,7 @@ export default function Webster() {
                 <p className="mb-6">
                   To book an appointment with your preferred therapist, call or text 409-795-1170. Your massage session is your time—we're here to ensure it meets your expectations. Discover more about our services and benefits <a href="#" className="underline">[here]</a>.
                 </p>
-                <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                   Learn More About Sol Massage
                 </CustomButton>
               </div>
@@ -168,7 +168,7 @@ export default function Webster() {
 
           {/* Google Reviews Button */}
           <div className="flex justify-center">
-            <CustomButton size="lg" style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}>
+            <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}>
               Spades Webster Google Reviews
             </CustomButton>
           </div>

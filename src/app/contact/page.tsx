@@ -116,12 +116,12 @@ export default function ContactPage() {
             {/* Action Buttons */}
             <div className="mt-12 flex flex-col items-center gap-4">
               <a href="https://form.jotform.com/231936301480148" target="_blank" rel="noopener noreferrer">
-                <CustomButton style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
+                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
                   Work with us
                 </CustomButton>
               </a>
               <a href="https://form.jotform.com/231715489717163?fbclid=IwAR1hhbvptHNP4xuS3iO80GZXTW-Qjhti9gEYxS5nx0zAkYhBQxAmqExY0Ck" target="_blank" rel="noopener noreferrer">
-                <CustomButton style={{ backgroundColor: '#CBB682', color: '#181510', borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
+                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
                   Become a member
                 </CustomButton>
               </a>
