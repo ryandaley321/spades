@@ -11,7 +11,7 @@ export default function Webster() {
         subtitle="SPADES POKER HOUSE WEBSTER"
         title="Experience Real Texas Hold'em at Its Finest"
         description="Live cash tables, dynamic daily tournaments, and a refined player experience — all under one roof."
-        backgroundImage="/images/spades-poker-house-full-room-live-action-poker-game 1.png"
+        backgroundImage="/images/optimized/spades-poker-house-full-room-live-action-poker-game 1.webp"
         overlayOpacity={0.5}
       />
 
@@ -28,7 +28,7 @@ export default function Webster() {
         <div 
           className="absolute inset-0"
           style={{ 
-            backgroundImage: `url('/images/BACKDROP1.png')`,
+            backgroundImage: `url('/images/optimized/BACKDROP1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 1
@@ -47,7 +47,7 @@ export default function Webster() {
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
             <div className="lg:w-1/3">
               <Image
-                src="/images/player-holding-cards-chip-stack-money-spades-poker-house-webster-texas.jpg 1.png"
+                src="/images/optimized/player-holding-cards-chip-stack-money-spades-poker-house-webster-texas.jpg 1.webp"
                 alt="Player holding cards"
                 width={400}
                 height={300}
@@ -95,7 +95,7 @@ export default function Webster() {
             <div className="lg:w-1/2 flex justify-center">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/images/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.png"
+                  src="/images/optimized/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.webp"
                   alt="Walzz Kookin Menu"
                   width={500}
                   height={700}
@@ -109,7 +109,7 @@ export default function Webster() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/3">
               <Image
-                src="/images/massage 1.png"
+                src="/images/optimized/massage 1.webp"
                 alt="Massage therapy"
                 width={400}
                 height={300}
@@ -119,7 +119,7 @@ export default function Webster() {
             <div className="lg:w-2/3">
               <div className="flex items-center gap-4 mb-6">
                 <Image
-                  src="/images/sol_massage_logo_final_072524 1.png"
+                  src="/images/optimized/sol_massage_logo_final_072524 1.webp"
                   alt="Sol Massage Logo"
                   width={60}
                   height={60}
@@ -158,7 +158,7 @@ export default function Webster() {
           {/* Gallery Image */}
           <div className="flex justify-center mb-12">
             <Image
-              src="/images/Group 28.png"
+              src="/images/optimized/Group 28.webp"
               alt="Spades Poker House Highlights Gallery"
               width={1200}
               height={400}

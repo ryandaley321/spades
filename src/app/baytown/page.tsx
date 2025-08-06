@@ -12,7 +12,7 @@ export default function BaytownLocationPage() {
           subtitle="SPADES POKER HOUSE BAYTOWN"
           title="Discover Real Poker Vibes in Baytown, Texas"
           description="Looking for poker near Baytown? Join live games, daily tournaments with blind and level adjustments, and top-notch connection that wins your Baytown, Texas poker experience over."
-          backgroundImage="/images/baytown-hero-image.png"
+          backgroundImage="/images/optimized/baytown-hero-image.webp"
           overlayOpacity={0.7}
         />
 
@@ -24,7 +24,7 @@ export default function BaytownLocationPage() {
         />
 
         {/* Service Highlights Section */}
-        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-unbeatable-background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/spades-unbeatable-background.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
           {/* Dark overlay to fade the background */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
           <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -39,7 +39,7 @@ export default function BaytownLocationPage() {
               <div className="flex justify-center">
                 <div className="relative">
                   <Image
-                    src="/images/spades-baytown-lobby-welcoming-new-customer-shaking-hands-smiling.jpg"
+                    src="/images/optimized/spades-baytown-lobby-welcoming-new-customer-shaking-hands-smiling.webp"
                     alt="Spades Baytown Staff"
                     width={496}
                     height={368}
@@ -69,7 +69,7 @@ export default function BaytownLocationPage() {
         </section>
 
         {/* Facilities Section */}
-        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/spades-unbeatable-background.png')", backgroundSize: 'cover', backgroundPosition: 'center', borderBottom: '1px solid #CBB682' }}>
+        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/spades-unbeatable-background.webp')", backgroundSize: 'cover', backgroundPosition: 'center', borderBottom: '1px solid #CBB682' }}>
           {/* Dark overlay to fade the background */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
           <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -95,7 +95,7 @@ export default function BaytownLocationPage() {
               <div className="flex justify-center">
                 <div className="relative">
                   <Image
-                    src="/images/spades-baytown-movie-theater-seating-sports-memorabilia-relaxing.jpg"
+                    src="/images/optimized/spades-baytown-movie-theater-seating-sports-memorabilia-relaxing.webp"
                     alt="Spades Baytown movie theater seating with sports memorabilia"
                     width={500}
                     height={400}
@@ -104,7 +104,7 @@ export default function BaytownLocationPage() {
                   {/* Patriotic hat overlay */}
                   <div className="absolute left-0" style={{ bottom: '-29px' }}>
                     <Image
-                      src="/images/premium-patriotic-hat-spades-poker-merch-usa-style.jpg"
+                      src="/images/optimized/premium-patriotic-hat-spades-poker-merch-usa-style.webp"
                       alt="Premium patriotic Spades poker merchandise hat"
                       width={180}
                       height={180}
@@ -130,7 +130,7 @@ export default function BaytownLocationPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/spades-baytown-poker-tournament-winners-cash-prize-felt-webster.jpg"
+                  src="/images/optimized/spades-baytown-poker-tournament-winners-cash-prize-felt-webster.webp"
                   alt="Spades Baytown poker tournament winners with cash prize"
                   width={300}
                   height={300}
@@ -139,25 +139,27 @@ export default function BaytownLocationPage() {
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/spades-baytown-10000-giveaway-winner-cash-backdrop-promotion.jpg"
+                  src="/images/optimized/spades-baytown-10000-giveaway-winner-cash-backdrop-promotion.webp"
                   alt="Spades Baytown $10,000 giveaway winner with cash backdrop"
                   width={300}
                   height={300}
                   className="w-full h-full object-cover"
+                  style={{ transform: 'rotate(90deg)' }}
                 />
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/spades-baytown-large-chip-stacks-poker-game-high-stakes-texas.jpg"
+                  src="/images/optimized/spades-baytown-large-chip-stacks-poker-game-high-stakes-texas.webp"
                   alt="Spades Baytown large chip stacks in high stakes poker game"
                   width={300}
                   height={300}
                   className="w-full h-full object-cover"
+                  style={{ transform: 'rotate(90deg)' }}
                 />
               </div>
               <div className="aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/images/spades-baytown-poker-room-full-players-live-action-texas-poker.jpg"
+                  src="/images/optimized/spades-baytown-poker-room-full-players-live-action-texas-poker.webp"
                   alt="Spades Baytown poker room full of players in live action"
                   width={300}
                   height={300}

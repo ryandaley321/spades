@@ -12,7 +12,7 @@ export default function About() {
         subtitle="TWO LOCATIONS. ONE LEGENDARY POKER EXPERIENCE."
         title="Webster | Baytown"
         description="Your Premier Poker Destination in Baytown and Webster, Texas"
-        backgroundImage="/images/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.png"
+        backgroundImage="/images/optimized/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.webp"
         overlayOpacity={0.7}
       />
 
@@ -29,7 +29,7 @@ export default function About() {
         <div 
           className="absolute inset-0"
           style={{ 
-            backgroundImage: `url('/images/faded spade premium quality poker cards 1.png')`,
+            backgroundImage: `url('/images/optimized/faded spade premium quality poker cards 1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3
@@ -95,7 +95,7 @@ export default function About() {
         <div 
           className="absolute inset-0"
           style={{ 
-            backgroundImage: `url('/images/image 1.png')`,
+            backgroundImage: `url('/images/optimized/image 1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3
@@ -128,7 +128,7 @@ export default function About() {
                 <div className="flex items-start gap-8">
                   <div className="flex-shrink-0">
                     <Image
-                      src="/images/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.png"
+                      src="/images/optimized/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.webp"
                       alt="2020 Poker Room"
                       width={280}
                       height={210}
@@ -163,7 +163,7 @@ export default function About() {
                   </div>
                   <div className="flex-shrink-0">
                     <Image
-                      src="/images/480742102_2727444374108691_8265231031706897172_n 1.png"
+                      src="/images/optimized/480742102_2727444374108691_8265231031706897172_n 1.webp"
                       alt="Remodeled Room"
                       width={280}
                       height={210}
@@ -178,7 +178,7 @@ export default function About() {
                 <div className="flex items-start gap-8">
                   <div className="flex-shrink-0">
                     <Image
-                      src="/images/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.png"
+                      src="/images/optimized/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.webp"
                       alt="Baytown Opening"
                       width={280}
                       height={210}
@@ -222,7 +222,7 @@ export default function About() {
                   </div>
                   <div className="flex-shrink-0">
                     <Image
-                      src="/images/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.png"
+                      src="/images/optimized/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.webp"
                       alt="Modern Poker Action"
                       width={280}
                       height={210}

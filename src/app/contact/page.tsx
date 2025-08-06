@@ -13,7 +13,7 @@ export default function ContactPage() {
           title="Webster | Baytown"
           description="Whether you're ready to play or need more info, our team is here to help you join the action in Webster or Baytown."
           buttonText="Find Your Nearest Club"
-          backgroundImage="/images/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.jpg"
+          backgroundImage="/images/optimized/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.webp"
           overlayOpacity={0.7}
         />
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
         />
 
         {/* Location Cards Section */}
-        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/poker-chips-on-table-spades-poker-house-high-stakes-action-webster.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/poker-chips-on-table-spades-poker-house-high-stakes-action-webster.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
           {/* Dark overlay for content readability */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
           <div className="max-w-7xl mx-auto px-4 relative z-10">

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
 import LogoAnimation from "@/components/LogoAnimation";
+import OptimizedImage from "@/components/OptimizedImage";
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         subtitle="WELCOME TO SPADES POKER HOUSE"
         title="Webster | Baytown"
         description="Two Convenient Locations - Premier Poker Experience in Texas"
-        backgroundImage="/images/luxury-poker-house-exterior-spades-logo-blue-sky-webster-texas.jpg 1.png"
+        backgroundImage="/images/optimized/luxury-poker-house-exterior-spades-logo-blue-sky-webster-texas.jpg 1.webp"
         overlayOpacity={0.7}
       />
 
@@ -36,8 +37,8 @@ export default function Home() {
             <Card className="bg-black" style={{ borderColor: '#785F37' }}>
               <CardContent className="p-6">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
-                  <Image
-                    src="/images/high-stakes-poker-hand-chip-tower-cash-game-spades-poker-webster.jpg 1.png"
+                  <OptimizedImage
+                    src="/images/optimized/high-stakes-poker-hand-chip-tower-cash-game-spades-poker-webster.jpg 1"
                     alt="Cash Games at Spades Poker House"
                     width={400}
                     height={225}
@@ -74,7 +75,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
-                    src="/images/tournament-image 1.png"
+                    src="/images/optimized/tournament-image 1.webp"
                     alt="Poker Tournaments at Spades Poker House"
                     width={400}
                     height={225}
@@ -110,7 +111,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
-                    src="/images/wrap2 1.png"
+                    src="/images/optimized/wrap2 1.webp"
                     alt="Gyro Hero Kitchen Food"
                     width={400}
                     height={225}
@@ -151,7 +152,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/happyq 1.png"
+                src="/images/optimized/happyq 1.webp"
                 alt="Instagram post 1"
                 width={300}
                 height={300}
@@ -160,7 +161,7 @@ export default function Home() {
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/mario 1.png"
+                src="/images/optimized/mario 1.webp"
                 alt="Instagram post 2"
                 width={300}
                 height={300}
@@ -169,7 +170,7 @@ export default function Home() {
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/trio 1.png"
+                src="/images/optimized/trio 1.webp"
                 alt="Instagram post 3"
                 width={300}
                 height={300}
@@ -178,7 +179,7 @@ export default function Home() {
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/happier 1.png"
+                src="/images/optimized/happier 1.webp"
                 alt="Instagram post 4"
                 width={300}
                 height={300}

@@ -39,7 +39,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
           {/* Logo */}
           <div className="flex items-center">
             <Image
-              src="/images/spades champagne 1.png"
+              src="/images/optimized/spades champagne 1.webp"
               alt="Spades Poker House Logo"
               width={65}
               height={58}
