@@ -1,17 +1,13 @@
 import Image from "next/image";
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CustomButton } from "@/components/ui/custom-button";
 
 export default function BaytownLocationPage() {
-  const baytownDirectionsUrl = "https://www.google.com/maps/search/?api=1&query=6952+Garth+Rd,+Baytown,+TX+77521";
-  
   return (
     <div className="min-h-screen bg-[#181510]">
-      <Header directionsUrl={baytownDirectionsUrl} />
       <main>
         {/* Hero Section */}
-        <section className="relative flex items-center justify-center" style={{ height: '1080px', marginTop: '87px' }}>
+        <section className="relative flex items-center justify-center" style={{ height: '1080px' }}>
           {/* Background Image with poker chips */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
