@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     siteName: "Spades Poker House",
   },
   other: {
+    "google-site-verification": "e-yl_NVVAbd9mhW7h5iHZCRWiSJLrzNMoBVhQEPZpwk",
     "geo.region": "US-TX",
     "geo.placename": ["Webster, Texas", "Baytown, Texas"],
     "og:type": "business.business",
