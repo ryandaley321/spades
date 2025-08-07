@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Footer() {
@@ -225,7 +224,7 @@ export default function Footer() {
                     <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
                       You can control and manage cookies in your browser settings. Most browsers allow you to block or delete 
                       cookies, but doing so may affect your experience on our website. To learn more about how to manage cookies in your browser, 
-                      please visit the "Help" section of your browser.
+                      {`please visit the "Help" section of your browser.`}
                     </p>
                   </div>
 
@@ -423,7 +422,7 @@ export default function Footer() {
                       Acceptance of Terms
                     </h3>
                     <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
-                      By accessing and using the Spades Poker House website, you agree to be bound by these Terms of Use ("Terms"). 
+                      {`By accessing and using the Spades Poker House website, you agree to be bound by these Terms of Use ("Terms").`} 
                       If you do not agree to all of the terms and conditions contained herein, you are expressly prohibited from using 
                       the site.
                     </p>
@@ -456,7 +455,7 @@ export default function Footer() {
                       Disclaimer
                     </h3>
                     <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
-                      The materials on the Spades Poker House website are provided on an 'as is' basis. Spades Poker House makes no 
+                      {`The materials on the Spades Poker House website are provided on an 'as is' basis. Spades Poker House makes no`} 
                       warranties, expressed or implied, and hereby disclaims and negates all other warranties including without 
                       limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-
                       infringement of intellectual property or other violation of rights.
@@ -488,7 +487,7 @@ export default function Footer() {
                     <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
                       Spades Poker House has not reviewed all of the sites linked to our website and is not responsible for the contents 
                       of any such linked site. The inclusion of any link does not imply endorsement by Spades Poker House of the site. 
-                      Use of any such linked website is at the user's own risk.
+                      {`Use of any such linked website is at the user's own risk.`}
                     </p>
                   </div>
 
@@ -1118,7 +1117,7 @@ export default function Footer() {
           {/* Logo and Copyright */}
           <div className="flex items-center justify-center gap-4">
             <Image
-              src="/images/spades champagne 1.png"
+              src="/images/optimized/spades champagne 1.webp"
               alt="Spades Poker House"
               width={55}
               height={55}
