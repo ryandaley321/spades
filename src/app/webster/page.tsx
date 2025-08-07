@@ -3,6 +3,23 @@ import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Webster TX Poker Room | Real Texas Hold'em at Its Finest",
+  description: "Webster's premier poker room featuring real Texas Hold'em, tournaments, massage therapy, and luxury amenities. Top-tier poker action near Clear Lake and NASA area.",
+  keywords: "Webster TX poker room, Webster poker, real Texas Hold'em Webster, top-tier poker action Webster, poker near Clear Lake TX, NASA area poker",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://spades-gamma.vercel.app/webster",
+  },
+  other: {
+    "geo.region": "US-TX",
+    "geo.placename": "Webster, Texas",
+    "geo.position": "29.5383;-95.1188",
+    "ICBM": "29.5383,-95.1188",
+  },
+};
 
 export default function Webster() {
   return (
