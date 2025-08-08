@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
@@ -11,6 +12,7 @@ import GoogleReviewCard from "@/components/GoogleReviewCard";
 export default function AboutClient() {
   const [isVisible, setIsVisible] = useState(false);
   const timelineRef = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -56,6 +58,7 @@ export default function AboutClient() {
         description="Your Premier Poker Destination in Baytown and Webster, Texas"
         backgroundImage="/images/optimized/webster-elite-poker-destination-felt-cards-chips-spades-poker-house 1.webp"
         overlayOpacity={0.7}
+        buttonAction={() => router.push('/contact')}
       />
 
       <CallToActionBanner
@@ -63,6 +66,7 @@ export default function AboutClient() {
         description="Two locations, endless action, and a luxury poker atmosphere."
         buttonText="See How It All Started"
         buttonStyle="brown"
+        buttonAction={() => timelineRef.current?.scrollIntoView({ behavior: 'smooth' })}
       />
 
       {/* Google Reviews Section */}
@@ -297,20 +301,30 @@ export default function AboutClient() {
             </h2>
             
             <div className="flex flex-col items-center gap-4">
-              <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ 
-                borderRadius: '11px', 
-                padding: '10px 60px', 
-                fontSize: '16px',
-                minWidth: '365px'
-              }}>
+              <CustomButton 
+                size="lg" 
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
+                style={{ 
+                  borderRadius: '11px', 
+                  padding: '10px 60px', 
+                  fontSize: '16px',
+                  minWidth: '365px'
+                }}
+                onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster', '_blank')}
+              >
                 Poker Atlas- Webster
               </CustomButton>
-              <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ 
-                borderRadius: '11px', 
-                padding: '10px 60px', 
-                fontSize: '16px',
-                minWidth: '365px'
-              }}>
+              <CustomButton 
+                size="lg" 
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
+                style={{ 
+                  borderRadius: '11px', 
+                  padding: '10px 60px', 
+                  fontSize: '16px',
+                  minWidth: '365px'
+                }}
+                onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-baytown', '_blank')}
+              >
                 Poker Atlas- Baytown
               </CustomButton>
             </div>

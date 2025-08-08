@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
@@ -9,6 +12,8 @@ import OptimizedImage from "@/components/OptimizedImage";
 
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-black text-white">
       <LogoAnimation />
@@ -18,6 +23,7 @@ export default function Home() {
         description="Two Convenient Locations - Premier Poker Experience in Texas"
         backgroundImage="/images/optimized/luxury-poker-house-exterior-spades-logo-blue-sky-webster-texas.jpg 1.webp"
         overlayOpacity={0.7}
+        buttonAction={() => router.push('/contact')}
       />
 
       <CallToActionBanner
@@ -25,6 +31,7 @@ export default function Home() {
         description="Experience the best poker games in Webster & Baytown, TX."
         buttonText="Learn More"
         buttonStyle="brown"
+        buttonAction={() => router.push('/about')}
       />
 
       {/* Ultimate Poker Action Section - Remove this section as it's not in Figma design */}
@@ -60,10 +67,18 @@ export default function Home() {
                   <p className="text-xs">Our cash games are available daily at both of our locations, providing a wide range of options for players. Whether you&apos;re looking for a relaxed game or high-stakes action, <strong>Spades Poker House is the place to be!</strong></p>
                 </div>
                 <div className="mt-6 space-y-2">
-                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
+                  <CustomButton 
+                    size="sm" 
+                    className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                    onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster/cash-games', '_blank')}
+                  >
                     Games today- Webster
                   </CustomButton>
-                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
+                  <CustomButton 
+                    size="sm" 
+                    className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                    onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-baytown/cash-games', '_blank')}
+                  >
                     Games today- Baytown
                   </CustomButton>
                 </div>
@@ -96,10 +111,18 @@ export default function Home() {
                   <p className="text-xs">These <strong>tournaments are held daily</strong> in both of our locations, offering players the opportunity to compete and win amazing prizes. Join us for an unforgettable poker experience at Spades Poker House – <strong>where the action never stops!</strong></p>
                 </div>
                 <div className="mt-6">
-                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
+                  <CustomButton 
+                    size="sm" 
+                    className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                    onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster/tournaments', '_blank')}
+                  >
                     Webster Schedule
                   </CustomButton>
-                  <CustomButton size="sm" className="w-full text-sm mt-2 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
+                  <CustomButton 
+                    size="sm" 
+                    className="w-full text-sm mt-2 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                    onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-baytown/tournaments', '_blank')}
+                  >
                     Baytown Schedule
                   </CustomButton>
                 </div>
