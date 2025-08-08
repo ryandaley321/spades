@@ -48,7 +48,10 @@ export default function Footer() {
                 Spades Poker House Webster
               </h3>
               <div className="flex items-center justify-center gap-4">
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <div 
+                  onClick={() => window.open('https://maps.app.goo.gl/YaWdtsakbGvQMHNT8', '_blank')} 
+                  className="hover:opacity-80 transition-opacity cursor-pointer"
+                >
                   <Image
                     src="/icons/location-icon.png"
                     alt="Location"
@@ -56,7 +59,7 @@ export default function Footer() {
                     height={51}
                     className="w-12 h-12 md:w-[51px] md:h-[51px]"
                   />
-                </a>
+                </div>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phone-icon.png"
@@ -102,7 +105,10 @@ export default function Footer() {
                 Spades Poker House Baytown
               </h3>
               <div className="flex items-center justify-center gap-4">
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <div 
+                  onClick={() => window.open('https://maps.app.goo.gl/jHRek6VcBgtxrnMw9', '_blank')} 
+                  className="hover:opacity-80 transition-opacity cursor-pointer"
+                >
                   <Image
                     src="/icons/location-icon.png"
                     alt="Location"
@@ -110,7 +116,7 @@ export default function Footer() {
                     height={51}
                     className="w-12 h-12 md:w-[51px] md:h-[51px]"
                   />
-                </a>
+                </div>
                 <a href="#" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phone-icon.png"
