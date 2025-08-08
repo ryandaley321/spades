@@ -85,7 +85,7 @@ export default function Webster() {
                 <p className="mb-6">
                   Take a break from the poker table to grab a bite, and recharge. <strong>Great food, great poker, and a great atmosphere</strong>—only at Spades.
                 </p>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
                   <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
                     Explore Walzz Kookin Menu & Specials
                   </CustomButton>
@@ -93,7 +93,7 @@ export default function Webster() {
               </div>
             </div>
             <div className="lg:w-1/2 flex justify-center">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/optimized/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.webp"
                   alt="Walzz Kookin Menu"
