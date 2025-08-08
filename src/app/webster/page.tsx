@@ -1,10 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { CustomButton } from "@/components/ui/custom-button";
 import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
 
 export default function Webster() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-black text-white">
       <HeroBanner
@@ -13,6 +17,7 @@ export default function Webster() {
         description="Live cash tables, dynamic daily tournaments, and a refined player experience — all under one roof."
         backgroundImage="/images/optimized/spades-poker-house-full-room-live-action-poker-game 1.webp"
         overlayOpacity={0.5}
+        buttonAction={() => router.push('/contact')}
       />
 
       <CallToActionBanner
@@ -20,6 +25,7 @@ export default function Webster() {
         description="Join the action at our luxurious poker room, featuring high-stakes games, daily tournaments, and a vibrant player community."
         buttonText="See Webster Schedule"
         buttonStyle="brown"
+        buttonAction={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster/tournaments', '_blank')}
       />
 
       {/* Premium Amenities and Highlights Container */}
@@ -65,7 +71,12 @@ export default function Webster() {
                 <p className="mb-6">
                   Join us at <strong>Spades Poker House Webster</strong>, where <strong>elite poker action</strong> and <strong>luxury</strong> meet.
                 </p>
-                <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
+                <CustomButton 
+                  size="lg" 
+                  className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
+                  style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}
+                  onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster', '_blank')}
+                >
                   Poker Atlas- Spades Webster
                 </CustomButton>
               </div>
@@ -168,7 +179,12 @@ export default function Webster() {
 
           {/* Google Reviews Button */}
           <div className="flex justify-center">
-            <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}>
+            <CustomButton 
+              size="lg" 
+              className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
+              style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}
+              onClick={() => window.open('https://maps.app.goo.gl/99ivNCoJeeuX4Uco8', '_blank')}
+            >
               Spades Webster Google Reviews
             </CustomButton>
           </div>
