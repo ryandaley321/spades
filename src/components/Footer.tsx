@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -27,7 +28,7 @@ export default function Footer() {
                     className="w-12 h-12 md:w-[51px] md:h-[51px]"
                   />
                 </div>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="tel:2817241415" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phone-icon.png"
                     alt="Phone"
@@ -36,7 +37,7 @@ export default function Footer() {
                     className="w-12 h-12 md:w-[49px] md:h-[51px]"
                   />
                 </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.pokeratlas.com/poker-room/spades-poker-house-webster" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/pokeratlas-icon.png"
                     alt="Poker Atlas"
@@ -54,7 +55,7 @@ export default function Footer() {
                     className="w-12 h-12 md:w-[48px] md:h-[51px]"
                   />
                 </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook-icon.png"
                     alt="Facebook"
@@ -84,7 +85,7 @@ export default function Footer() {
                     className="w-12 h-12 md:w-[51px] md:h-[51px]"
                   />
                 </div>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="tel:3469776537" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phone-icon.png"
                     alt="Phone"
@@ -93,7 +94,7 @@ export default function Footer() {
                     className="w-12 h-12 md:w-[49px] md:h-[51px]"
                   />
                 </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.pokeratlas.com/poker-room/spades-poker-house-baytown" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/pokeratlas-icon.png"
                     alt="Poker Atlas"
@@ -102,7 +103,7 @@ export default function Footer() {
                     className="w-11 h-12 md:w-[44px] md:h-[51px]"
                   />
                 </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook-icon.png"
                     alt="Facebook"
@@ -159,13 +160,15 @@ export default function Footer() {
 
           {/* Logo and Copyright */}
           <div className="flex items-center justify-center gap-4">
-            <Image
-              src="/images/optimized/spades champagne 1.webp"
-              alt="Spades Poker House"
-              width={55}
-              height={55}
-              className="w-12 h-12 md:w-[55px] md:h-[55px]"
-            />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <Image
+                src="/images/optimized/spades champagne 1.webp"
+                alt="Spades Poker House"
+                width={55}
+                height={55}
+                className="w-12 h-12 md:w-[55px] md:h-[55px] cursor-pointer"
+              />
+            </Link>
             <div className="font-['Poppins'] text-[#f7e7ce] text-[16px] leading-tight space-y-1">
               <p>© 2025 Spades Poker House. All rights reserved.</p>
               <p>Site Designed by G&R Technologies</p>
