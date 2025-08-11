@@ -63,13 +63,13 @@ export default function Header({ directionsUrl }: HeaderProps) {
           <div className="hidden md:block">
             {directionsConfig.isExternal ? (
               <a href={directionsConfig.url} target="_blank" rel="noopener noreferrer">
-                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
+                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px' }}>
                   Directions
                 </CustomButton>
               </a>
             ) : (
               <a href={directionsConfig.url}>
-                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px', fontSize: '16px' }}>
+                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px' }}>
                   Directions
                 </CustomButton>
               </a>
@@ -171,7 +171,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
                 <CustomButton 
                   size="md" 
                   className="w-full bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-                  style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '18px' }}
+                  style={{ borderRadius: '11px', padding: '12px 30px' }}
                 >
                   Directions
                 </CustomButton>
@@ -184,7 +184,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
                 <CustomButton 
                   size="md" 
                   className="w-full bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-                  style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '18px' }}
+                  style={{ borderRadius: '11px', padding: '12px 30px' }}
                 >
                   Directions
                 </CustomButton>
