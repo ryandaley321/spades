@@ -1,6 +1,47 @@
-# Spades Poker House - Development Guide
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Commands
+
+### Development
+```bash
+npm run dev        # Start development server with Turbopack
+npm run build      # Build production bundle
+npm start          # Start production server
+npm run lint       # Run ESLint checks
+npm run optimize-images  # Optimize images in public/images
+```
+
+## Architecture
+
+### Tech Stack
+- **Framework**: Next.js 15.3 with TypeScript
+- **Styling**: Tailwind CSS v4 with inline styles for Figma fidelity
+- **UI Libraries**: Radix UI, Lucide icons, class-variance-authority
+- **Path Aliases**: `@/*` maps to `./src/*`
+
+### Project Structure
+```
+/src
+  /app              # Next.js app router pages
+    /about          # About page
+    /baytown        # Baytown location page
+    /webster        # Webster location page with menu
+    /contact        # Contact page
+  /components       # Reusable React components
+    /ui             # Base UI components (button, card, custom-button)
+  /styles           # Design tokens and global styles
+  /lib              # Utility functions (cn helper)
+```
+
+### Key Components
+- **CustomButton**: Primary CTA component at `/src/components/ui/custom-button.tsx`
+- **Header**: Fixed header (87px height) at `/src/components/Header.tsx`
+- **Design Tokens**: Centralized at `/src/styles/design-tokens.ts`
 
 ## Design System
+
 ### Colors
 - **Primary Dark**: #181510 (backgrounds, header)
 - **Light Text**: #F7E7CE (primary text)
@@ -10,57 +51,49 @@
 ### Typography
 - **Headings**: Montserrat (bold/semibold)
 - **Body**: Poppins (regular/semibold)
-- **Sizes**: 16px base, 18px subheadings, 24-28.8px headings
+- **Base Size**: 16px (body), 18px (subheadings), 24-28.8px (headings)
 
-### Components
-- CustomButton component for all CTAs
-- Card components with custom border colors
-- Consistent spacing patterns throughout
-
-## Figma Integration Workflow
-1. **Get Code**: Use `get_code` tool to extract component code
-2. **Get Visual**: Always call `get_image` after to see the design
-3. **Download Assets**: 
-   ```bash
-   curl -s "http://localhost:3845/assets/[hash].png" -o "public/[path]/[original-name].png"
-   ```
-4. **Keep Original Names**: Preserve Figma names (e.g., "spades champagne 1.png")
-5. **Update Paths**: Replace localhost URLs with local paths
-
-## Project Structure
-```
-/public
-  /images    # Main images (hero, cards, etc.)
-  /icons     # Social media and UI icons
-/src/app
-  page.tsx   # Landing page
-```
-
-## Key Implementation Notes
-- Next.js 13+ with TypeScript
-- Tailwind CSS with inline styles for exact Figma matching
-- Fixed header at 87px height
-- Hero section at 1080px height
+### Layout
+- Fixed header height: 87px
+- Hero section height: 1080px
 - All sections use #181510 background
-- Borders use #CBB682 (gold) or #785F37 (brown)
+- Consistent border colors: #CBB682 (gold) or #785F37 (brown)
 
-## Figma MCP Requirements
+## Figma Integration
+
+### MCP Server Requirements
 - Figma desktop app must be running
-- Server at `http://127.0.0.1:3845/sse`
-- Never use placeholder images if localhost source provided
-- All assets should come from Figma payload
+- Server endpoint: `http://127.0.0.1:3845/sse`
+- Use provided localhost assets directly, never placeholders
 
-## MCP Servers
-### Figma Dev Mode MCP Rules
-- The Figma Dev Mode MCP Server provides an assets endpoint which can serve image and SVG assets
-- IMPORTANT: If the Figma Dev Mode MCP Server returns a localhost source for an image or an SVG, use that image or SVG source directly
-- IMPORTANT: DO NOT import/add new icon packages, all the assets should be in the Figma payload
-- IMPORTANT: do NOT use or create placeholders if a localhost source is provided
+### Workflow
+1. Use `mcp__figma-dev-mode-mcp-server__get_code` for component code
+2. Call `mcp__figma-dev-mode-mcp-server__get_image` to see designs
+3. Download assets: `curl -s "http://localhost:3845/assets/[hash].png" -o "public/[path]/[name].png"`
+4. Preserve original Figma names (e.g., "spades champagne 1.png")
+5. Replace localhost URLs with local paths
 
-## General Development Rules
-- IMPORTANT: Always use components from `/src/components` when possible
-- Prioritize Figma fidelity to match designs exactly
-- Avoid hardcoded values, use design tokens from Figma where available
-- Follow WCAG requirements for accessibility
-- Add component documentation
-- Place UI components in `/src/components`; avoid inline styles unless truly necessary
+## Development Guidelines
+
+### Component Usage
+- Always use existing components from `/src/components/ui` when possible
+- Maintain Figma design fidelity with exact matching
+- Follow existing patterns for new components
+
+### Asset Management
+- Images in `/public/images`
+- Icons in `/public/icons`
+- Use OptimizedImage component when available
+- Run `npm run optimize-images` for production builds
+
+### Code Style
+- TypeScript strict mode enabled
+- ESLint with Next.js core-web-vitals config
+- Path imports using `@/` alias
+- Functional components with TypeScript interfaces
+
+## SEO & Metadata
+- Multi-location SEO optimization (Webster & Baytown)
+- Structured metadata in layout.tsx
+- Google site verification configured
+- Open Graph and business schema markup

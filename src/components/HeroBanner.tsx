@@ -1,5 +1,4 @@
 import { CustomButton } from "@/components/ui/custom-button";
-import type { CSSProperties } from "react";
 
 interface HeroBannerProps {
   subtitle?: string;
@@ -9,26 +8,6 @@ interface HeroBannerProps {
   buttonAction?: () => void;
   backgroundImage: string;
   overlayOpacity?: number;
-  /**
-   * Optional class override for the subtitle heading element. Use this to
-   * precisely control typography on a per-page basis without affecting other
-   * pages that consume the shared HeroBanner component.
-   */
-  subtitleClassName?: string;
-  /**
-   * Optional inline style override for the subtitle. Useful for exact pixel
-   * values such as 18px font size or 0 letter-spacing as specified by a design
-   * system.
-   */
-  subtitleStyle?: CSSProperties;
-  /** Class override for the main title heading */
-  titleClassName?: string;
-  /** Inline style override for the main title heading */
-  titleStyle?: CSSProperties;
-  /** Class override for the description paragraph */
-  descriptionClassName?: string;
-  /** Inline style override for the description paragraph */
-  descriptionStyle?: CSSProperties;
 }
 
 export default function HeroBanner({
@@ -38,13 +17,7 @@ export default function HeroBanner({
   buttonText = "Play Now",
   buttonAction,
   backgroundImage,
-  overlayOpacity = 0.5,
-  subtitleClassName,
-  subtitleStyle,
-  titleClassName,
-  titleStyle,
-  descriptionClassName,
-  descriptionStyle
+  overlayOpacity = 0.5
 }: HeroBannerProps) {
   return (
     <>
@@ -66,44 +39,37 @@ export default function HeroBanner({
         {/* Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 py-20">
           {subtitle && (
-            <h1
-              className={
-                subtitleClassName ??
-                "font-semibold mb-4 tracking-wide text-sm md:text-base lg:text-lg"
-              }
-              style={{
-                color: '#F7E7CE',
-                fontFamily: 'Poppins',
-                letterSpacing: '0.1em',
-                ...(subtitleStyle || {})
+            <h1 
+              className="font-semibold mb-4 text-sm md:text-base lg:text-lg" 
+              style={{ 
+                color: '#F7E7CE', 
+                fontFamily: 'Poppins', 
+                fontWeight: 600,
+                letterSpacing: '0%'
               }}
             >
               {subtitle}
             </h1>
           )}
-          <h2
-            className={
-              titleClassName ?? "font-bold mb-6 text-3xl md:text-4xl lg:text-5xl"
-            }
-            style={{
-              color: '#F7E7CE',
-              fontFamily: 'Montserrat',
-              lineHeight: '1.2',
-              ...(titleStyle || {})
+          <h2 
+            className="font-bold mb-6 text-4xl md:text-5xl lg:text-6xl" 
+            style={{ 
+              color: '#F7E7CE', 
+              fontFamily: 'Montserrat', 
+              fontWeight: 700,
+              lineHeight: '1.2'
             }}
           >
             {title}
           </h2>
-          <p
-            className={
-              descriptionClassName ??
-              "mb-10 max-w-3xl mx-auto text-base md:text-lg"
-            }
-            style={{
-              color: '#F7E7CE',
-              fontFamily: 'Poppins',
-              lineHeight: '1.6',
-              ...(descriptionStyle || {})
+          <p 
+            className="mb-10 max-w-3xl mx-auto text-sm md:text-base lg:text-base" 
+            style={{ 
+              color: '#F7E7CE', 
+              fontFamily: 'Poppins', 
+              fontWeight: 400,
+              lineHeight: '1.5',
+              letterSpacing: '0%'
             }}
           >
             {description}
