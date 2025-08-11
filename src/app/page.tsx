@@ -34,9 +34,19 @@ export default function Home() {
         buttonAction={() => router.push('/about')}
       />
 
-      {/* Three Column Section with Title */}
-      <section className="bg-black pt-16 pb-16">
-        <div className="w-full px-6 lg:px-12">
+      {/* Combined Three Column and Instagram Sections */}
+      <section 
+        className="relative pt-16 pb-16"
+        style={{
+          backgroundImage: 'url("/images/optimized/image 1.webp")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#181510'
+        }}
+      >
+        {/* Three Column Section */}
+        <div className="w-full px-6 lg:px-12 pb-8">
           <h2 
             className="text-center mb-12 text-2xl md:text-3xl"
             style={{
@@ -52,7 +62,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Cash Games */}
-            <Card className="bg-black border" style={{ borderColor: '#785F37', borderWidth: '1px', borderRadius: '0' }}>
+            <Card className="border" style={{ backgroundColor: 'transparent', borderColor: '#785F37', borderWidth: '1px', borderRadius: '0' }}>
               <CardContent className="p-8">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <OptimizedImage
@@ -97,7 +107,7 @@ export default function Home() {
             </Card>
 
             {/* Poker Tournaments */}
-            <Card className="bg-black border" style={{ borderColor: '#785F37', borderWidth: '1px', borderRadius: '0' }}>
+            <Card className="border" style={{ backgroundColor: 'transparent', borderColor: '#785F37', borderWidth: '1px', borderRadius: '0' }}>
               <CardContent className="p-8">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
@@ -141,7 +151,7 @@ export default function Home() {
             </Card>
 
             {/* Gyro Hero Kitchen */}
-            <Card className="bg-black border" style={{ borderColor: '#785F37', borderWidth: '1px', borderRadius: '0' }}>
+            <Card className="border" style={{ backgroundColor: 'transparent', borderColor: '#785F37', borderWidth: '1px', borderRadius: '0' }}>
               <CardContent className="p-8">
                 <div className="aspect-video rounded-lg mb-6 overflow-hidden">
                   <Image
@@ -175,11 +185,9 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
 
-      {/* Instagram Section */}
-      <section className="bg-black py-16">
-        <div className="w-full px-8 lg:px-20">
+        {/* Instagram Section */}
+        <div className="w-full px-8 lg:px-20 pt-8">
           <h2 
             className="text-center mb-12 text-2xl md:text-3xl"
             style={{
