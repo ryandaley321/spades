@@ -36,22 +36,27 @@ export default function CallToActionBanner({
     >
       <div className="max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center">
         <h2 
-          className="font-bold mb-4" 
+          className="font-bold mb-4 text-2xl md:text-3xl" 
           style={{ 
             color: '#F7E7CE', 
             fontFamily: 'Montserrat',
-            fontSize: '28.8px'
+            fontWeight: 700,
+            fontSize: 'clamp(24px, 4vw, 28.8px)',
+            lineHeight: '1.25',
+            letterSpacing: '0%'
           }}
         >
           {title}
         </h2>
         <p 
-          className="mb-8 max-w-3xl" 
+          className="mb-8 max-w-3xl text-sm md:text-base" 
           style={{ 
             color: '#F7E7CE', 
             fontFamily: 'Poppins',
-            fontSize: '16px',
-            lineHeight: '1.6'
+            fontWeight: 400,
+            fontSize: 'clamp(14px, 2.5vw, 16px)',
+            lineHeight: '1.5',
+            letterSpacing: '0%'
           }}
         >
           {description}

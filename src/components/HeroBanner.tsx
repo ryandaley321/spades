@@ -40,21 +40,37 @@ export default function HeroBanner({
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 py-20">
           {subtitle && (
             <h1 
-              className="font-semibold mb-4 tracking-wide text-sm md:text-base lg:text-lg" 
-              style={{ color: '#F7E7CE', fontFamily: 'Poppins', letterSpacing: '0.1em' }}
+              className="font-semibold mb-4 text-sm md:text-base lg:text-lg" 
+              style={{ 
+                color: '#F7E7CE', 
+                fontFamily: 'Poppins', 
+                fontWeight: 600,
+                letterSpacing: '0%'
+              }}
             >
               {subtitle}
             </h1>
           )}
           <h2 
-            className="font-bold mb-6 text-3xl md:text-4xl lg:text-5xl" 
-            style={{ color: '#F7E7CE', fontFamily: 'Montserrat', lineHeight: '1.2' }}
+            className="font-bold mb-6 text-4xl md:text-5xl lg:text-6xl" 
+            style={{ 
+              color: '#F7E7CE', 
+              fontFamily: 'Montserrat', 
+              fontWeight: 700,
+              lineHeight: '1.2'
+            }}
           >
             {title}
           </h2>
           <p 
-            className="mb-10 max-w-3xl mx-auto text-base md:text-lg" 
-            style={{ color: '#F7E7CE', fontFamily: 'Poppins', lineHeight: '1.6' }}
+            className="mb-10 max-w-3xl mx-auto text-sm md:text-base lg:text-base" 
+            style={{ 
+              color: '#F7E7CE', 
+              fontFamily: 'Poppins', 
+              fontWeight: 400,
+              lineHeight: '1.5',
+              letterSpacing: '0%'
+            }}
           >
             {description}
           </p>
