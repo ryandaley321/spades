@@ -76,8 +76,8 @@ export default function HeroBanner({
           </p>
           <CustomButton 
             size="lg" 
-            className="text-sm md:text-base bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
-            style={{ borderRadius: '11px', padding: '12px 40px', fontWeight: '600' }}
+            className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+            style={{ borderRadius: '11px', padding: '12px 40px' }}
             onClick={buttonAction}
           >
             {buttonText}

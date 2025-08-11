@@ -51,16 +51,16 @@ export default function Webster() {
 
           {/* Top Tier Poker Action Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
-            <div className="lg:w-1/3">
+            <div className="w-full lg:w-1/3 flex justify-center">
               <Image
                 src="/images/optimized/player-holding-cards-chip-stack-money-spades-poker-house-webster-texas.jpg 1.webp"
                 alt="Player holding cards"
                 width={400}
                 height={300}
-                className="rounded-lg"
+                className="rounded-lg max-w-full"
               />
             </div>
-            <div className="lg:w-2/3">
+            <div className="w-full lg:w-2/3 text-center lg:text-left">
               <h3 className="font-semibold mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
                 Experience Top-Tier Poker Action
               </h3>
@@ -71,11 +71,11 @@ export default function Webster() {
                 <p className="mb-6" style={{ fontWeight: 'normal' }}>
                   Join us at <strong style={{ fontWeight: '600' }}>Spades Poker House Webster</strong>, where <strong style={{ fontWeight: '600' }}>elite poker action</strong> and <strong style={{ fontWeight: '600' }}>luxury</strong> meet.
                 </p>
-                <div className="flex justify-end">
+                <div className="flex justify-center lg:justify-end">
                   <CustomButton 
                     size="lg" 
                     className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-                    style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}
+                    style={{ borderRadius: '11px', padding: '10px 30px' }}
                     onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster', '_blank')}
                   >
                     Poker Atlas- Spades Webster
@@ -86,8 +86,8 @@ export default function Webster() {
           </div>
 
           {/* Dining Section */}
-          <div className="flex flex-col lg:flex-row items-start gap-12 mb-20">
-            <div className="lg:w-1/2">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 mb-20">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
               <h3 className="font-semibold mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
                 Dining at Spades Poker House
               </h3>
@@ -98,21 +98,23 @@ export default function Webster() {
                 <p className="mb-6" style={{ fontWeight: 'normal' }}>
                   Take a break from the poker table to grab a bite, and recharge. <strong style={{ fontWeight: '600' }}>Great food, great poker, and a great atmosphere</strong>—only at Spades.
                 </p>
-                <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
-                  <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}>
-                    Explore Walzz Kookin Menu & Specials
-                  </CustomButton>
-                </a>
+                <div className="flex justify-center">
+                  <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
+                    <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px' }}>
+                      Explore Walzz Kookin Menu & Specials
+                    </CustomButton>
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="lg:w-1/2 flex justify-center">
-              <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
+            <div className="w-full lg:w-1/2 flex justify-center">
+              <a href="/webster/menu" target="_blank" rel="noopener noreferrer" className="max-w-full">
                 <Image
                   src="/images/optimized/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.webp"
                   alt="Walzz Kookin Menu"
                   width={500}
                   height={700}
-                  className="rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                  className="rounded-lg cursor-pointer hover:opacity-90 transition-opacity max-w-full h-auto"
                 />
               </a>
             </div>
@@ -120,7 +122,7 @@ export default function Webster() {
 
           {/* Massage Therapy Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/3">
+            <div className="w-full lg:w-1/3 flex justify-center">
               <Image
                 src="/images/optimized/massage 1.webp"
                 alt="Massage therapy"
@@ -129,8 +131,8 @@ export default function Webster() {
                 className="rounded-lg"
               />
             </div>
-            <div className="lg:w-2/3">
-              <div className="flex items-center gap-4 mb-6">
+            <div className="w-full lg:w-2/3">
+              <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
                 <Image
                   src="/images/optimized/sol_massage_logo_final_072524 1.webp"
                   alt="Sol Massage Logo"
@@ -138,11 +140,11 @@ export default function Webster() {
                   height={102}
                   className="w-[80px] h-[77px] md:w-[106px] md:h-[102px]"
                 />
-                <h3 className="font-semibold" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
+                <h3 className="font-semibold text-center lg:text-left" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
                   Massage Therapy at Spades Poker House
                 </h3>
               </div>
-              <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
+              <div className="text-center lg:text-left" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
                 <p className="mb-4" style={{ fontWeight: 'normal' }}>
                   At Spades Poker House, we prioritize your <strong style={{ fontWeight: '600' }}>comfort and performance</strong> at the table. We strongly recommend players who engage for four or more hours to consider a 60-minute massage. Start your session with us <strong style={{ fontWeight: '600' }}>to ensure your body is in optimal condition for focused gameplay</strong>. Prolonged sitting can take a toll, affecting concentration and physical well-being. We encourage regular breaks, including stretching before and after your massage, and every 30 minutes during play. <strong style={{ fontWeight: '600' }}>Even a 20-30 minute session can significantly enhance cognitive function and provide vital energy.</strong>
                 </p>
@@ -156,7 +158,7 @@ export default function Webster() {
                   <CustomButton 
                     size="lg" 
                     className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-                    style={{ borderRadius: '11px', padding: '10px 30px', fontSize: '16px' }}
+                    style={{ borderRadius: '11px', padding: '10px 30px' }}
                     onClick={() => window.open('https://www.solmassagetherapies.com/', '_blank')}
                   >
                     Learn More About Sol Massage
@@ -192,7 +194,7 @@ export default function Webster() {
             <CustomButton 
               size="lg" 
               className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-              style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px' }}
+              style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px', fontFamily: 'Poppins', fontWeight: '400' }}
               onClick={() => window.open('https://maps.app.goo.gl/99ivNCoJeeuX4Uco8', '_blank')}
             >
               Spades Webster Google Reviews

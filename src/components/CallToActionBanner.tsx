@@ -78,8 +78,6 @@ export default function CallToActionBanner({
                 style={{ 
                   borderRadius: '11px', 
                   padding: '12px 40px', 
-                  fontSize: '16px',
-                  fontWeight: '600',
                   minWidth: '280px'
                 }}
                 onClick={button.action}
