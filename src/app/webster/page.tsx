@@ -51,7 +51,8 @@ export default function Webster() {
 
           {/* Top Tier Poker Action Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
-            <div className="w-full lg:w-1/3 flex justify-center">
+            {/* Mobile/Tablet: Image first, Desktop: Image on left */}
+            <div className="w-full lg:w-1/3 flex justify-center order-1 lg:order-1">
               <Image
                 src="/images/optimized/player-holding-cards-chip-stack-money-spades-poker-house-webster-texas.jpg 1.webp"
                 alt="Player holding cards"
@@ -60,11 +61,11 @@ export default function Webster() {
                 className="rounded-lg max-w-full"
               />
             </div>
-            <div className="w-full lg:w-2/3 text-center lg:text-left">
-              <h3 className="font-semibold mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
+            <div className="w-full lg:w-2/3 order-2 lg:order-2">
+              <h3 className="font-semibold mb-6 text-center lg:text-left" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
                 Experience Top-Tier Poker Action
               </h3>
-              <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
+              <div className="text-left" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
                 <p className="mb-4" style={{ fontWeight: 'normal' }}>
                   {`At Spades Poker House Webster, we bring you top-tier poker action in a `}<strong style={{ fontWeight: '600' }}>luxurious setting</strong>{`. Our `}<strong style={{ fontWeight: '600' }}>state-of-the-art poker tables</strong>{` and `}<strong style={{ fontWeight: '600' }}>Poker Atlas tablets</strong>{` make it easy to join games, track live action, and check tournament schedules. From `}<strong style={{ fontWeight: '600' }}>{`Texas Hold'em`}</strong>{` to `}<strong style={{ fontWeight: '600' }}>PLO</strong>{`, we offer a variety of `}<strong style={{ fontWeight: '600' }}>cash games</strong>{` and `}<strong style={{ fontWeight: '600' }}>high-stakes tournaments</strong>{`. Whether you're a novice looking to try your hand or a seasoned pro aiming for the next big win, our `}<strong style={{ fontWeight: '600' }}>professional dealers</strong>{` and `}<strong style={{ fontWeight: '600' }}>friendly atmosphere</strong>{` will ensure your poker experience is unforgettable.`}
                 </p>
@@ -86,28 +87,9 @@ export default function Webster() {
           </div>
 
           {/* Dining Section */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 mb-20">
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h3 className="font-semibold mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
-                Dining at Spades Poker House
-              </h3>
-              <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
-                <p className="mb-4" style={{ fontWeight: 'normal' }}>
-                  {`Enjoy a wide range of `}<strong style={{ fontWeight: '600' }}>delicious meals</strong>{` at Spades Poker House, crafted to satisfy your cravings while you play. Our menu features a `}<strong style={{ fontWeight: '600' }}>variety of options</strong>{`, from quick bites to satisfying entrees, designed to fuel you for long sessions at the table. Whether you're in the mood for a `}<strong style={{ fontWeight: '600' }}>hearty meal</strong>{` or a `}<strong style={{ fontWeight: '600' }}>light snack</strong>{`, we've got something for everyone.`}
-                </p>
-                <p className="mb-6" style={{ fontWeight: 'normal' }}>
-                  Take a break from the poker table to grab a bite, and recharge. <strong style={{ fontWeight: '600' }}>Great food, great poker, and a great atmosphere</strong>—only at Spades.
-                </p>
-                <div className="flex justify-center">
-                  <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
-                    <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px' }}>
-                      Explore Walzz Kookin Menu & Specials
-                    </CustomButton>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="flex flex-col gap-12 mb-20">
+            {/* Mobile/Tablet: Image first, before header */}
+            <div className="w-full flex justify-center lg:hidden">
               <a href="/webster/menu" target="_blank" rel="noopener noreferrer" className="max-w-full">
                 <Image
                   src="/images/optimized/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.webp"
@@ -118,11 +100,48 @@ export default function Webster() {
                 />
               </a>
             </div>
+            
+            {/* Desktop layout */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+              <div className="w-full lg:w-1/2">
+                <h3 className="font-semibold mb-6 text-center lg:text-left" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px' }}>
+                  Dining at Spades Poker House
+                </h3>
+                <div className="text-left" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
+                  <p className="mb-4" style={{ fontWeight: 'normal' }}>
+                    {`Enjoy a wide range of `}<strong style={{ fontWeight: '600' }}>delicious meals</strong>{` at Spades Poker House, crafted to satisfy your cravings while you play. Our menu features a `}<strong style={{ fontWeight: '600' }}>variety of options</strong>{`, from quick bites to satisfying entrees, designed to fuel you for long sessions at the table. Whether you're in the mood for a `}<strong style={{ fontWeight: '600' }}>hearty meal</strong>{` or a `}<strong style={{ fontWeight: '600' }}>light snack</strong>{`, we've got something for everyone.`}
+                  </p>
+                  <p className="mb-6" style={{ fontWeight: 'normal' }}>
+                    Take a break from the poker table to grab a bite, and recharge. <strong style={{ fontWeight: '600' }}>Great food, great poker, and a great atmosphere</strong>—only at Spades.
+                  </p>
+                  <div className="flex justify-center">
+                    <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
+                      <CustomButton size="lg" className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '10px 30px' }}>
+                        Explore Walzz Kookin Menu & Specials
+                      </CustomButton>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* Desktop: Image on right */}
+              <div className="w-full lg:w-1/2 hidden lg:flex justify-center order-3 lg:order-2">
+                <a href="/webster/menu" target="_blank" rel="noopener noreferrer" className="max-w-full">
+                  <Image
+                    src="/images/optimized/watz-kookin-restaurant-menu-design-gabi-papirtyte 1.webp"
+                    alt="Walzz Kookin Menu"
+                    width={500}
+                    height={700}
+                    className="rounded-lg cursor-pointer hover:opacity-90 transition-opacity max-w-full h-auto"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Massage Therapy Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="w-full lg:w-1/3 flex justify-center">
+            {/* Mobile/Tablet: Image first, Desktop: Image on left */}
+            <div className="w-full lg:w-1/3 flex justify-center order-1 lg:order-1">
               <Image
                 src="/images/optimized/massage 1.webp"
                 alt="Massage therapy"
@@ -131,7 +150,7 @@ export default function Webster() {
                 className="rounded-lg"
               />
             </div>
-            <div className="w-full lg:w-2/3">
+            <div className="w-full lg:w-2/3 order-2 lg:order-2">
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
                 <Image
                   src="/images/optimized/sol_massage_logo_final_072524 1.webp"
@@ -144,7 +163,7 @@ export default function Webster() {
                   Massage Therapy at Spades Poker House
                 </h3>
               </div>
-              <div className="text-center lg:text-left" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
+              <div className="text-left" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '1.6' }}>
                 <p className="mb-4" style={{ fontWeight: 'normal' }}>
                   At Spades Poker House, we prioritize your <strong style={{ fontWeight: '600' }}>comfort and performance</strong> at the table. We strongly recommend players who engage for four or more hours to consider a 60-minute massage. Start your session with us <strong style={{ fontWeight: '600' }}>to ensure your body is in optimal condition for focused gameplay</strong>. Prolonged sitting can take a toll, affecting concentration and physical well-being. We encourage regular breaks, including stretching before and after your massage, and every 30 minutes during play. <strong style={{ fontWeight: '600' }}>Even a 20-30 minute session can significantly enhance cognitive function and provide vital energy.</strong>
                 </p>
