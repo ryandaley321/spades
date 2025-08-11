@@ -34,11 +34,22 @@ export default function Home() {
         buttonAction={() => router.push('/about')}
       />
 
-      {/* Ultimate Poker Action Section - Remove this section as it's not in Figma design */}
-
-      {/* Three Column Section */}
-      <section className="bg-black pt-8 pb-16">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Three Column Section with Title */}
+      <section className="bg-black pt-16 pb-16">
+        <div className="w-full px-6 lg:px-12">
+          <h2 
+            className="text-center mb-12 text-2xl md:text-3xl"
+            style={{
+              color: '#F7E7CE',
+              fontFamily: 'Montserrat',
+              fontWeight: 700,
+              fontSize: 'clamp(24px, 4vw, 28.8px)',
+              lineHeight: '1.25',
+              letterSpacing: '0%'
+            }}
+          >
+            Ultimate Poker Action & Exceptional Cuisine
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Cash Games */}
             <Card className="bg-black" style={{ borderColor: '#785F37' }}>
