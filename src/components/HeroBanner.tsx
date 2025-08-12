@@ -66,52 +66,45 @@ export default function HeroBanner({
         {/* Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 py-20">
           {subtitle && (
-            <h1
-              className={
-                subtitleClassName ??
-                "font-semibold mb-4 tracking-wide text-sm md:text-base lg:text-lg"
-              }
-              style={{
-                color: '#F7E7CE',
-                fontFamily: 'Poppins',
-                letterSpacing: '0.1em',
-                ...(subtitleStyle || {})
+            <h1 
+              className="font-semibold mb-4 text-sm md:text-base lg:text-lg" 
+              style={{ 
+                color: '#F7E7CE', 
+                fontFamily: 'Poppins', 
+                fontWeight: 600,
+                letterSpacing: '0%'
               }}
             >
               {subtitle}
             </h1>
           )}
-          <h2
-            className={
-              titleClassName ?? "font-bold mb-6 text-3xl md:text-4xl lg:text-5xl"
-            }
-            style={{
-              color: '#F7E7CE',
-              fontFamily: 'Montserrat',
-              lineHeight: '1.2',
-              ...(titleStyle || {})
+          <h2 
+            className="font-bold mb-6 text-4xl md:text-5xl lg:text-6xl" 
+            style={{ 
+              color: '#F7E7CE', 
+              fontFamily: 'Montserrat', 
+              fontWeight: 700,
+              lineHeight: '1.2'
             }}
           >
             {title}
           </h2>
-          <p
-            className={
-              descriptionClassName ??
-              "mb-10 max-w-3xl mx-auto text-base md:text-lg"
-            }
-            style={{
-              color: '#F7E7CE',
-              fontFamily: 'Poppins',
-              lineHeight: '1.6',
-              ...(descriptionStyle || {})
+          <p 
+            className="mb-10 max-w-3xl mx-auto text-sm md:text-base lg:text-base" 
+            style={{ 
+              color: '#F7E7CE', 
+              fontFamily: 'Poppins', 
+              fontWeight: 400,
+              lineHeight: '1.5',
+              letterSpacing: '0%'
             }}
           >
             {description}
           </p>
           <CustomButton 
             size="lg" 
-            className="text-sm md:text-base bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
-            style={{ borderRadius: '11px', padding: '12px 40px', fontWeight: '600' }}
+            className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+            style={{ borderRadius: '11px', padding: '12px 40px' }}
             onClick={buttonAction}
           >
             {buttonText}
