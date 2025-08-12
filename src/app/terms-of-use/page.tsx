@@ -33,7 +33,7 @@ export default function TermsOfUsePage() {
                   Acceptance of Terms
                 </h2>
                 <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
-                  By accessing and using the Spades Poker House website, you agree to be bound by these Terms of Use ("Terms"). 
+                  By accessing and using the Spades Poker House website, you agree to be bound by these Terms of Use ({"\"Terms\""}). 
                   If you do not agree to all of the terms and conditions contained herein, you are expressly prohibited from using 
                   the site.
                 </p>
@@ -66,7 +66,7 @@ export default function TermsOfUsePage() {
                   Disclaimer
                 </h2>
                 <p className="mb-4" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
-                  The materials on the Spades Poker House website are provided on an 'as is' basis. Spades Poker House makes no 
+                  The materials on the Spades Poker House website are provided on an {"'as is'"} basis. Spades Poker House makes no 
                   warranties, expressed or implied, and hereby disclaims and negates all other warranties including without 
                   limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-
                   infringement of intellectual property or other violation of rights.
@@ -98,7 +98,7 @@ export default function TermsOfUsePage() {
                 <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   Spades Poker House has not reviewed all of the sites linked to our website and is not responsible for the contents 
                   of any such linked site. The inclusion of any link does not imply endorsement by Spades Poker House of the site. 
-                  Use of any such linked website is at the user's own risk.
+                  Use of any such linked website is at the {"user's"} own risk.
                 </p>
               </div>
 
