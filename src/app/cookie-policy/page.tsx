@@ -20,33 +20,33 @@ export default function CookiePolicyPage() {
       <main>
         <div className="px-4 py-12 md:py-20">
           <div className="max-w-4xl mx-auto">
-            <h1 className="font-['Montserrat'] font-bold text-[28px] md:text-[32px] text-[#f7e7ce] text-center mb-6">
+            <h1 className="font-bold text-center mb-6" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontWeight: 700, fontSize: '28.8px', lineHeight: '100%', letterSpacing: '0%' }}>
               Cookie Policy
             </h1>
-            <p className="font-['Poppins'] text-[12px] text-[#f7e7ce] text-center mb-8">
+            <p className="text-left mb-8" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
               This Cookie Policy explains how Spades Poker House uses cookies on our website. By continuing to use 
               our website, you agree to the use of cookies in accordance with this policy.
             </p>
             
             <div className="space-y-8 text-left">
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   What are Cookies?
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   Cookies are small text files that are stored on your device when you visit a website. They help improve your 
                   experience by remembering your preferences and providing us with data about how visitors use the site.
                 </p>
               </div>
 
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   How We Use Cookies
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed mb-4">
+                <p className="mb-4" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   We use cookies for various purposes, including:
                 </p>
-                <ul className="list-disc ml-6 space-y-2 font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <ul className="list-disc ml-6 space-y-2" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   <li><strong>Essential Cookies:</strong> These cookies are necessary for the proper functioning of our website and cannot be 
                   switched off in our systems. They enable basic functions such as page navigation and access to secure areas of the 
                   website.</li>
@@ -62,10 +62,10 @@ export default function CookiePolicyPage() {
               </div>
 
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   How to Control Cookies
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   You can control and manage cookies in your browser settings. Most browsers allow you to block or delete 
                   cookies, but doing so may affect your experience on our website. To learn more about how to manage cookies in your browser, 
                   please visit the "Help" section of your browser.
@@ -73,20 +73,20 @@ export default function CookiePolicyPage() {
               </div>
 
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   Third-Party Cookies
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   We may use third-party services (such as Google Analytics or advertising networks) that place cookies on your 
                   device. These third-party cookies are subject to the privacy policies of the respective service providers.
                 </p>
               </div>
 
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   Consent to Use Cookies
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   By using our website, you consent to the use of cookies as outlined in this Cookie Policy. If you do not agree with 
                   the use of cookies, you can disable them via your browser or mentioned above, but this may affect your experience with 
                   our website.
@@ -94,27 +94,24 @@ export default function CookiePolicyPage() {
               </div>
 
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   Changes to This Cookie Policy
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   We may update this Cookie Policy from time to time. We will notify you of any changes by posting the updated 
                   policy on this page. Please check this page regularly for updates.
                 </p>
               </div>
 
               <div>
-                <h2 className="font-['Poppins'] font-semibold text-[18px] text-[#f7e7ce] mb-3">
+                <h2 className="mb-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 600, fontSize: '18px', lineHeight: '100%', letterSpacing: '0%' }}>
                   Contact Us
                 </h2>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
+                <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   If you have any questions about this Cookie Policy or how we use cookies, please contact us:
                 </p>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed mt-2">
-                  <strong>Phone:</strong> 281-724-1405
-                </p>
-                <p className="font-['Poppins'] text-[14px] text-[#f7e7ce] leading-relaxed">
-                  <strong>Email:</strong> info@spadespokerhouse.com
+                <p className="mt-2" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
+                  <strong>Phone:</strong> 281-724-1415
                 </p>
               </div>
             </div>
