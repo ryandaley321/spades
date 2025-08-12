@@ -1,5 +1,4 @@
 import { CustomButton } from "@/components/ui/custom-button";
-import type { CSSProperties } from "react";
 
 interface HeroBannerProps {
   subtitle?: string;
@@ -9,26 +8,6 @@ interface HeroBannerProps {
   buttonAction?: () => void;
   backgroundImage: string;
   overlayOpacity?: number;
-  /**
-   * Optional class override for the subtitle heading element. Use this to
-   * precisely control typography on a per-page basis without affecting other
-   * pages that consume the shared HeroBanner component.
-   */
-  subtitleClassName?: string;
-  /**
-   * Optional inline style override for the subtitle. Useful for exact pixel
-   * values such as 18px font size or 0 letter-spacing as specified by a design
-   * system.
-   */
-  subtitleStyle?: CSSProperties;
-  /** Class override for the main title heading */
-  titleClassName?: string;
-  /** Inline style override for the main title heading */
-  titleStyle?: CSSProperties;
-  /** Class override for the description paragraph */
-  descriptionClassName?: string;
-  /** Inline style override for the description paragraph */
-  descriptionStyle?: CSSProperties;
 }
 
 export default function HeroBanner({
@@ -38,13 +17,7 @@ export default function HeroBanner({
   buttonText = "Play Now",
   buttonAction,
   backgroundImage,
-  overlayOpacity = 0.5,
-  subtitleClassName,
-  subtitleStyle,
-  titleClassName,
-  titleStyle,
-  descriptionClassName,
-  descriptionStyle
+  overlayOpacity = 0.5
 }: HeroBannerProps) {
   return (
     <>
