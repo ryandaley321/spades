@@ -1,9 +1,43 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [showTermsOfUse, setShowTermsOfUse] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+  const [showCookiePolicy, setShowCookiePolicy] = useState(false);
+
+  const handleTogglePrivacyPolicy = () => {
+    setShowPrivacyPolicy(!showPrivacyPolicy);
+    setShowTermsOfUse(false);
+    setShowDisclaimer(false);
+    setShowCookiePolicy(false);
+  };
+
+  const handleToggleTermsOfUse = () => {
+    setShowTermsOfUse(!showTermsOfUse);
+    setShowPrivacyPolicy(false);
+    setShowDisclaimer(false);
+    setShowCookiePolicy(false);
+  };
+
+  const handleToggleDisclaimer = () => {
+    setShowDisclaimer(!showDisclaimer);
+    setShowPrivacyPolicy(false);
+    setShowTermsOfUse(false);
+    setShowCookiePolicy(false);
+  };
+
+  const handleToggleCookiePolicy = () => {
+    setShowCookiePolicy(!showCookiePolicy);
+    setShowPrivacyPolicy(false);
+    setShowTermsOfUse(false);
+    setShowDisclaimer(false);
+  };
+
   return (
     <footer className="relative bg-[#181510] border-t border-[#cbb682]">
       <div className="px-4 py-8 md:py-10">
@@ -142,7 +176,7 @@ export default function Footer() {
                 className="hover:text-[#cbb682] transition-colors duration-200"
               >
                 Cookie Policy
-              </a>
+              </button>
             </nav>
           </div>
 
