@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Footer from '@/components/Footer';
 import { CustomButton } from "@/components/ui/custom-button";
 import HeroBanner from "@/components/HeroBanner";
@@ -103,9 +104,11 @@ export default function BaytownLocationPage() {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
-                    Read Our Google Reviews
-                  </CustomButton>
+                  <Link href="https://maps.app.goo.gl/UhEhA35GDKnKo1JB9" target="_blank" rel="noopener noreferrer">
+                    <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
+                      Read Our Google Reviews
+                    </CustomButton>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -129,9 +132,11 @@ export default function BaytownLocationPage() {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
-                    Check Out Spades in Person
-                  </CustomButton>
+                  <Link href="https://maps.app.goo.gl/nRpKa7nh65wCqtgX7" target="_blank" rel="noopener noreferrer">
+                    <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
+                      Check Out Spades in Person
+                    </CustomButton>
+                  </Link>
                 </div>
               </div>
               
@@ -216,9 +221,11 @@ export default function BaytownLocationPage() {
               <p className="mb-8" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '100%', letterSpacing: '0%', textAlign: 'center' }}>
                 {`At `}<strong style={{ fontWeight: 700 }}>Spades Baytown</strong>{`, the excitement never stops! With `}<strong style={{ fontWeight: 700 }}>ongoing promotions</strong>{` for both `}<strong style={{ fontWeight: 700 }}>cash games</strong>{` and `}<strong style={{ fontWeight: 700 }}>tournaments</strong>{`, there's always something exciting happening. Whether you're joining daily bounty tournaments or taking advantage of our `}<strong style={{ fontWeight: 700 }}>high hand</strong>{` promotions, you'll find new opportunities to win big every day at `}<strong style={{ fontWeight: 700 }}>Spades Baytown</strong>{` is the perfect poker experience.`}
               </p>
-              <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
-                See Current Promotions
-              </CustomButton>
+              <Link href="https://www.pokeratlas.com/poker-room/spades-poker-house-baytown" target="_blank" rel="noopener noreferrer">
+                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
+                  See Current Promotions
+                </CustomButton>
+              </Link>
             </div>
           </div>
         </section>
