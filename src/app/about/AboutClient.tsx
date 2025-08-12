@@ -10,24 +10,45 @@ import CallToActionBanner from "@/components/CallToActionBanner";
 import GoogleReviewCard from "@/components/GoogleReviewCard";
 
 export default function AboutClient() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [topVisible, setTopVisible] = useState(false);
+  const [bottomVisible, setBottomVisible] = useState(false);
+  const topRef = useRef<HTMLDivElement | null>(null);
+  const bottomRef = useRef<HTMLDivElement | null>(null);
   const timelineRef = useRef<HTMLElement | null>(null);
   const router = useRouter();
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const topObserver = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        if (entry.isIntersecting && !topVisible) {
+          setTopVisible(true);
+        }
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 }
     );
 
-    if (timelineRef.current) {
-      observer.observe(timelineRef.current);
+    const bottomObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !bottomVisible) {
+          setBottomVisible(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (topRef.current) {
+      topObserver.observe(topRef.current);
     }
 
-    return () => observer.disconnect();
-  }, []);
+    if (bottomRef.current) {
+      bottomObserver.observe(bottomRef.current);
+    }
+
+    return () => {
+      topObserver.disconnect();
+      bottomObserver.disconnect();
+    };
+  }, [topVisible, bottomVisible]);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -116,8 +137,8 @@ export default function AboutClient() {
               Timeline
             </h2>
 
-            <div className="flex justify-start mb-2 overflow-hidden" style={{ marginLeft: 'calc(2.5% + 5px)' }}>
-              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line top ${isVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
+            <div ref={topRef} className="flex justify-start mb-2 overflow-hidden" style={{ marginLeft: 'calc(2.5% + 5px)' }}>
+              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line top ${topVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
             </div>
 
             <div className="space-y-8">
@@ -203,8 +224,8 @@ export default function AboutClient() {
               </div>
             </div>
 
-            <div className="flex justify-end mt-2 overflow-hidden" style={{ marginRight: 'calc(2.5% + 5px)' }}>
-              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line bottom ${isVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
+            <div ref={bottomRef} className="flex justify-end mt-2 overflow-hidden" style={{ marginRight: 'calc(2.5% + 5px)' }}>
+              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line bottom ${bottomVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
             </div>
           </div>
         </section>
