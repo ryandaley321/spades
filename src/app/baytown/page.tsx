@@ -23,35 +23,8 @@ export default function BaytownLocationPage() {
       <main>
         <HeroBanner
           subtitle="SPADES POKER HOUSE BAYTOWN"
-          subtitleClassName="font-semibold mb-4"
-          subtitleStyle={{
-            fontFamily: 'Poppins',
-            fontWeight: 600,
-            fontSize: '18px',
-            lineHeight: '100%',
-            letterSpacing: '0',
-            color: '#F7E7CE'
-          }}
           title="Discover Real Poker Vibes in Baytown, Texas"
-          titleClassName="font-bold mb-6"
-          titleStyle={{
-            fontFamily: 'Montserrat',
-            fontWeight: 700,
-            fontSize: '28.8px',
-            lineHeight: '100%',
-            letterSpacing: '0',
-            color: '#F7E7CE'
-          }}
           description="Looking for poker near Baytown? Join live games, daily tournaments with blind and level adjustments, and top-notch connection that wins your Baytown, Texas poker experience over."
-          descriptionClassName="mb-10 max-w-3xl mx-auto"
-          descriptionStyle={{
-            fontFamily: 'Poppins',
-            fontWeight: 400,
-            fontSize: '16px',
-            lineHeight: '100%',
-            letterSpacing: '0',
-            color: '#F7E7CE'
-          }}
           backgroundImage="/images/optimized/baytown-hero-image.webp"
           overlayOpacity={0.7}
           buttonAction={handlePlayNowClick}

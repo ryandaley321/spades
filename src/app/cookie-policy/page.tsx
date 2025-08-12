@@ -68,7 +68,7 @@ export default function CookiePolicyPage() {
                 <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontWeight: 400, fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
                   You can control and manage cookies in your browser settings. Most browsers allow you to block or delete 
                   cookies, but doing so may affect your experience on our website. To learn more about how to manage cookies in your browser, 
-                  please visit the "Help" section of your browser.
+                  please visit the {'"Help"'} section of your browser.
                 </p>
               </div>
 
