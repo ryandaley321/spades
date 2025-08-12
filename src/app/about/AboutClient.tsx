@@ -20,18 +20,14 @@ export default function AboutClient() {
   useEffect(() => {
     const topObserver = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !topVisible) {
-          setTopVisible(true);
-        }
+        setTopVisible(entry.isIntersecting);
       },
       { threshold: 0.5 }
     );
 
     const bottomObserver = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !bottomVisible) {
-          setBottomVisible(true);
-        }
+        setBottomVisible(entry.isIntersecting);
       },
       { threshold: 0.5 }
     );
@@ -48,7 +44,7 @@ export default function AboutClient() {
       topObserver.disconnect();
       bottomObserver.disconnect();
     };
-  }, [topVisible, bottomVisible]);
+  }, []);
 
   return (
     <div className="min-h-screen bg-black text-white">
