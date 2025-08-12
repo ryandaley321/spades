@@ -135,12 +135,12 @@ export default function ContactPage() {
             {/* Action Buttons */}
             <div className="mt-12 flex flex-col items-center gap-4">
               <a href="https://form.jotform.com/231936301480148" target="_blank" rel="noopener noreferrer">
-                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
+                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
                   Work with us
                 </CustomButton>
               </a>
               <a href="https://form.jotform.com/231715489717163?fbclid=IwAR1hhbvptHNP4xuS3iO80GZXTW-Qjhti9gEYxS5nx0zAkYhBQxAmqExY0Ck" target="_blank" rel="noopener noreferrer">
-                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px', fontSize: '16px', fontWeight: '600' }}>
+                <CustomButton className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '12px 30px' }}>
                   Become a member
                 </CustomButton>
               </a>
