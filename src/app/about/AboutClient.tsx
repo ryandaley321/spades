@@ -10,23 +10,40 @@ import CallToActionBanner from "@/components/CallToActionBanner";
 import GoogleReviewCard from "@/components/GoogleReviewCard";
 
 export default function AboutClient() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [topVisible, setTopVisible] = useState(false);
+  const [bottomVisible, setBottomVisible] = useState(false);
+  const topRef = useRef<HTMLDivElement | null>(null);
+  const bottomRef = useRef<HTMLDivElement | null>(null);
   const timelineRef = useRef<HTMLElement | null>(null);
   const router = useRouter();
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const topObserver = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        setTopVisible(entry.isIntersecting);
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 }
     );
 
-    if (timelineRef.current) {
-      observer.observe(timelineRef.current);
+    const bottomObserver = new IntersectionObserver(
+      ([entry]) => {
+        setBottomVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+
+    if (topRef.current) {
+      topObserver.observe(topRef.current);
     }
 
-    return () => observer.disconnect();
+    if (bottomRef.current) {
+      bottomObserver.observe(bottomRef.current);
+    }
+
+    return () => {
+      topObserver.disconnect();
+      bottomObserver.disconnect();
+    };
   }, []);
 
   return (
@@ -35,9 +52,10 @@ export default function AboutClient() {
         dangerouslySetInnerHTML={{
           __html: `
           .spade-line {
-            transition: all 0.8s ease-in-out;
+            transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
             transform: scaleY(0.05);
             opacity: 0.4;
+            will-change: transform, opacity;
           }
           .spade-line.visible { opacity: 1; }
           .spade-line.top.visible { transform: scaleY(1); }
@@ -66,12 +84,13 @@ export default function AboutClient() {
       {/* Google Reviews Section */}
       <section className="relative" style={{ backgroundColor: '#181510' }}>
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url('/images/optimized/faded spade premium quality poker cards 1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3,
+            willChange: 'transform',
           }}
         />
 
@@ -87,7 +106,7 @@ export default function AboutClient() {
             <a href="https://maps.app.goo.gl/jEARNPRj9tnAbKuC6" target="_blank" rel="noopener noreferrer">
               <CustomButton
                 size="lg"
-                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200"
                 style={{ borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}
               >
                 See More Google Reviews
@@ -100,24 +119,25 @@ export default function AboutClient() {
       {/* Timeline and CTA Container with shared background */}
       <div className="relative" style={{ backgroundColor: '#181510' }}>
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url('/images/optimized/image 1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3,
+            willChange: 'transform',
           }}
         />
 
         {/* Timeline Section */}
         <section ref={timelineRef} className="relative pt-12 md:pt-20 pb-16 md:pb-24">
           <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
-            <h2 className="text-center font-bold mb-8 md:mb-16 text-3xl md:text-4xl lg:text-5xl" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+            <h2 className="text-center font-bold mb-8 md:mb-16" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: '700' }}>
               Timeline
             </h2>
 
-            <div className="flex justify-start mb-2 overflow-hidden" style={{ marginLeft: 'calc(2.5% + 5px)' }}>
-              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line top ${isVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
+            <div ref={topRef} className="flex justify-start mb-2 overflow-hidden" style={{ marginLeft: 'calc(2.5% + 5px)' }}>
+              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line top ${topVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
             </div>
 
             <div className="space-y-8">
@@ -127,10 +147,10 @@ export default function AboutClient() {
                     <Image className="w-full lg:w-[280px]" src="/images/optimized/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.webp" alt="2020 Poker Room" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
                   </div>
                   <div className="flex-1 flex flex-col justify-center lg:order-2">
-                    <h3 className="font-bold mb-3 md:mb-4 text-xl md:text-2xl lg:text-[28px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+                    <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       2020 – Launching Spades Poker House in Webster, TX
                     </h3>
-                    <p className="text-sm md:text-base" style={{ color: '#F7E7CE', fontFamily: 'Poppins', lineHeight: '1.8' }}>
+                    <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', fontWeight: '400', lineHeight: '25px' }}>
                       In 2020, Spades Poker House opened its doors in Webster, Texas, bringing a luxurious and professional poker club experience to Southeast Texas.<br />
                       We created dozens of local jobs for poker dealers, servers, managers, cage cashiers, security staff, and cleaners, building a team of qualified professionals.<br />
                       {`Players were drawn to our modern poker room, time-based cash game model, and safe, upscale atmosphere, making us the go-to spot for Texas Hold'em and PLO action.`}
@@ -142,10 +162,10 @@ export default function AboutClient() {
               <div className="p-4 md:p-6 lg:p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
                 <div className="flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8">
                   <div className="flex-1 flex flex-col justify-center lg:order-1">
-                    <h3 className="font-bold mb-3 md:mb-4 text-xl md:text-2xl lg:text-[28px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+                    <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       2021–2022 – Remodeling, Expanding & More Poker Action
                     </h3>
-                    <p className="text-sm md:text-base" style={{ color: '#F7E7CE', fontFamily: 'Poppins', lineHeight: '1.8' }}>
+                    <p style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', fontWeight: '400', lineHeight: '25px' }}>
                       With increasing demand, we invested in remodeling the Webster poker room, introducing more tables and enhancing the environment.<br />
                       Our kitchen upgrades brought high-quality food and drinks to complement the gaming experience.<br />
                       We added a wider variety of poker games and tournaments, creating nonstop action for Southeast Texas poker enthusiasts.
@@ -163,10 +183,10 @@ export default function AboutClient() {
                     <Image className="w-full lg:w-[280px]" src="/images/optimized/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.webp" alt="Baytown Opening" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
                   </div>
                   <div className="flex-1 flex flex-col justify-center lg:order-2">
-                    <h3 className="font-bold mb-3 md:mb-4 text-xl md:text-2xl lg:text-[28px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+                    <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       {`2023 – Opening Baytown's Top Poker Room`}
                     </h3>
-                    <div className="text-sm md:text-base" style={{ color: '#F7E7CE', fontFamily: 'Poppins', lineHeight: '1.8' }}>
+                    <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', fontWeight: '400', lineHeight: '25px' }}>
                       <p className="mb-2">In 2023, we proudly expanded with a second location: Spades Poker House Baytown.</p>
                       <p className="mb-2">The Baytown poker room features:</p>
                       <ul className="list-disc pl-6 space-y-1 mb-2">
@@ -183,10 +203,10 @@ export default function AboutClient() {
               <div className="p-4 md:p-6 lg:p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
                 <div className="flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8">
                   <div className="flex-1 flex flex-col justify-center lg:order-1">
-                    <h3 className="font-bold mb-3 md:mb-4 text-xl md:text-2xl lg:text-[28px]" style={{ color: '#F7E7CE', fontFamily: 'Montserrat' }}>
+                    <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       2024–Present – Leading Texas Poker with Technology & Service
                     </h3>
-                    <div className="text-sm md:text-base" style={{ color: '#F7E7CE', fontFamily: 'Poppins', lineHeight: '1.8' }}>
+                    <div style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', fontWeight: '400', lineHeight: '25px' }}>
                       <p className="mb-2">Today, Spades Poker House uses Poker Atlas tablets at every table, giving players access to:</p>
                       <ul className="list-disc pl-6 space-y-1 mb-2">
                         <li>Real-time waitlist registration for cash games</li>
@@ -203,8 +223,8 @@ export default function AboutClient() {
               </div>
             </div>
 
-            <div className="flex justify-end mt-2 overflow-hidden" style={{ marginRight: 'calc(2.5% + 5px)' }}>
-              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line bottom ${isVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
+            <div ref={bottomRef} className="flex justify-end mt-2 overflow-hidden" style={{ marginRight: 'calc(2.5% + 5px)' }}>
+              <Image src="/images/Group 16.svg" alt="Spades decoration" width={700} height={90} className={`spade-line bottom ${bottomVisible ? 'visible' : ''} w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto`} />
             </div>
           </div>
         </section>
@@ -212,13 +232,13 @@ export default function AboutClient() {
         {/* Call to Action - Check Live Poker Action */}
         <section className="relative" style={{ height: '280px', borderTop: '1px solid #CBB682' }}>
           <div className="relative z-10 flex flex-col items-center justify-center h-full">
-            <h2 className="text-center font-bold mb-12" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '36px' }}>
+            <h2 className="text-center font-bold mb-12" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '28.8px', fontWeight: '700' }}>
               Your Seat is Waiting – Check Live Poker Action
             </h2>
             <div className="flex flex-col items-center gap-4">
               <CustomButton
                 size="lg"
-                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200"
                 style={{ borderRadius: '11px', padding: '10px 60px', fontSize: '16px', minWidth: '365px' }}
                 onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster', '_blank')}
               >
@@ -226,7 +246,7 @@ export default function AboutClient() {
               </CustomButton>
               <CustomButton
                 size="lg"
-                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200"
                 style={{ borderRadius: '11px', padding: '10px 60px', fontSize: '16px', minWidth: '365px' }}
                 onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-baytown', '_blank')}
               >

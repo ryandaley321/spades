@@ -177,9 +177,11 @@ export default function Home() {
                   <p style={{ fontSize: '16px', lineHeight: '25px' }}>Come by to satisfy your hunger at <strong>Gyro Hero, where each dish is crafted with care and full of flavor!</strong></p>
                 </div>
                 <div className="mt-6">
-                  <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
-                    View Menu
-                  </CustomButton>
+                  <a href="/webster/menu" target="_blank" rel="noopener noreferrer">
+                    <CustomButton size="sm" className="w-full text-sm bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200">
+                      View Menu
+                    </CustomButton>
+                  </a>
                 </div>
               </CardContent>
             </Card>

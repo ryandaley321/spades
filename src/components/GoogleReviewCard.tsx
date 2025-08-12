@@ -40,7 +40,7 @@ const GoogleReviewCard: React.FC<GoogleReviewCardProps> = ({
   };
 
   return (
-    <div className="google-review-card bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="google-review-card bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 will-change-transform">
       <div className="flex items-start mb-4">
         <div className="mr-3">
           {avatar ? (
