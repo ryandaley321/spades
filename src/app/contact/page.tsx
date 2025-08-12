@@ -1,24 +1,35 @@
+'use client';
+
 import Image from "next/image";
 import Footer from '@/components/Footer';
 import { CustomButton } from "@/components/ui/custom-button";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Contact Spades Poker House | Webster Baytown TX Poker Locations",
-  description: "Contact Spades Poker House Webster and Baytown locations. Elite-level poker events near Houston. Get directions, hours, membership info for Texas's premier poker club.",
-  keywords: "contact Spades Poker House, Webster poker location, Baytown poker address, Houston area poker contact, elite poker events Texas",
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://spades-gamma.vercel.app/contact",
-  },
-  other: {
-    "geo.region": "US-TX",
-  },
-};
 
 export default function ContactPage() {
+  const handleWebsterGamesClick = () => {
+    window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster', '_blank');
+  };
+
+  const handleBaytownGamesClick = () => {
+    window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-baytown', '_blank');
+  };
+
+  const handleFindNearestClubClick = () => {
+    const mapsSection = document.getElementById('maps-section');
+    if (mapsSection) {
+      mapsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      // Add some offset to ensure titles are visible
+      setTimeout(() => {
+        window.scrollBy(0, -80);
+      }, 500);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#181510]">
       <main>
@@ -27,6 +38,7 @@ export default function ContactPage() {
           title="Webster | Baytown"
           description="Whether you're ready to play or need more info, our team is here to help you join the action in Webster or Baytown."
           buttonText="Find Your Nearest Club"
+          buttonAction={handleFindNearestClubClick}
           backgroundImage="/images/optimized/spades-poker-house-logo-wooden-wall-luxury-design-webster-texas.webp"
           overlayOpacity={0.7}
         />
@@ -35,13 +47,13 @@ export default function ContactPage() {
           title="Find Us, Call Us, Join the Game"
           description="Join a community of serious players and enjoy nonstop poker action, premium service, and unforgettable nights."
           buttons={[
-            { text: "Webster Games & Promotions", style: "brown" },
-            { text: "Baytown Games & Promotions", style: "brown" }
+            { text: "Webster Games & Promotions", style: "brown", action: handleWebsterGamesClick },
+            { text: "Baytown Games & Promotions", style: "brown", action: handleBaytownGamesClick }
           ]}
         />
 
         {/* Location Cards Section */}
-        <section className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/poker-chips-on-table-spades-poker-house-high-stakes-action-webster.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section id="maps-section" className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/poker-chips-on-table-spades-poker-house-high-stakes-action-webster.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
           {/* Dark overlay for content readability */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
           <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -54,19 +66,16 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex justify-center items-center mb-4">
                   <div className="flex space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity">
                       <Image src="/icons/facebook-icon.png" alt="Facebook" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/instagram-icon.png" alt="Instagram" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    </a>
+                    <a href="tel:2817241415" className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity">
                       <Image src="/icons/phone-icon.png" alt="Phone" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    </a>
+                    <a href="https://www.pokeratlas.com/poker-room/spades-poker-house-webster" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity">
                       <Image src="/icons/pokeratlas-icon.png" alt="Poker Atlas" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    </a>
+                    <div onClick={() => window.open('https://maps.app.goo.gl/YaWdtsakbGvQMHNT8', '_blank')} className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
                       <Image src="/icons/location-icon.png" alt="Location" width={16} height={16} />
                     </div>
                   </div>
@@ -93,19 +102,16 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex justify-center items-center mb-4">
                   <div className="flex space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity">
                       <Image src="/icons/facebook-icon.png" alt="Facebook" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
-                      <Image src="/icons/instagram-icon.png" alt="Instagram" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    </a>
+                    <a href="tel:3469776537" className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity">
                       <Image src="/icons/phone-icon.png" alt="Phone" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    </a>
+                    <a href="https://www.pokeratlas.com/poker-room/spades-poker-house-baytown" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity">
                       <Image src="/icons/pokeratlas-icon.png" alt="Poker Atlas" width={16} height={16} />
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center">
+                    </a>
+                    <div onClick={() => window.open('https://maps.app.goo.gl/jHRek6VcBgtxrnMw9', '_blank')} className="w-8 h-8 rounded-full bg-[#CBB682] flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
                       <Image src="/icons/location-icon.png" alt="Location" width={16} height={16} />
                     </div>
                   </div>

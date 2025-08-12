@@ -1,28 +1,23 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Footer from '@/components/Footer';
 import { CustomButton } from "@/components/ui/custom-button";
 import HeroBanner from "@/components/HeroBanner";
 import CallToActionBanner from "@/components/CallToActionBanner";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Baytown TX Poker Room | Real Poker Vibes Southeast Texas",
-  description: "Discover real poker vibes in Baytown, Texas. Exceptional service, friendly atmosphere, and professional poker action. Trusted venue for Southeast Texas players.",
-  keywords: "Baytown TX poker room, Baytown poker, Southeast Texas poker, real poker vibes Baytown, East Houston poker, poker tournaments Baytown",
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://spades-gamma.vercel.app/baytown",
-  },
-  other: {
-    "geo.region": "US-TX",
-    "geo.placename": "Baytown, Texas",
-    "geo.position": "29.7355;-94.9774",
-    "ICBM": "29.7355,-94.9774",
-  },
-};
 
 export default function BaytownLocationPage() {
+  const router = useRouter();
+
+  const handlePlayNowClick = () => {
+    router.push('/contact');
+  };
+
+  const handleViewScheduleClick = () => {
+    window.open('https://maps.app.goo.gl/46bwGKorY2VKRA727', '_blank');
+  };
   return (
     <div className="min-h-screen bg-[#181510]">
       <main>
@@ -59,6 +54,7 @@ export default function BaytownLocationPage() {
           }}
           backgroundImage="/images/optimized/baytown-hero-image.webp"
           overlayOpacity={0.7}
+          buttonAction={handlePlayNowClick}
         />
 
         <CallToActionBanner
@@ -66,6 +62,7 @@ export default function BaytownLocationPage() {
           description="Established tables, consistent action, and a loyal community of serious players."
           buttonText="View Baytown Schedule"
           buttonStyle="brown"
+          buttonAction={handleViewScheduleClick}
         />
 
         {/* Service Highlights Section */}
