@@ -52,24 +52,24 @@ export default function Header({ directionsUrl }: HeaderProps) {
           
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
-            <Link href="/" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Home</Link>
-            <Link href="/webster" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Webster</Link>
-            <Link href="/baytown" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Baytown</Link>
-            <Link href="/about" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>About</Link>
-            <Link href="/contact" className="transition-colors" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Contact</Link>
+            <Link href="/" className="transition-opacity hover:opacity-80" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Home</Link>
+            <Link href="/webster" className="transition-opacity hover:opacity-80" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Webster</Link>
+            <Link href="/baytown" className="transition-opacity hover:opacity-80" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Baytown</Link>
+            <Link href="/about" className="transition-opacity hover:opacity-80" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>About</Link>
+            <Link href="/contact" className="transition-opacity hover:opacity-80" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px' }}>Contact</Link>
           </nav>
           
           {/* Desktop Directions Button */}
           <div className="hidden md:block">
             {directionsConfig.isExternal ? (
               <a href={directionsConfig.url} target="_blank" rel="noopener noreferrer">
-                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px' }}>
+                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200" style={{ borderRadius: '11px', padding: '8px 30px' }}>
                   Directions
                 </CustomButton>
               </a>
             ) : (
               <a href={directionsConfig.url}>
-                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" style={{ borderRadius: '11px', padding: '8px 30px' }}>
+                <CustomButton size="md" className="mr-8 bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200" style={{ borderRadius: '11px', padding: '8px 30px' }}>
                   Directions
                 </CustomButton>
               </a>
@@ -84,14 +84,14 @@ export default function Header({ directionsUrl }: HeaderProps) {
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center relative">
               <span 
-                className="block h-0.5 w-6 transition-all duration-300 ease-out absolute"
+                className="block h-0.5 w-6 transition-transform duration-300 ease-out absolute"
                 style={{ 
                   backgroundColor: '#CBB682',
                   transform: isMobileMenuOpen ? 'rotate(45deg)' : 'translateY(-8px)'
                 }}
               />
               <span 
-                className="block h-0.5 w-6 transition-all duration-300 ease-out absolute"
+                className="block h-0.5 w-6 transition-transform duration-300 ease-out absolute"
                 style={{ 
                   backgroundColor: '#CBB682',
                   opacity: isMobileMenuOpen ? 0 : 1,
@@ -99,7 +99,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
                 }}
               />
               <span 
-                className="block h-0.5 w-6 transition-all duration-300 ease-out absolute"
+                className="block h-0.5 w-6 transition-transform duration-300 ease-out absolute"
                 style={{ 
                   backgroundColor: '#CBB682',
                   transform: isMobileMenuOpen ? 'rotate(-45deg)' : 'translateY(8px)'
@@ -112,7 +112,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
       
       {/* Mobile Navigation Drawer */}
       <div 
-        className={`md:hidden fixed top-[87px] left-0 w-full transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`md:hidden fixed top-[87px] left-0 w-full transition-[max-height] duration-300 ease-in-out overflow-hidden ${
           isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'
         }`}
         style={{ backgroundColor: '#181510' }}
@@ -121,7 +121,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
           <Link 
             href="/" 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="py-3 transition-colors hover:opacity-80" 
+            className="py-3 transition-opacity hover:opacity-80" 
             style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}
           >
             Home
@@ -129,7 +129,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
           <Link 
             href="/webster" 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="py-3 transition-colors hover:opacity-80" 
+            className="py-3 transition-opacity hover:opacity-80" 
             style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}
           >
             Webster
@@ -137,7 +137,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
           <Link 
             href="/baytown" 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="py-3 transition-colors hover:opacity-80" 
+            className="py-3 transition-opacity hover:opacity-80" 
             style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}
           >
             Baytown
@@ -145,7 +145,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
           <Link 
             href="/about" 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="py-3 transition-colors hover:opacity-80" 
+            className="py-3 transition-opacity hover:opacity-80" 
             style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}
           >
             About
@@ -153,7 +153,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
           <Link 
             href="/contact" 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="py-3 transition-colors hover:opacity-80" 
+            className="py-3 transition-opacity hover:opacity-80" 
             style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '18px' }}
           >
             Contact
@@ -170,7 +170,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
               >
                 <CustomButton 
                   size="md" 
-                  className="w-full bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
+                  className="w-full bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200" 
                   style={{ borderRadius: '11px', padding: '12px 30px' }}
                 >
                   Directions
@@ -183,7 +183,7 @@ export default function Header({ directionsUrl }: HeaderProps) {
               >
                 <CustomButton 
                   size="md" 
-                  className="w-full bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
+                  className="w-full bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200" 
                   style={{ borderRadius: '11px', padding: '12px 30px' }}
                 >
                   Directions

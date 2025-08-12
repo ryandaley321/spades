@@ -52,9 +52,10 @@ export default function AboutClient() {
         dangerouslySetInnerHTML={{
           __html: `
           .spade-line {
-            transition: all 0.8s ease-in-out;
+            transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
             transform: scaleY(0.05);
             opacity: 0.4;
+            will-change: transform, opacity;
           }
           .spade-line.visible { opacity: 1; }
           .spade-line.top.visible { transform: scaleY(1); }
@@ -83,12 +84,13 @@ export default function AboutClient() {
       {/* Google Reviews Section */}
       <section className="relative" style={{ backgroundColor: '#181510' }}>
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url('/images/optimized/faded spade premium quality poker cards 1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3,
+            willChange: 'transform',
           }}
         />
 
@@ -104,7 +106,7 @@ export default function AboutClient() {
             <a href="https://maps.app.goo.gl/jEARNPRj9tnAbKuC6" target="_blank" rel="noopener noreferrer">
               <CustomButton
                 size="lg"
-                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200"
                 style={{ borderRadius: '11px', padding: '8px 40px', fontSize: '16px' }}
               >
                 See More Google Reviews
@@ -117,12 +119,13 @@ export default function AboutClient() {
       {/* Timeline and CTA Container with shared background */}
       <div className="relative" style={{ backgroundColor: '#181510' }}>
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url('/images/optimized/image 1.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3,
+            willChange: 'transform',
           }}
         />
 
@@ -235,7 +238,7 @@ export default function AboutClient() {
             <div className="flex flex-col items-center gap-4">
               <CustomButton
                 size="lg"
-                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200"
                 style={{ borderRadius: '11px', padding: '10px 60px', fontSize: '16px', minWidth: '365px' }}
                 onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-webster', '_blank')}
               >
@@ -243,7 +246,7 @@ export default function AboutClient() {
               </CustomButton>
               <CustomButton
                 size="lg"
-                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200"
+                className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-colors duration-200"
                 style={{ borderRadius: '11px', padding: '10px 60px', fontSize: '16px', minWidth: '365px' }}
                 onClick={() => window.open('https://www.pokeratlas.com/poker-room/spades-poker-house-baytown', '_blank')}
               >

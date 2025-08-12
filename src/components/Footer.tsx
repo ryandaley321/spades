@@ -153,25 +153,25 @@ export default function Footer() {
             <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-8 font-['Poppins'] text-[16px] text-[#f7e7ce]">
               <button 
                 onClick={handleTogglePrivacyPolicy}
-                className="hover:text-[#cbb682] transition-colors"
+                className="hover:text-[#cbb682] transition-colors duration-200"
               >
                 Privacy Policy
               </button>
               <button 
                 onClick={handleToggleTermsOfUse}
-                className="hover:text-[#cbb682] transition-colors"
+                className="hover:text-[#cbb682] transition-colors duration-200"
               >
                 Terms of Use
               </button>
               <button 
                 onClick={handleToggleDisclaimer}
-                className="hover:text-[#cbb682] transition-colors"
+                className="hover:text-[#cbb682] transition-colors duration-200"
               >
                 Disclaimer
               </button>
               <button 
                 onClick={handleToggleCookiePolicy}
-                className="hover:text-[#cbb682] transition-colors"
+                className="hover:text-[#cbb682] transition-colors duration-200"
               >
                 Cookie Policy
               </button>
@@ -375,25 +375,25 @@ export default function Footer() {
                   <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-8 font-['Poppins'] text-[16px] text-[#f7e7ce]">
                     <button 
                       onClick={handleTogglePrivacyPolicy}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Privacy Policy
                     </button>
                     <button 
                       onClick={handleToggleTermsOfUse}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Terms of Use
                     </button>
                     <button 
                       onClick={handleToggleDisclaimer}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Disclaimer
                     </button>
                     <button 
                       onClick={() => setShowCookiePolicy(false)}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Cookie Policy
                     </button>
@@ -628,25 +628,25 @@ export default function Footer() {
                   <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-8 font-['Poppins'] text-[16px] text-[#f7e7ce]">
                     <button 
                       onClick={handleTogglePrivacyPolicy}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Privacy Policy
                     </button>
                     <button 
                       onClick={() => setShowTermsOfUse(false)}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Terms of Use
                     </button>
                     <button 
                       onClick={handleToggleDisclaimer}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Disclaimer
                     </button>
                     <button 
                       onClick={handleToggleCookiePolicy}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Cookie Policy
                     </button>
@@ -895,25 +895,25 @@ export default function Footer() {
                   <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-8 font-['Poppins'] text-[16px] text-[#f7e7ce]">
                     <button 
                       onClick={() => setShowPrivacyPolicy(false)}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Privacy Policy
                     </button>
                     <button 
                       onClick={handleToggleTermsOfUse}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Terms of Use
                     </button>
                     <button 
                       onClick={handleToggleDisclaimer}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Disclaimer
                     </button>
                     <button 
                       onClick={handleToggleCookiePolicy}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Cookie Policy
                     </button>
@@ -1084,25 +1084,25 @@ export default function Footer() {
                   <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-8 font-['Poppins'] text-[16px] text-[#f7e7ce]">
                     <button 
                       onClick={handleTogglePrivacyPolicy}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Privacy Policy
                     </button>
                     <button 
                       onClick={handleToggleTermsOfUse}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Terms of Use
                     </button>
                     <button 
                       onClick={() => setShowDisclaimer(false)}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Disclaimer
                     </button>
                     <button 
                       onClick={handleToggleCookiePolicy}
-                      className="hover:text-[#cbb682] transition-colors"
+                      className="hover:text-[#cbb682] transition-colors duration-200"
                     >
                       Cookie Policy
                     </button>

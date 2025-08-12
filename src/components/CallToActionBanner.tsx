@@ -73,7 +73,7 @@ export default function CallToActionBanner({
                     ? 'bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE]' 
                     : 'bg-[#785F37] text-[#F7E7CE] hover:bg-[#CBB682] hover:text-[#181510]'
                   }
-                  transition-all duration-200
+                  transition-colors duration-200
                 `}
                 style={{ 
                   borderRadius: '11px', 
