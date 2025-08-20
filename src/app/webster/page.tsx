@@ -21,7 +21,8 @@ export default function Webster() {
       />
 
       <CallToActionBanner
-        title="Spades Poker House Webster: Your Premier Poker Destination in Texas"
+        title="Spades Poker House Webster: Your Premier Poker Destination"
+        titleSize="28.8px"
         description="Join the action at our luxurious poker room, featuring high-stakes games, daily tournaments, and a vibrant player community."
         buttonText="See Webster Schedule"
         buttonStyle="brown"
@@ -35,7 +36,7 @@ export default function Webster() {
           className="absolute inset-0"
           style={{ 
             backgroundImage: `url('/images/optimized/BACKDROP1.webp')`,
-            backgroundSize: 'cover',
+            backgroundSize: '800px',
             backgroundPosition: 'center',
             opacity: 1
           }}
@@ -173,16 +174,6 @@ export default function Webster() {
                 <p className="mb-6" style={{ fontWeight: 'normal' }}>
                   {`To book an appointment with your preferred therapist, call or text 409-795-1170. Your massage session is your time—we're here to ensure it meets your expectations. Discover more about our services and benefits `}<a href="https://www.solmassagetherapies.com/" target="_blank" rel="noopener noreferrer" className="underline">[here]</a>{`.`}
                 </p>
-                <div className="flex justify-center">
-                  <CustomButton 
-                    size="lg" 
-                    className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-                    style={{ borderRadius: '11px', padding: '10px 30px' }}
-                    onClick={() => window.open('https://www.solmassagetherapies.com/', '_blank')}
-                  >
-                    Learn More About Sol Massage
-                  </CustomButton>
-                </div>
               </div>
             </div>
           </div>
@@ -199,13 +190,15 @@ export default function Webster() {
 
           {/* Gallery Image */}
           <div className="mb-20">
-            <Image
-              src="/images/optimized/Group 28.webp"
-              alt="Spades Poker House Highlights Gallery"
-              width={1920}
-              height={400}
-              className="w-full h-auto"
-            />
+            <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="block hover:opacity-90 transition-opacity">
+              <Image
+                src="/images/optimized/Group 28.webp"
+                alt="Spades Poker House Highlights Gallery"
+                width={1920}
+                height={400}
+                className="w-full h-auto cursor-pointer"
+              />
+            </a>
           </div>
 
           {/* Google Reviews Button */}
@@ -213,7 +206,7 @@ export default function Webster() {
             <CustomButton 
               size="lg" 
               className="bg-[#CBB682] text-[#181510] hover:bg-[#785F37] hover:text-[#F7E7CE] transition-all duration-200" 
-              style={{ borderRadius: '11px', padding: '10px 40px', fontSize: '16px', fontFamily: 'Poppins', fontWeight: '400' }}
+              style={{ borderRadius: '11px', padding: '10px 30px' }}
               onClick={() => window.open('https://maps.app.goo.gl/99ivNCoJeeuX4Uco8', '_blank')}
             >
               Spades Webster Google Reviews

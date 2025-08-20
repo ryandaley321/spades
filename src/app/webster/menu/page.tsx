@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { X } from "lucide-react";
 
 export default function WebsterMenu() {
@@ -27,16 +26,14 @@ export default function WebsterMenu() {
         </div>
       </div>
       
-      {/* Menu Image */}
+      {/* Menu PDF */}
       <div className="flex items-center justify-center p-4 md:p-8">
-        <div className="max-w-6xl w-full">
-          <Image
-            src="/images/watz-kookin-restaurant-menu-design.jpg"
-            alt="Walzz Kookin Menu"
-            width={1200}
-            height={1600}
-            className="w-full h-auto"
-            priority
+        <div className="max-w-6xl w-full h-screen">
+          <iframe
+            src="/images/3pt WK MENU .pdf"
+            title="Walzz Kookin Menu"
+            className="w-full h-full border-0"
+            style={{ minHeight: '80vh' }}
           />
         </div>
       </div>

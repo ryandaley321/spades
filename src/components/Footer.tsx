@@ -46,15 +46,6 @@ export default function Footer() {
                     className="w-11 h-12 md:w-[44px] md:h-[51px]"
                   />
                 </a>
-                <a href="#" className="hover:opacity-80 transition-opacity">
-                  <Image
-                    src="/icons/instagram-icon.png"
-                    alt="Instagram"
-                    width={48}
-                    height={51}
-                    className="w-12 h-12 md:w-[48px] md:h-[51px]"
-                  />
-                </a>
                 <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook-icon.png"
@@ -160,14 +151,14 @@ export default function Footer() {
               <Image
                 src="/images/optimized/spades champagne 1.webp"
                 alt="Spades Poker House"
-                width={55}
-                height={55}
-                className="w-12 h-12 md:w-[55px] md:h-[55px] cursor-pointer"
+                width={65}
+                height={58}
+                className="w-[65px] h-[58px] cursor-pointer"
               />
             </Link>
             <div className="font-['Poppins'] text-[#f7e7ce] text-[16px] leading-tight space-y-1">
               <p>© 2025 Spades Poker House. All rights reserved.</p>
-              <p>Site Designed by G&R Technologies</p>
+              <p>Site Designed by <a href="tel:4097390888" className="underline hover:text-[#cbb682] transition-colors">G&R Technologies</a></p>
             </div>
           </div>
         </div>

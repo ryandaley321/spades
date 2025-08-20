@@ -41,13 +41,15 @@ export default function Header({ directionsUrl }: HeaderProps) {
         <div className="flex items-center justify-between" style={{ height: '87px' }}>
           {/* Logo */}
           <div className="flex items-center">
-            <Image
-              src="/images/optimized/spades champagne 1.webp"
-              alt="Spades Poker House Logo"
-              width={65}
-              height={58}
-              className="ml-8"
-            />
+            <Link href="/" className="ml-8">
+              <Image
+                src="/images/optimized/spades champagne 1.webp"
+                alt="Spades Poker House Logo"
+                width={65}
+                height={58}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
           
           {/* Navigation */}

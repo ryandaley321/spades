@@ -87,7 +87,7 @@ export default function AboutClient() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url('/images/optimized/faded spade premium quality poker cards 1.webp')`,
-            backgroundSize: 'cover',
+            backgroundSize: '800px',
             backgroundPosition: 'center',
             opacity: 0.3,
             willChange: 'transform',
@@ -122,7 +122,7 @@ export default function AboutClient() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url('/images/optimized/image 1.webp')`,
-            backgroundSize: 'cover',
+            backgroundSize: '800px',
             backgroundPosition: 'center',
             opacity: 0.3,
             willChange: 'transform',
@@ -143,10 +143,10 @@ export default function AboutClient() {
             <div className="space-y-8">
               <div className="p-4 md:p-6 lg:p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
                 <div className="flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8">
-                  <div className="flex-shrink-0 flex items-stretch lg:order-1">
+                  <div className="flex-shrink-0 flex items-stretch order-1 lg:order-1">
                     <Image className="w-full lg:w-[280px]" src="/images/optimized/spades-poker-house-original-2020-poker-room-webster-tx.jpg 1.webp" alt="2020 Poker Room" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
                   </div>
-                  <div className="flex-1 flex flex-col justify-center lg:order-2">
+                  <div className="flex-1 flex flex-col justify-center order-2 lg:order-2">
                     <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       2020 – Launching Spades Poker House in Webster, TX
                     </h3>
@@ -161,7 +161,10 @@ export default function AboutClient() {
 
               <div className="p-4 md:p-6 lg:p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
                 <div className="flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8">
-                  <div className="flex-1 flex flex-col justify-center lg:order-1">
+                  <div className="flex-shrink-0 flex items-stretch order-1 lg:hidden">
+                    <Image className="w-full" src="/images/optimized/480742102_2727444374108691_8265231031706897172_n 1.webp" alt="Remodeled Room" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
+                  </div>
+                  <div className="flex-1 flex flex-col justify-center order-2 lg:order-1">
                     <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       2021–2022 – Remodeling, Expanding & More Poker Action
                     </h3>
@@ -171,7 +174,7 @@ export default function AboutClient() {
                       We added a wider variety of poker games and tournaments, creating nonstop action for Southeast Texas poker enthusiasts.
                     </p>
                   </div>
-                  <div className="flex-shrink-0 flex items-stretch lg:order-2">
+                  <div className="flex-shrink-0 flex items-stretch hidden lg:flex lg:order-2">
                     <Image className="w-full lg:w-[280px]" src="/images/optimized/480742102_2727444374108691_8265231031706897172_n 1.webp" alt="Remodeled Room" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
                   </div>
                 </div>
@@ -179,10 +182,10 @@ export default function AboutClient() {
 
               <div className="p-4 md:p-6 lg:p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
                 <div className="flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8">
-                  <div className="flex-shrink-0 flex items-stretch lg:order-1">
+                  <div className="flex-shrink-0 flex items-stretch order-1 lg:order-1">
                     <Image className="w-full lg:w-[280px]" src="/images/optimized/spades-poker-house-baytown-opening-day-cash-games-live-action-texas.jpg 1.webp" alt="Baytown Opening" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
                   </div>
-                  <div className="flex-1 flex flex-col justify-center lg:order-2">
+                  <div className="flex-1 flex flex-col justify-center order-2 lg:order-2">
                     <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       {`2023 – Opening Baytown's Top Poker Room`}
                     </h3>
@@ -202,7 +205,10 @@ export default function AboutClient() {
 
               <div className="p-4 md:p-6 lg:p-8 mx-auto" style={{ maxWidth: '95%', border: '2px solid #785F37' }}>
                 <div className="flex flex-col lg:flex-row items-stretch gap-4 md:gap-6 lg:gap-8">
-                  <div className="flex-1 flex flex-col justify-center lg:order-1">
+                  <div className="flex-shrink-0 flex items-stretch order-1 lg:hidden">
+                    <Image className="w-full" src="/images/optimized/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.webp" alt="Modern Poker Action" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
+                  </div>
+                  <div className="flex-1 flex flex-col justify-center order-2 lg:order-1">
                     <h3 className="font-bold mb-3 md:mb-4" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: '600' }}>
                       2024–Present – Leading Texas Poker with Technology & Service
                     </h3>
@@ -216,7 +222,7 @@ export default function AboutClient() {
                       <p>{`With two thriving locations and a focus on innovation, we're proud to be recognized as a top-rated poker destination in Texas, offering a premium experience for casual players and high-stakes grinders alike.`}</p>
                     </div>
                   </div>
-                  <div className="flex-shrink-0 flex items-stretch lg:order-2">
+                  <div className="flex-shrink-0 flex items-stretch hidden lg:flex lg:order-2">
                     <Image className="w-full lg:w-[280px]" src="/images/optimized/texas-holdem-quads-queens-spades-poker-house-full-table-action-webster.jpg 1.webp" alt="Modern Poker Action" width={280} height={0} style={{ height: 'auto', objectFit: 'cover' }} />
                   </div>
                 </div>

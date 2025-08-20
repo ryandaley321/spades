@@ -53,7 +53,7 @@ export default function ContactPage() {
         />
 
         {/* Location Cards Section */}
-        <section id="maps-section" className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/poker-chips-on-table-spades-poker-house-high-stakes-action-webster.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section id="maps-section" className="py-16 relative" style={{ backgroundColor: '#181510', backgroundImage: "url('/images/optimized/poker-chips-on-table-spades-poker-house-high-stakes-action-webster.webp')", backgroundSize: '800px', backgroundPosition: 'center' }}>
           {/* Dark overlay for content readability */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
           <div className="max-w-7xl mx-auto px-4 relative z-10">

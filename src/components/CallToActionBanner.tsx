@@ -8,6 +8,7 @@ interface ButtonConfig {
 
 interface CallToActionBannerProps {
   title: string;
+  titleSize?: string;
   description: string;
   buttonText?: string;
   buttonAction?: () => void;
@@ -17,6 +18,7 @@ interface CallToActionBannerProps {
 
 export default function CallToActionBanner({
   title,
+  titleSize,
   description,
   buttonText,
   buttonAction,
@@ -41,7 +43,7 @@ export default function CallToActionBanner({
             color: '#F7E7CE', 
             fontFamily: 'Montserrat',
             fontWeight: 700,
-            fontSize: 'clamp(24px, 4vw, 28.8px)',
+            fontSize: titleSize || 'clamp(24px, 4vw, 28.8px)',
             lineHeight: '1.25',
             letterSpacing: '0%'
           }}

@@ -39,7 +39,7 @@ export default function BaytownLocationPage() {
         />
 
         {/* Combined Background Wrapper for all three sections */}
-        <div className="relative" style={{ backgroundImage: "url('/images/optimized/spades-unbeatable-background.webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#181510' }}>
+        <div className="relative" style={{ backgroundImage: "url('/images/optimized/spades-unbeatable-background.webp')", backgroundSize: '800px', backgroundPosition: 'center', backgroundColor: '#181510' }}>
           {/* Dark overlay for entire background */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
           
@@ -148,44 +148,44 @@ export default function BaytownLocationPage() {
             
             {/* Image Gallery */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              <div className="aspect-square rounded-lg overflow-hidden">
+              <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
                 <Image
                   src="/images/optimized/spades-baytown-poker-tournament-winners-cash-prize-felt-webster.webp"
                   alt="Spades Baytown poker tournament winners with cash prize"
                   width={300}
                   height={300}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                 />
-              </div>
-              <div className="aspect-square rounded-lg overflow-hidden">
+              </a>
+              <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
                 <Image
                   src="/images/optimized/spades-baytown-10000-giveaway-winner-cash-backdrop-promotion.webp"
                   alt="Spades Baytown $10,000 giveaway winner with cash backdrop"
                   width={300}
                   height={300}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                   style={{ transform: 'rotate(90deg)' }}
                 />
-              </div>
-              <div className="aspect-square rounded-lg overflow-hidden">
+              </a>
+              <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
                 <Image
                   src="/images/optimized/spades-baytown-large-chip-stacks-poker-game-high-stakes-texas.webp"
                   alt="Spades Baytown large chip stacks in high stakes poker game"
                   width={300}
                   height={300}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                   style={{ transform: 'rotate(90deg)' }}
                 />
-              </div>
-              <div className="aspect-square rounded-lg overflow-hidden">
+              </a>
+              <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
                 <Image
                   src="/images/optimized/spades-baytown-poker-room-full-players-live-action-texas-poker.webp"
                   alt="Spades Baytown poker room full of players in live action"
                   width={300}
                   height={300}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                 />
-              </div>
+              </a>
             </div>
             
             <div className="text-center max-w-4xl mx-auto">

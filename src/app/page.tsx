@@ -39,7 +39,7 @@ export default function Home() {
         className="relative pt-16 pb-16"
         style={{
           backgroundImage: 'url("/images/optimized/image 1.webp")',
-          backgroundSize: 'cover',
+          backgroundSize: '800px',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundColor: '#181510'
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-center" style={{ color: '#F7E7CE', fontFamily: 'Montserrat', fontSize: '24px', fontWeight: 600, letterSpacing: '0%', lineHeight: '1.2' }}>Kitchen</h3>
                 <div className="space-y-3" style={{ color: '#F7E7CE', fontFamily: 'Poppins', fontSize: '16px', lineHeight: '25px', letterSpacing: '0%' }}>
-                  <p>Introducing <strong>GYRO HERO</strong>, the exclusive restaurant at Spades Poker House Webster! We take pride in offering a diverse menu that caters to all taste buds. Indulge in our mouthwatering <strong>Gyros, flavorful Sandwiches, delectable Wraps, and satisfying Pastas</strong>, alongside a variety of other tempting options. Whether you&apos;re in the mood for a quick snack or a full meal, our skilled chefs will craft dishes that will delight your senses.</p>
+                  <p>Introducing the exclusive restaurant at Spades Poker House Webster! We take pride in offering a diverse menu that caters to all taste buds. Indulge in our <strong>mouthwatering Gyros, flavorful Sandwiches, delectable Wraps, and satisfying Pastas</strong>, alongside a variety of other tempting options. Whether you&apos;re in the mood for a quick snack or a full meal, our skilled chefs will craft dishes that will delight your senses.</p>
                   <ul className="space-y-1 pl-4">
                     <li>• <strong>Wraps</strong> with fresh ingredients</li>
                     <li>• <strong>Sandwiches</strong> made to order</li>
@@ -201,45 +201,45 @@ export default function Home() {
               letterSpacing: '0%'
             }}
           >
-            Follow Us on Instagram
+            Follow us on Facebook
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="aspect-square rounded-lg overflow-hidden">
+            <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/happyq 1.webp"
-                alt="Instagram post 1"
+                alt="Facebook post 1"
                 width={300}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover cursor-pointer"
               />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden">
+            </a>
+            <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/mario 1.webp"
-                alt="Instagram post 2"
+                alt="Facebook post 2"
                 width={300}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover cursor-pointer"
               />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden">
+            </a>
+            <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/trio 1.webp"
-                alt="Instagram post 3"
+                alt="Facebook post 3"
                 width={300}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover cursor-pointer"
               />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden">
+            </a>
+            <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/happier 1.webp"
-                alt="Instagram post 4"
+                alt="Facebook post 4"
                 width={300}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover cursor-pointer"
               />
-            </div>
+            </a>
           </div>
         </div>
       </section>

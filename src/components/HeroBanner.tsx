@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CustomButton } from "@/components/ui/custom-button";
 
 interface HeroBannerProps {
@@ -60,7 +61,15 @@ export default function HeroBanner({
               lineHeight: '1.2'
             }}
           >
-            {title}
+            {title === "Webster | Baytown" ? (
+              <>
+                <Link href="/webster" className="hover:underline transition-all">Webster</Link>
+                <span> | </span>
+                <Link href="/baytown" className="hover:underline transition-all">Baytown</Link>
+              </>
+            ) : (
+              title
+            )}
           </h2>
           <p 
             className="mb-10 max-w-3xl mx-auto text-sm md:text-base lg:text-base" 
