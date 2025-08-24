@@ -124,7 +124,7 @@ export default function AboutClient() {
             backgroundImage: `url('/images/optimized/image 1.webp')`,
             backgroundSize: '800px',
             backgroundPosition: 'center',
-            opacity: 0.3,
+            opacity: 1,
             willChange: 'transform',
           }}
         />

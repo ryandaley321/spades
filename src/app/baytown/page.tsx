@@ -39,9 +39,7 @@ export default function BaytownLocationPage() {
         />
 
         {/* Combined Background Wrapper for all three sections */}
-        <div className="relative" style={{ backgroundImage: "url('/images/optimized/spades-unbeatable-background.webp')", backgroundSize: '800px', backgroundPosition: 'center', backgroundColor: '#181510' }}>
-          {/* Dark overlay for entire background */}
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(24, 21, 16, 0.8)' }}></div>
+        <div className="relative" style={{ backgroundImage: "url('/images/optimized/spades-unbeatable-background.webp')", backgroundSize: '800px', backgroundPosition: 'center', backgroundRepeat: 'repeat', backgroundColor: '#181510' }}>
           
           {/* Service Highlights Section */}
           <section className="py-16 relative z-10">

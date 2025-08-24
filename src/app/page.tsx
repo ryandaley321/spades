@@ -41,7 +41,7 @@ export default function Home() {
           backgroundImage: 'url("/images/optimized/image 1.webp")',
           backgroundSize: '800px',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+          backgroundRepeat: 'repeat',
           backgroundColor: '#181510'
         }}
       >
@@ -189,7 +189,7 @@ export default function Home() {
         </div>
 
         {/* Instagram Section */}
-        <div className="w-full px-8 lg:px-20 pt-8">
+        <div className="relative w-full px-8 lg:px-20 pt-8">
           <h2 
             className="text-center mb-12 text-2xl md:text-3xl"
             style={{

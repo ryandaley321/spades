@@ -38,6 +38,7 @@ export default function Webster() {
             backgroundImage: `url('/images/optimized/BACKDROP1.webp')`,
             backgroundSize: '800px',
             backgroundPosition: 'center',
+            backgroundRepeat: 'repeat',
             opacity: 1
           }}
         />
