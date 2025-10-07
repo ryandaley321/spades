@@ -207,7 +207,7 @@ export default function Home() {
             <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/happyq 1.webp"
-                alt="Facebook post 1"
+                alt="Happy poker players at Spades Poker House - Click to visit our Facebook page"
                 width={300}
                 height={300}
                 className="w-full h-full object-cover cursor-pointer"
@@ -216,7 +216,7 @@ export default function Home() {
             <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/mario 1.webp"
-                alt="Facebook post 2"
+                alt="Poker tournament winner at Spades - Click to visit our Facebook page"
                 width={300}
                 height={300}
                 className="w-full h-full object-cover cursor-pointer"
@@ -225,7 +225,7 @@ export default function Home() {
             <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/trio 1.webp"
-                alt="Facebook post 3"
+                alt="Group of players enjoying poker at Spades - Click to visit our Facebook page"
                 width={300}
                 height={300}
                 className="w-full h-full object-cover cursor-pointer"
@@ -234,7 +234,7 @@ export default function Home() {
             <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="aspect-square rounded-lg overflow-hidden hover:opacity-90 transition-opacity">
               <Image
                 src="/images/optimized/happier 1.webp"
-                alt="Facebook post 4"
+                alt="Smiling poker player at Spades - Click to visit our Facebook page"
                 width={300}
                 height={300}
                 className="w-full h-full object-cover cursor-pointer"

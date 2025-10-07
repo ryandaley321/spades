@@ -22,7 +22,7 @@ export default function Footer() {
                 >
                   <Image
                     src="/icons/location-icon.png"
-                    alt="Location"
+                    alt="Location icon - Get directions to Spades Poker House Webster"
                     width={51}
                     height={51}
                     className="w-12 h-12 md:w-[51px] md:h-[51px]"
@@ -31,7 +31,7 @@ export default function Footer() {
                 <a href="tel:2817241415" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phone-icon.png"
-                    alt="Phone"
+                    alt="Phone icon - Call Spades Poker House Webster at (281) 724-1415"
                     width={49}
                     height={51}
                     className="w-12 h-12 md:w-[49px] md:h-[51px]"
@@ -40,7 +40,7 @@ export default function Footer() {
                 <a href="https://www.pokeratlas.com/poker-room/spades-poker-house-webster" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/pokeratlas-icon.png"
-                    alt="Poker Atlas"
+                    alt="Poker Atlas icon - View Spades Webster on Poker Atlas"
                     width={44}
                     height={51}
                     className="w-11 h-12 md:w-[44px] md:h-[51px]"
@@ -49,7 +49,7 @@ export default function Footer() {
                 <a href="https://www.facebook.com/Spadespokerhouse/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook-icon.png"
-                    alt="Facebook"
+                    alt="Facebook icon - Visit Spades Webster Facebook page"
                     width={49}
                     height={51}
                     className="w-12 h-12 md:w-[49px] md:h-[51px]"
@@ -70,7 +70,7 @@ export default function Footer() {
                 >
                   <Image
                     src="/icons/location-icon.png"
-                    alt="Location"
+                    alt="Location icon - Get directions to Spades Poker House Baytown"
                     width={51}
                     height={51}
                     className="w-12 h-12 md:w-[51px] md:h-[51px]"
@@ -79,7 +79,7 @@ export default function Footer() {
                 <a href="tel:3469776537" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/phone-icon.png"
-                    alt="Phone"
+                    alt="Phone icon - Call Spades Poker House Baytown at (346) 977-6537"
                     width={49}
                     height={51}
                     className="w-12 h-12 md:w-[49px] md:h-[51px]"
@@ -88,7 +88,7 @@ export default function Footer() {
                 <a href="https://www.pokeratlas.com/poker-room/spades-poker-house-baytown" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/pokeratlas-icon.png"
-                    alt="Poker Atlas"
+                    alt="Poker Atlas icon - View Spades Baytown on Poker Atlas"
                     width={44}
                     height={51}
                     className="w-11 h-12 md:w-[44px] md:h-[51px]"
@@ -97,7 +97,7 @@ export default function Footer() {
                 <a href="https://www.facebook.com/people/Spades-Baytown/100093212547274/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <Image
                     src="/icons/facebook-icon.png"
-                    alt="Facebook"
+                    alt="Facebook icon - Visit Spades Baytown Facebook page"
                     width={49}
                     height={51}
                     className="w-12 h-12 md:w-[49px] md:h-[51px]"
@@ -150,7 +150,7 @@ export default function Footer() {
             <Link href="/" className="hover:opacity-80 transition-opacity">
               <Image
                 src="/images/optimized/spades champagne 1.webp"
-                alt="Spades Poker House"
+                alt="Spades Poker House logo - Return to homepage"
                 width={65}
                 height={58}
                 className="w-[65px] h-[58px] cursor-pointer"
